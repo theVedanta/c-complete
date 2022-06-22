@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import dash from "../../public/index/dash.png";
+// import dash from "../../public/index/dash.png";
 
 const Header = () => {
     return (
@@ -32,8 +32,7 @@ const Header = () => {
 
             <div className="header-img w-1/2 flex justify-end">
                 <Image
-                    src={dash}
-                    placeholder="blur"
+                    src="/index/dash.png"
                     alt="dash"
                     width={1040}
                     height={728}

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "../Container";
-import stat from "../../public/index/stat.png";
+// import stat from "../../public/index/stat.png";
 
 const Stats = () => {
     return (
@@ -9,7 +9,7 @@ const Stats = () => {
                 <div className="img-stat flex justify-center items-center w-1/2">
                     <Image
                         alt="stat"
-                        src={stat}
+                        src="/index/stat.png"
                         placeholder="blur"
                         width={600}
                         height={500}
