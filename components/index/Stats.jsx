@@ -10,7 +10,6 @@ const Stats = () => {
                     <Image
                         alt="stat"
                         src="/index/stat.png"
-                        placeholder="blur"
                         width={600}
                         height={500}
                     />
