@@ -28,7 +28,7 @@ body {
 
 /* FOR */
 .index-for {
-    background: url(../public/index/for.png);
+    background: url(/index/for.png);
 }
 .for-card {
     @apply w-5/12 px-10 py-8 bg-white text-black mx-10 rounded-xl;
