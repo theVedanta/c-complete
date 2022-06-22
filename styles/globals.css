@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    outline: 0;
+}
+*::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+*::-webkit-scrollbar-track {
+    border-radius: 10000;
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 100vh;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+body {
+    @apply bg-blue text-white;
+}
+
+/* FOR */
+.index-for {
+    background: url(../public/index/for.png);
+}
+.for-card {
+    @apply w-5/12 px-10 py-8 bg-white text-black mx-10 rounded-xl;
+    box-shadow: 0 0 50px rgba(56, 56, 56, 0.15);
+}
+
+/* BTNS */
+.btn {
+    @apply px-5 py-3 rounded-lg;
+}
+.btn-dark {
+    @apply bg-darkBlue border-2 border-darkBlue transition-all duration-300 hover:bg-transparent hover:text-darkBlue;
+}
+.btn-line {
+    @apply border-2 border-white transition-all duration-300 hover:bg-white hover:text-black;
+}
+
+/* HAM ---------------------------------------------------------------------------------------- */
+.line {
+    width: 20px;
+    height: 2px;
+    border-radius: 20px;
+    background: #000;
+    position: relative;
+    transition: all 0.2s;
+}
+.line::before,
+.line::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background: #000;
+    border-radius: inherit;
+    transition: all 0.3s;
+}
+.line::after {
+    top: 6px;
+}
+.ham-active .line {
+    background: transparent;
+}
+.ham-active .line::before,
+.ham-active .line::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+.ham-active .line::after {
+    transform: rotate(45deg);
+}
