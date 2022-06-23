@@ -28,19 +28,19 @@ body {
 
 /* FOR */
 .index-for {
-    background: url(/assets/for.png);
+    background: url(/for.png);
 }
 .for-card {
-    @apply w-5/12 px-10 py-8 bg-white text-black mx-10 rounded-xl;
+    @apply w-5/12 px-10 py-8 bg-white text-black mx-10 rounded-xl transition-all hover:shadow-2xl;
     box-shadow: 0 0 50px rgba(56, 56, 56, 0.15);
 }
 
 /* BTNS */
 .btn {
-    @apply px-5 py-3 rounded-lg;
+    @apply px-5 py-3 cursor-pointer rounded-lg;
 }
 .btn-dark {
-    @apply bg-darkBlue border-2 border-darkBlue transition-all duration-300 hover:bg-transparent hover:text-darkBlue;
+    @apply bg-darkBlue border-2 border-darkBlue transition-all duration-300 hover:shadow-xl;
 }
 .btn-line {
     @apply border-2 border-white transition-all duration-300 hover:bg-white hover:text-black;
@@ -80,4 +80,25 @@ body {
 }
 .ham-active .line::after {
     transform: rotate(45deg);
+}
+
+/* Features */
+.index-feat {
+    background: url(/feat-bg.png);
+    background-size: cover;
+}
+.index-feat-heading {
+    position: relative;
+    @apply inline-block w-auto;
+}
+.index-feat-heading::after {
+    content: "";
+    position: absolute;
+    bottom: -1.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 4px;
+    border-radius: 100px;
+    @apply bg-white;
 }

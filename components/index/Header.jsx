@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import dash from "../../public/assets/dash.png";
+import dash from "../../public/dash.png";
 
 const Header = () => {
     return (
         <section className="flex w-full items-center my-48">
             <div className="header-text w-1/2 pl-20">
-                <h3 className="text-5xl leading-snug mb-12 pr-10">
+                <h3 className="text-4xl leading-snug mb-12 pr-10">
                     Welcome to C-Complete, a Flexible and Comprehensive Multi
                     Rater.
                 </h3>
-                <p className="w-5/6 leading-relaxed pr-12">
+                <p className="w-5/6 leading-relaxed">
                     Competency management and development professionals are
                     constantly faced with the need to accurately evaluate
                     behavioral attributes. Whether as part of performance
@@ -31,7 +31,7 @@ const Header = () => {
             </div>
 
             <div className="header-img w-1/2 flex justify-end">
-                <Image src={dash} alt="dash" width={1040} height={750} />
+                <Image src={dash} alt="dash" width={950} height={680} />
             </div>
         </section>
     );
