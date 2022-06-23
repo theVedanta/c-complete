@@ -5,12 +5,12 @@ import stat from "../../public/stat.svg";
 const Stats = () => {
     return (
         <section className="index-stats py-16 bg-darkBlue">
-            <Container className="flex w-full">
-                <div className="img-stat flex justify-center items-center w-1/2">
-                    <Image alt="stat" src={stat} width={450} height={425} />
+            <Container className="flex w-full justify-between">
+                <div className="img-stat flex justify-start items-center w-1/2">
+                    <Image alt="stat" src={stat} width={450} height={475} />
                 </div>
 
-                <div className="stat-cards flex w-1/2 justify-center flex-wrap">
+                <div className="stat-cards flex w-1/2 justify-end flex-wrap">
                     {[
                         {
                             stat: "69",

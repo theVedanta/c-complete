@@ -31,8 +31,14 @@ body {
     background: url(/for.png);
 }
 .for-card {
-    @apply w-5/12 px-10 py-8 bg-white text-black mx-10 rounded-xl transition-all hover:shadow-2xl;
+    @apply w-5/12 px-10 py-8 bg-white text-black rounded-xl transition-all hover:shadow-2xl;
+}
+.for-card,
+.sol-card {
     box-shadow: 0 0 50px rgba(56, 56, 56, 0.15);
+}
+.sol-card {
+    width: 49%;
 }
 
 /* BTNS */
@@ -87,6 +93,10 @@ body {
     background: url(/feat-bg.png);
     background-size: cover;
 }
+.sol-feat {
+    background: url(/sol.png);
+    background-size: cover;
+}
 .index-feat-heading {
     position: relative;
     @apply inline-block w-auto;
@@ -97,8 +107,8 @@ body {
     bottom: -1.6rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 70%;
-    height: 4px;
+    width: 60%;
+    height: 6px;
     border-radius: 100px;
     @apply bg-white;
 }
