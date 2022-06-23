@@ -31,7 +31,7 @@ const Header = () => {
             </div>
 
             <div className="header-img w-1/2 flex justify-end">
-                <Image src="/dash.png" alt="dash" width={950} height={680} />
+                <Image src="/vercel.svg" alt="dash" width={950} height={680} />
             </div>
         </section>
     );
