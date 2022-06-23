@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-// import dash from "../../public/dash.png";
+import dash from "../../public/dash.svg";
 
 const Header = () => {
     return (
@@ -31,7 +31,7 @@ const Header = () => {
             </div>
 
             <div className="header-img w-1/2 flex justify-end">
-                <Image src="/vercel.svg" alt="dash" width={950} height={680} />
+                <Image src={dash} alt="dash" width={950} height={680} />
             </div>
         </section>
     );

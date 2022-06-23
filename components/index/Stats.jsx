@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "../Container";
-import stat from "../../public/stat.png";
+import stat from "../../public/stat.svg";
 
 const Stats = () => {
     return (
