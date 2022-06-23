@@ -1,18 +1,13 @@
 import Image from "next/image";
 import Container from "../Container";
-// import stat from "../../public/index/stat.png";
+import stat from "../../public/assets/stat.png";
 
 const Stats = () => {
     return (
         <section className="index-stats py-16 bg-darkBlue">
             <Container className="flex w-full">
                 <div className="img-stat flex justify-center items-center w-1/2">
-                    <Image
-                        alt="stat"
-                        src="/index/stat.png"
-                        width={600}
-                        height={500}
-                    />
+                    <Image alt="stat" src={stat} width={600} height={500} />
                 </div>
 
                 <div className="stat-cards flex w-1/2 justify-center flex-wrap">
