@@ -1,3 +1,5 @@
+import Beliefs from "../components/index/Beliefs";
+import Cases from "../components/index/Cases";
 import FAQ from "../components/index/FAQ";
 import Features from "../components/index/Features";
 import For from "../components/index/For";
@@ -18,6 +20,8 @@ const Index = () => {
             <FAQ />
             <Price />
             <Test />
+            <Cases />
+            <Beliefs />
         </>
     );
 };

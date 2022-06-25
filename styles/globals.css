@@ -144,11 +144,24 @@ body {
 .swiper-button-prev::after {
     @apply text-white;
 }
+.blue-nav .swiper-button-next::after,
+.blue-nav .swiper-button-prev::after {
+    @apply text-blue;
+}
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
     .swiper-pagination-bullet {
     @apply border-2 border-white w-3 h-3 bg-darkBlue opacity-90;
 }
+
+.blue-nav .swiper-pagination-bullet,
+.blue-nav .swiper-pagination-horizontal.swiper-pagination-bullets {
+    @apply !border-blue !bg-gray;
+}
+
 .swiper .swiper-pagination-bullet-active {
     @apply !bg-white;
+}
+.blue-nav .swiper-pagination-bullet-active {
+    @apply !bg-blue;
 }

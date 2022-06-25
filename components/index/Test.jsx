@@ -37,7 +37,8 @@ const Test = () => {
                     modules={[Navigation, Pagination, Autoplay]}
                     spaceBetween={50}
                     slidesPerView={1}
-                    // autoplay
+                    autoplay
+                    loop
                     navigation
                     pagination={{ clickable: true }}
                 >
