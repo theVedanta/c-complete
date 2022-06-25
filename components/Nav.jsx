@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Nav = () => {
     return (
-        <nav className="nav px-20 bg-gray flex justify-between items-center border-b-2 border-b-slate-300 fixed top-0 left-0 w-screen z-40 lap:px-10 ph:px-6 ph:bg-white ph:border-none">
+        <nav className="nav px-32 bg-gray flex justify-between items-center border-b-2 border-b-slate-300 fixed top-0 left-0 w-screen z-40 lap:px-10 ph:px-6 ph:bg-white ph:border-none">
             <div className="logo-hold flex items-center w-3/12 ph:w-1/3 ph:z-40">
                 <Link href="/">
                     <a className="font-bold text-xl text-blue">C-Complete</a>

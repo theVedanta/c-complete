@@ -4,13 +4,13 @@ import stat from "../../public/stat.svg";
 
 const Stats = () => {
     return (
-        <section className="index-stats py-16 bg-darkBlue">
+        <section className="index-stats py-5 bg-darkBlue">
             <Container className="flex w-full justify-between">
                 <div className="img-stat flex justify-start items-center w-1/2">
-                    <Image alt="stat" src={stat} width={450} height={475} />
+                    <Image alt="stat" src={stat} width={800} height={600} />
                 </div>
 
-                <div className="stat-cards flex w-1/2 justify-end flex-wrap">
+                <div className="stat-cards flex w-1/2 py-12 justify-end flex-wrap">
                     {[
                         {
                             stat: "69",

@@ -5,7 +5,7 @@ import dash from "../../public/dash.svg";
 const Header = () => {
     return (
         <section className="flex w-full items-center my-48">
-            <div className="header-text w-1/2 pl-20">
+            <div className="header-text w-1/2 pl-32">
                 <h3 className="text-4xl leading-snug mb-12 pr-10">
                     Welcome to C-Complete, a Flexible and Comprehensive Multi
                     Rater.

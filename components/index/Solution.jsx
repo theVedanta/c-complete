@@ -30,7 +30,7 @@ const Solution = () => {
 
     return (
         <>
-            <section className="index-feat sol-feat w-screen py-16 mt-32">
+            <section className="index-feat sol-feat w-screen py-16">
                 <Container className="flex flex-col items-center">
                     <h3 className="index-feat-heading text-5xl text-white font-semibold text-center">
                         What We Offer
