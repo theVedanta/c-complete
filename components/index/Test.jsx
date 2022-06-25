@@ -25,7 +25,7 @@ const Test = () => {
     ];
 
     return (
-        <section className="testimonials py-20 bg-darkBlue">
+        <section className="testimonials py-32 bg-darkBlue">
             <Container className="flex flex-col items-center">
                 <h3 className="index-feat-heading text-5xl text-white font-semibold text-center mb-32">
                     Testimonials

@@ -56,7 +56,7 @@ const Features = () => {
                 </Container>
             </section>
 
-            <Container className="feats w-full bg-gray py-20 flex flex-wrap">
+            <Container className="feats w-full bg-gray py-32 flex flex-wrap">
                 {feats.map((feat, i) => (
                     <div className="feat text-black flex w-1/2 my-6" key={i}>
                         <div className="feat-img relative w-1/3">

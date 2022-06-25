@@ -78,7 +78,7 @@ const QNA = ({ qna, id }) => {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ delay: 0.1, duration: 0.2 }}
-                        className="font-medium z-10 tracking-wider text-lg mt-5 pr-48 lap:pr-16 lap:text-base tab:pr-10 ph:text-xs ph:mt-3 ph:pr-4 ph:font-normal ph:leading-relaxed"
+                        className="font-medium z-10 tracking-wider text-lg mt-5 pr-16 lap:pr-16 lap:text-base tab:pr-10 ph:text-xs ph:mt-3 ph:pr-4 ph:font-normal ph:leading-relaxed"
                     >
                         {qna.a}
                     </motion.h6>

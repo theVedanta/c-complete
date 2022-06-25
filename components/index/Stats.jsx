@@ -4,7 +4,7 @@ import stat from "../../public/stat.svg";
 
 const Stats = () => {
     return (
-        <section className="index-stats py-5 bg-darkBlue">
+        <section className="index-stats py-20 bg-darkBlue">
             <Container className="flex w-full justify-between">
                 <div className="img-stat flex justify-start items-center w-1/2">
                     <Image alt="stat" src={stat} width={800} height={600} />

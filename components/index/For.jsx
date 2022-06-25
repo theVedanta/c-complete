@@ -3,9 +3,9 @@ import Container from "../Container";
 
 const For = () => {
     return (
-        <section className="index-for py-20 pt-48">
+        <section className="index-for py-32 pt-48">
             <Container>
-                <h3 className="font-medium text-5xl text-center px-32 text-black mt-32 mb-16 leading-normal">
+                <h3 className="font-medium text-4xl text-center px-32 text-black mt-32 mb-16 leading-normal">
                     C-Complete allows both{" "}
                     <span className="font-semibold text-blue">Individuals</span>{" "}
                     and
@@ -16,7 +16,7 @@ const For = () => {
                     to see the complete picture.
                 </h3>
 
-                <div className="for-cards flex justify-between items-center w-full">
+                <div className="for-cards flex justify-between px-28 items-center w-full">
                     <Link href="/individual">
                         <a className="for-card">
                             <h3 className="font-semibold text-blue text-3xl mb-6">

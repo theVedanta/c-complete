@@ -41,7 +41,7 @@ const Solution = () => {
                     </h3>
                 </Container>
             </section>
-            <div className="sol-cards-hold w-full bg-gray py-16">
+            <div className="sol-cards-hold w-full bg-gray py-32">
                 <Container className="flex justify-center items-center">
                     <div className="sol-cards w-9/12 flex justify-between flex-wrap">
                         {sols.map((sol, i) => (
