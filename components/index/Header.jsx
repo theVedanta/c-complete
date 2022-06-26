@@ -1,16 +1,43 @@
 import Image from "next/image";
 import Link from "next/link";
 import dash from "../../public/dash.svg";
+import { motion } from "framer-motion";
 
 const Header = () => {
     return (
         <section className="flex w-full items-center my-48">
             <div className="header-text w-1/2 pl-32">
-                <h3 className="text-4xl leading-snug mb-12 pr-10">
+                <motion.h3
+                    initial={{
+                        y: 100,
+                        opacity: 0,
+                    }}
+                    animate={{
+                        y: 0,
+                        opacity: 1,
+                    }}
+                    transition={{
+                        delay: 1,
+                    }}
+                    className="text-4xl  leading-snug mb-12 pr-10"
+                >
                     Welcome to C-Complete, a Flexible and Comprehensive Multi
                     Rater.
-                </h3>
-                <p className="w-5/6 leading-relaxed">
+                </motion.h3>
+                <motion.p
+                    initial={{
+                        y: 100,
+                        opacity: 0,
+                    }}
+                    animate={{
+                        y: 0,
+                        opacity: 1,
+                    }}
+                    transition={{
+                        delay: 1.6,
+                    }}
+                    className="w-5/6 leading-relaxed"
+                >
                     Competency management and development professionals are
                     constantly faced with the need to accurately evaluate
                     behavioral attributes. Whether as part of performance
@@ -19,20 +46,51 @@ const Header = () => {
                     for objectively capturing the picture of each individual as
                     perceived by the many stakeholders. C-Complete lets you see
                     the complete picture.
-                </p>
-                <div className="btns mt-16">
+                </motion.p>
+                <motion.div
+                    initial={{
+                        y: 100,
+                        opacity: 0,
+                    }}
+                    animate={{
+                        y: 0,
+                        opacity: 1,
+                    }}
+                    transition={{
+                        delay: 2,
+                    }}
+                    className="btns mt-16"
+                >
                     <Link href="/">
                         <a className="btn btn-dark mr-5">Get started</a>
                     </Link>
                     <Link href="/">
                         <a className="btn btn-line">Learn more</a>
                     </Link>
-                </div>
+                </motion.div>
             </div>
 
-            <div className="header-img w-1/2 flex justify-end">
-                <Image src={dash} alt="dash" width={950} height={680} />
-            </div>
+            <motion.div
+                initial={{
+                    x: "100%",
+                }}
+                animate={{
+                    x: 0,
+                }}
+                transition={{
+                    delay: 0.4,
+                    duration: 1,
+                }}
+                className="header-img w-1/2 flex justify-end"
+            >
+                <Image
+                    src={dash}
+                    alt="dash"
+                    width={950}
+                    height={680}
+                    priority
+                />
+            </motion.div>
         </section>
     );
 };

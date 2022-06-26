@@ -39,11 +39,17 @@ const Beliefs = () => {
     ];
 
     return (
-        <section className="cases py-32 bg-gray">
+        <section className="cases py-32 bg-gray text-black">
             <Container className="flex flex-col items-center">
-                <h3 className="text-5xl text-blue font-semibold text-center mb-32">
-                    Our latest case studies
+                <h3 className="text-5xl text-blue font-semibold text-center">
+                    Our Thoughts
                 </h3>
+                <p className="text-2xl my-10 mb-16 text-center leading-relaxed">
+                    We at C-Complete believe that it is important to provide
+                    services that reflect our Thought Leadership. Our Content &
+                    Research team publishes insightful reports, blogs and other
+                    thought provoking information.
+                </p>
             </Container>
 
             <Container className="px-48">

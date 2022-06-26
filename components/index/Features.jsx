@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Container from "../Container";
-import feat1 from "../../public/feat-1.svg";
-import feat2 from "../../public/feat-2.svg";
-import feat3 from "../../public/feat-3.svg";
-import feat4 from "../../public/feat-4.svg";
-import feat5 from "../../public/feat-5.svg";
-import feat6 from "../../public/feat-6.svg";
+import feat1 from "../../public/feats/feat-1.svg";
+import feat2 from "../../public/feats/feat-2.svg";
+import feat3 from "../../public/feats/feat-3.svg";
+import feat4 from "../../public/feats/feat-4.svg";
+import feat5 from "../../public/feats/feat-5.svg";
+import feat6 from "../../public/feats/feat-6.svg";
 
 const Features = () => {
     const feats = [
