@@ -30,7 +30,7 @@ const Stats = () => {
                     {[
                         {
                             stat: "69",
-                            name: "Competencies",
+                            name: "Incompetencies",
                         },
                         {
                             stat: "489",

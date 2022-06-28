@@ -29,16 +29,7 @@ const For = () => {
 
                 <div className="for-cards flex justify-between px-20 items-stretch w-full">
                     <Link href="/individual">
-                        <motion.a
-                            initial={{ x: -500, opacity: 0 }}
-                            whileInView={{ x: 0, opacity: 1 }}
-                            viewport={{ once: true }}
-                            transition={{
-                                duration: 0.4,
-                                delay: 0.4,
-                            }}
-                            className="for-card"
-                        >
+                        <a className="for-card">
                             <h3 className="font-semibold flex items-center text-blue text-3xl mb-6">
                                 <span className="text-5xl">
                                     <FiUsers />
@@ -58,19 +49,10 @@ const For = () => {
                                 Multi Rater feedback for providing impactful
                                 results.
                             </p>
-                        </motion.a>
+                        </a>
                     </Link>
                     <Link href="/org">
-                        <motion.a
-                            initial={{ x: 500, opacity: 0 }}
-                            whileInView={{ x: 0, opacity: 1 }}
-                            viewport={{ once: true }}
-                            transition={{
-                                duration: 0.4,
-                                delay: 0.4,
-                            }}
-                            className="for-card"
-                        >
+                        <a className="for-card">
                             <h3 className="font-semibold flex items-center text-blue text-3xl mb-6">
                                 <span className="text-5xl">
                                     <FiUsers />
@@ -91,7 +73,7 @@ const For = () => {
                                 the most objective way of demonstrating
                                 competencies, consistently
                             </p>
-                        </motion.a>
+                        </a>
                     </Link>
                 </div>
             </Container>

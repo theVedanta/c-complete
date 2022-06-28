@@ -53,7 +53,7 @@ const Solution = () => {
             </section>
             <div className="sol-cards-hold w-full bg-gray py-32">
                 <Container className="flex justify-center items-center">
-                    <div className="sol-cards w-10/12 flex justify-between flex-wrap">
+                    <div className="sol-cards w-10/12 flex justify-between items-start flex-wrap">
                         {sols.map((sol, i) => (
                             <div
                                 key={i}

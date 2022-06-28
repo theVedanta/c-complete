@@ -7,10 +7,10 @@
     outline: 0;
 }
 body::-webkit-scrollbar {
-    width: 6px;
+    width: 10px;
 }
 body::-webkit-scrollbar-track {
-    @apply bg-white;
+    @apply bg-gray;
 }
 body::-webkit-scrollbar-thumb {
     @apply bg-blue;

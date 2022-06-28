@@ -85,7 +85,6 @@ const Header = () => {
                 }}
                 transition={{
                     delay: 0.4,
-                    duration: 0.6,
                 }}
                 className="header-img w-1/2 flex justify-end"
             >
@@ -93,9 +92,10 @@ const Header = () => {
                     src={dash}
                     placeholder="blur"
                     alt="dash"
-                    width={950}
-                    height={670}
+                    width={1000}
+                    height={630}
                     priority
+                    className="scale-105 translate-x-28"
                 />
             </motion.div>
         </section>
