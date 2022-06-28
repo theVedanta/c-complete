@@ -9,7 +9,7 @@ const Nav = () => {
             }}
             animate={{ y: 0 }}
             transition={{ duration: 0.4, delay: 1 }}
-            className="nav px-32 bg-gray flex justify-between items-center border-b-2 border-b-slate-300 fixed top-0 left-0 w-screen z-40 lap:px-10 ph:px-6 ph:bg-white ph:border-none"
+            className="nav px-32 bg-white flex justify-between items-center border-b-2 border-b-slate-300 fixed top-0 left-0 w-screen z-40 lap:px-10 ph:px-6 ph:bg-white ph:border-none"
         >
             <div className="logo-hold flex items-center w-2/12 ph:w-1/3 ph:z-40">
                 <Link href="/">
