@@ -2,7 +2,7 @@ import { Pagination, Autoplay } from "swiper";
 import Container from "../Container";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import sample from "../../public/case.svg";
+import sample from "../../public/case.png";
 import { FiPlay } from "react-icons/fi";
 
 const Cases = () => {
@@ -71,8 +71,15 @@ const Cases = () => {
 const Case = ({ cas }) => {
     return (
         <div className="case w-full mb-20 bg-white rounded-lg">
-            <div className="case-img w-full overflow-hidden relative">
-                <Image alt="the" src={cas.pic} objectFit="cover" />
+            <div className="case-img rounded-lg w-full overflow-hidden relative">
+                <Image
+                    alt="the"
+                    src={cas.pic}
+                    objectFit="cover"
+                    width={1000}
+                    height={500}
+                    placeholder="blur"
+                />
             </div>
 
             <div className="case-content w-full px-8 pb-8 pt-3 flex flex-col items-start justify-center">

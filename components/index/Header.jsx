@@ -12,7 +12,8 @@ const Header = () => {
                         y: 100,
                         opacity: 0,
                     }}
-                    animate={{
+                    viewport={{ once: true }}
+                    whileInView={{
                         y: 0,
                         opacity: 1,
                     }}
@@ -29,7 +30,8 @@ const Header = () => {
                         y: 100,
                         opacity: 0,
                     }}
-                    animate={{
+                    viewport={{ once: true }}
+                    whileInView={{
                         y: 0,
                         opacity: 1,
                     }}
@@ -52,7 +54,8 @@ const Header = () => {
                         y: 100,
                         opacity: 0,
                     }}
-                    animate={{
+                    viewport={{ once: true }}
+                    whileInView={{
                         y: 0,
                         opacity: 1,
                     }}
@@ -72,10 +75,13 @@ const Header = () => {
 
             <motion.div
                 initial={{
-                    x: "100%",
+                    x: 400,
+                    opacity: 0,
                 }}
-                animate={{
+                viewport={{ once: true }}
+                whileInView={{
                     x: 0,
+                    opacity: 1,
                 }}
                 transition={{
                     delay: 0.4,

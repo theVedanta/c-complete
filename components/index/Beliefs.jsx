@@ -2,7 +2,7 @@ import { Pagination, Autoplay } from "swiper";
 import Container from "../Container";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import sample from "../../public/case.svg";
+import sample from "../../public/case.png";
 
 const Beliefs = () => {
     const beliefs = [
@@ -79,8 +79,15 @@ const Beliefs = () => {
 const Belief = ({ bel }) => {
     return (
         <div className="bel w-full mb-28 bg-white shadow-xl text-black rounded-lg">
-            <div className="bel-img w-full h-1/2 overflow-hidden relative">
-                <Image alt="the" src={bel.pic} />
+            <div className="bel-img w-full h-1/2 rounded-lg overflow-hidden relative">
+                <Image
+                    alt="the"
+                    src={bel.pic}
+                    width={1000}
+                    height={500}
+                    objectFit="cover"
+                    placeholder="blur"
+                />
             </div>
 
             <div className="bel-content w-full h-1/2 px-6 flex flex-col items-start justify-center">
