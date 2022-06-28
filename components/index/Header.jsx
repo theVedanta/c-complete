@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import dash from "../../public/dash.svg";
+import dash from "../../public/dash.png";
 import { motion } from "framer-motion";
 
 const Header = () => {
@@ -79,15 +79,16 @@ const Header = () => {
                 }}
                 transition={{
                     delay: 0.4,
-                    duration: 1,
+                    duration: 0.6,
                 }}
                 className="header-img w-1/2 flex justify-end"
             >
                 <Image
                     src={dash}
+                    placeholder="blur"
                     alt="dash"
                     width={950}
-                    height={680}
+                    height={670}
                     priority
                 />
             </motion.div>

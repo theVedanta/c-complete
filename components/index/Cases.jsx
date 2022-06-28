@@ -3,6 +3,7 @@ import Container from "../Container";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import sample from "../../public/case.svg";
+import { FiPlay } from "react-icons/fi";
 
 const Cases = () => {
     const cases = [
@@ -70,14 +71,17 @@ const Cases = () => {
 const Case = ({ cas }) => {
     return (
         <div className="case w-full mb-20 bg-white rounded-lg">
-            <div className="case-img w-full h-2/3 overflow-hidden relative">
-                <Image alt="the" src={cas.pic} />
+            <div className="case-img w-full overflow-hidden relative">
+                <Image alt="the" src={cas.pic} objectFit="cover" />
             </div>
 
-            <div className="case-content w-full h-1/3 pl-6 flex flex-col items-start justify-center">
-                <h4 className="text-black text-xl font-medium">{cas.title}</h4>
-                <button className="btn btn-primary w-auto mt-3 text-light">
-                    Watch now
+            <div className="case-content w-full px-8 pb-8 pt-3 flex flex-col items-start justify-center">
+                <h4 className="text-black text-xl font-medium py-2">
+                    {cas.title}
+                </h4>
+                <button className="btn btn-primary w-auto flex items-center mt-3 text-light">
+                    <FiPlay />
+                    &nbsp;&nbsp;Watch now
                 </button>
             </div>
         </div>

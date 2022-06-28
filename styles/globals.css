@@ -6,28 +6,21 @@
 * {
     outline: 0;
 }
-*::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
+body::-webkit-scrollbar {
+    width: 6px;
 }
-*::-webkit-scrollbar-track {
-    border-radius: 10000;
-    background: transparent;
+body::-webkit-scrollbar-track {
+    @apply bg-white;
 }
-*::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 100vh;
+body::-webkit-scrollbar-thumb {
+    @apply bg-blue;
 }
-*::-webkit-scrollbar-thumb:hover {
-    background: transparent;
-}
-
-:root {
-    --swiper-theme-color: #000;
+body::-webkit-scrollbar-thumb:hover {
+    @apply bg-darkBlue;
 }
 
 body {
-    @apply bg-blue text-white;
+    @apply bg-blue text-white w-screen !overflow-x-hidden;
 }
 
 /* FOR */
@@ -35,8 +28,8 @@ body {
     background: url(/bgs/for.png);
 }
 .for-card {
-    @apply px-10 py-8 bg-white text-black rounded-xl transition-all hover:shadow-2xl;
-    width: 47%;
+    @apply px-12 py-10 bg-white text-black rounded-xl cursor-pointer transition-all hover:shadow-2xl;
+    width: 48%;
 }
 .for-card,
 .sol-card {

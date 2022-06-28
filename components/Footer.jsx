@@ -24,9 +24,9 @@ const Footer = () => {
                         </Link>
                         {[
                             ["Contact Us", "/"],
-                            ["Contact Us", "/"],
-                            ["Contact Us", "/"],
-                            ["Contact Us", "/"],
+                            ["About Us", "/"],
+                            ["Company History", "/"],
+                            ["Privacy Policy", "/"],
                         ].map(([title, href], i) => (
                             <Link href={href} key={i}>
                                 <a className="mb-8">{title}</a>
@@ -35,14 +35,12 @@ const Footer = () => {
                     </div>
                     <div className="foot-col flex flex-col">
                         <Link href="mailto:contact@unitol.in">
-                            <a className="font-semibold mb-12">
-                                contact@unitol.in
-                            </a>
+                            <a className="font-semibold mb-12">Secunderabad</a>
                         </Link>
                         {[
-                            ["Contact Us", "/"],
-                            ["Contact Us", "/"],
-                            ["Contact Us", "/"],
+                            ["Products", "/"],
+                            ["Services", "/"],
+                            ["Resources", "/"],
                         ].map(([title, href], i) => (
                             <Link href={href} key={i}>
                                 <a className="mb-8">{title}</a>
@@ -50,9 +48,12 @@ const Footer = () => {
                         ))}
                     </div>
                     <div className="foot-col flex flex-col">
-                        <h4 className="font-semibold mb-12">opening hours</h4>
-                        <p className="w-1/2">
-                            Mon - Sat : 09:30 am - 06:30 pm Sun : Closed
+                        <h4 className="font-semibold mb-12">Opening Hours</h4>
+                        <p className="w-full">
+                            Mon - Sat: 09:30 am - 06:30 pm
+                            <br />
+                            <br />
+                            Sun: Closed
                         </p>
                     </div>
                 </div>

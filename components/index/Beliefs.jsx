@@ -44,7 +44,7 @@ const Beliefs = () => {
                 <h3 className="text-5xl text-blue font-semibold text-center">
                     Our Thoughts
                 </h3>
-                <p className="text-2xl my-10 mb-16 text-center leading-relaxed">
+                <p className="text-xl my-10 mb-16 px-20 text-center leading-relaxed">
                     We at C-Complete believe that it is important to provide
                     services that reflect our Thought Leadership. Our Content &
                     Research team publishes insightful reports, blogs and other

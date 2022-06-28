@@ -17,27 +17,27 @@ const Features = () => {
         {
             img: feat2,
             title: "Customizable competency models",
-            desc: "Pre populated Competency Models to help in initiating feedback cycles, quickly. Also feature to create own competency models.",
+            desc: "Different Rating scales for varied needs; with scope to create and define new rating scales for specific needs.",
         },
         {
             img: feat3,
-            title: "Customizable competency models",
-            desc: "Pre populated Competency Models to help in initiating feedback cycles, quickly. Also feature to create own competency models.",
+            title: "Personalized communication",
+            desc: "Personalize your mail content at the start of the feedback cycle and also the intra cycle reminders.",
         },
         {
             img: feat4,
-            title: "Customizable competency models",
-            desc: "Pre populated Competency Models to help in initiating feedback cycles, quickly. Also feature to create own competency models.",
+            title: "Multilingual",
+            desc: "Want to roll out in different languages to different sets of people? Use C-Complete’s multi lingual capabilities.",
         },
         {
             img: feat5,
-            title: "Customizable competency models",
-            desc: "Pre populated Competency Models to help in initiating feedback cycles, quickly. Also feature to create own competency models.",
+            title: "Mobile enabled",
+            desc: "Provide feedback on multiple devise formats. Mobile enablement capabilities help CxO to give feedback on the go.",
         },
         {
             img: feat6,
-            title: "Customizable competency models",
-            desc: "Pre populated Competency Models to help in initiating feedback cycles, quickly. Also feature to create own competency models.",
+            title: "Comprehensive reports",
+            desc: "Extensive reports along multiple dimensions helping in better and more objective analysis for the individual.",
         },
     ];
 
