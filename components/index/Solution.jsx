@@ -11,25 +11,29 @@ const Solution = () => {
             title: "Management Complete",
             desc: "Want to build a more effective management cadre? Assess the Managerial capability of your employees through Management Complete. Our General Management competency repository can be used to identify the development requirements in your staff. By selecting the appropriate competencies to suit your requirement, you will be able to help build those capabilities in your people and thus build the organization in the long run.",
         },
+
+        {
+            icon: <IoFemaleOutline />,
+            title: "Women Lead Complete",
+            desc: "Want to grow a fair gender leadership pipeline? Want to assess the Leadership competencies of Women? Women Lead Complete has an exhaustive set of competencies related to Women Leadership. Use Women Lead Complete or customize as per your requirements to drive development of Women Leaders in the Organization.",
+        },
+
+        {
+            icon: <TbCrown />,
+            title: "Lead Complete",
+            desc: "Want to identify potential leaders? Building a leadership pipeline? Based on various Leadership Development models and theories we have developed an exhaustive list of leadership competencies and elements to design your own questionnaire.",
+        },
+    ];
+    const sols2 = [
         {
             icon: <AiOutlineStock />,
             title: "Sales Complete",
             desc: "Drawing up specific development initiatives for your high power Sales force? Developing your Sales team in general into a high performance Sales Force? Drive Sales by identifying competency gaps and drawing up appropriate development roadmaps. C-Complete have a unique and exhaustive database of questions covering all critical aspects of Sales. You could use this questionnaire, or customize it to meet any specific development requirement of your Sales team.",
         },
         {
-            icon: <IoFemaleOutline />,
-            title: "Women Lead Complete",
-            desc: "Want to grow a fair gender leadership pipeline? Want to assess the Leadership competencies of Women? Women Lead Complete has an exhaustive set of competencies related to Women Leadership. Use Women Lead Complete or customize as per your requirements to drive development of Women Leaders in the Organization.",
-        },
-        {
             icon: <FiStar />,
             title: "Change Complete",
             desc: "Driving a Change initiative? Identifying Change champions? Use Change-Complete; the most exhaustive database of parameters regarding Change Management in organizations.",
-        },
-        {
-            icon: <TbCrown />,
-            title: "Lead Complete",
-            desc: "Want to identify potential leaders? Building a leadership pipeline? Based on various Leadership Development models and theories we have developed an exhaustive list of leadership competencies and elements to design your own questionnaire.",
         },
         {
             icon: <FiFileText />,
@@ -51,10 +55,25 @@ const Solution = () => {
                     </h3>
                 </Container>
             </section>
-            <div className="sol-cards-hold w-full bg-gray py-32">
-                <Container className="flex justify-center items-center">
-                    <div className="sol-cards w-10/12 flex justify-between items-start flex-wrap">
+            <div className="sol-cards-hold w-full flex justify-center items-center bg-gray py-32">
+                <Container className="flex w-10/12 justify-center items-start">
+                    <div className="sol-cards flex flex-col w-full items-center">
                         {sols.map((sol, i) => (
+                            <div
+                                key={i}
+                                className="sol-card px-10 py-8 bg-white text-black rounded-xl mb-6"
+                            >
+                                <h3 className="font-semibold flex items-center text-blue text-2xl mb-6">
+                                    <span className="text-4xl">{sol.icon}</span>
+                                    &nbsp;&nbsp;
+                                    {sol.title}
+                                </h3>
+                                <p>{sol.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="sol-cards flex flex-col w-full items-center">
+                        {sols2.map((sol, i) => (
                             <div
                                 key={i}
                                 className="sol-card px-10 py-8 bg-white text-black rounded-xl mb-6"

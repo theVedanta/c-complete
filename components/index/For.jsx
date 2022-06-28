@@ -1,20 +1,13 @@
 import Link from "next/link";
 import Container from "../Container";
-import { motion } from "framer-motion";
 import { FiUser, FiUsers } from "react-icons/fi";
 
 const For = () => {
     return (
         <section className="index-for py-32 pt-48">
             <Container>
-                <motion.h3
-                    initial={{
-                        opacity: 0,
-                        y: -100,
-                    }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2, duration: 0.4 }}
-                    viewport={{ once: true }}
+                <h3
+                    data-aos="fade-down"
                     className="font-medium text-4xl text-center px-32 text-black mt-32 mb-16 leading-normal"
                 >
                     C-Complete allows both{" "}
@@ -25,11 +18,15 @@ const For = () => {
                         Organizations
                     </span>{" "}
                     to see the complete picture.
-                </motion.h3>
+                </h3>
 
                 <div className="for-cards flex justify-between px-20 items-stretch w-full">
                     <Link href="/individual">
-                        <a className="for-card">
+                        <a
+                            data-aos="fade-right"
+                            delay="600"
+                            className="for-card"
+                        >
                             <h3 className="font-semibold flex items-center text-blue text-3xl mb-6">
                                 <span className="text-5xl">
                                     <FiUsers />
@@ -52,10 +49,14 @@ const For = () => {
                         </a>
                     </Link>
                     <Link href="/org">
-                        <a className="for-card">
+                        <a
+                            data-aos="fade-left"
+                            delay="600"
+                            className="for-card"
+                        >
                             <h3 className="font-semibold flex items-center text-blue text-3xl mb-6">
                                 <span className="text-5xl">
-                                    <FiUsers />
+                                    <FiUser />
                                 </span>
                                 &nbsp;&nbsp; For Individuals
                             </h3>

@@ -1,43 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import dash from "../../public/dash.png";
-import { motion } from "framer-motion";
 
 const Header = () => {
     return (
         <section className="flex w-full items-center my-48">
             <div className="header-text w-1/2 pl-32">
-                <motion.h3
-                    initial={{
-                        y: 100,
-                        opacity: 0,
-                    }}
-                    viewport={{ once: true }}
-                    whileInView={{
-                        y: 0,
-                        opacity: 1,
-                    }}
-                    transition={{
-                        delay: 1,
-                    }}
+                <h3
+                    data-aos="fade-up"
                     className="text-4xl  leading-snug mb-12 pr-10"
                 >
                     Welcome to C-Complete, a Flexible and Comprehensive Multi
                     Rater.
-                </motion.h3>
-                <motion.p
-                    initial={{
-                        y: 100,
-                        opacity: 0,
-                    }}
-                    viewport={{ once: true }}
-                    whileInView={{
-                        y: 0,
-                        opacity: 1,
-                    }}
-                    transition={{
-                        delay: 1.6,
-                    }}
+                </h3>
+                <p
+                    data-aos="fade-up"
+                    data-aos-delay="600"
                     className="w-5/6 leading-relaxed"
                 >
                     Competency management and development professionals are
@@ -48,20 +26,10 @@ const Header = () => {
                     for objectively capturing the picture of each individual as
                     perceived by the many stakeholders. C-Complete lets you see
                     the complete picture.
-                </motion.p>
-                <motion.div
-                    initial={{
-                        y: 100,
-                        opacity: 0,
-                    }}
-                    viewport={{ once: true }}
-                    whileInView={{
-                        y: 0,
-                        opacity: 1,
-                    }}
-                    transition={{
-                        delay: 2,
-                    }}
+                </p>
+                <div
+                    data-aos="fade-up"
+                    data-aos-delay="900"
                     className="btns mt-16"
                 >
                     <Link href="/">
@@ -70,22 +38,11 @@ const Header = () => {
                     <Link href="/">
                         <a className="btn btn-line">Learn more</a>
                     </Link>
-                </motion.div>
+                </div>
             </div>
 
-            <motion.div
-                initial={{
-                    x: 400,
-                    opacity: 0,
-                }}
-                viewport={{ once: true }}
-                whileInView={{
-                    x: 0,
-                    opacity: 1,
-                }}
-                transition={{
-                    delay: 0.4,
-                }}
+            <div
+                data-aos="fade-left"
                 className="header-img w-1/2 flex justify-end"
             >
                 <Image
@@ -97,7 +54,7 @@ const Header = () => {
                     priority
                     className="scale-105 translate-x-28"
                 />
-            </motion.div>
+            </div>
         </section>
     );
 };

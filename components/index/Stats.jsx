@@ -1,66 +1,44 @@
 import Image from "next/image";
 import Container from "../Container";
 import stat from "../../public/stat.svg";
-import { motion } from "framer-motion";
 
 const Stats = () => {
     return (
         <section className="index-stats py-20 bg-darkBlue pt-10">
             <Container className="flex w-full px-52 justify-between items-stretch">
-                <motion.div
-                    initial={{
-                        x: -500,
-                        opacity: 0,
-                    }}
-                    whileInView={{
-                        x: 0,
-                        opacity: 1,
-                    }}
-                    transition={{
-                        delay: 0.6,
-                        duration: 0.6,
-                    }}
-                    viewport={{ once: true }}
+                <div
+                    data-aos="fade-right"
                     className="img-stat flex justify-start items-center w-1/2 relative"
                 >
                     <Image alt="stat" src={stat} layout="fill" />
-                </motion.div>
+                </div>
 
                 <div className="stat-cards flex w-1/2 py-12 justify-end flex-wrap">
                     {[
                         {
                             stat: "69",
                             name: "Incompetencies",
+                            delay: "400",
                         },
                         {
                             stat: "489",
                             name: "Competencies",
-                            delay: 0.6,
+                            delay: "500",
                         },
                         {
                             stat: "3826",
                             name: "Competencies",
+                            delay: "600",
                         },
                         {
                             stat: "1697",
                             name: "Reports Generated",
-                            delay: 0.6,
+                            delay: "700",
                         },
                     ].map((stat, i) => (
-                        <motion.div
-                            initial={{
-                                y: 200,
-                                opacity: 0,
-                            }}
-                            whileInView={{
-                                y: 0,
-                                opacity: 1,
-                            }}
-                            transition={{
-                                duration: 0.4,
-                                delay: stat.delay ? stat.delay : 0.4,
-                            }}
-                            viewport={{ once: true }}
+                        <div
+                            data-aos="fade-up"
+                            data-aos-delay={stat.delay}
                             key={i}
                             className="stat-card w-4/12 m-3 h-1/2 py-10 flex flex-col items-center justify-center rounded-lg shadow-lg bg-white"
                         >
@@ -70,7 +48,7 @@ const Stats = () => {
                             <h6 className="font-semibold text-lg text-blue mt-4">
                                 {stat.name}
                             </h6>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </Container>

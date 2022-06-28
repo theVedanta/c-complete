@@ -5,8 +5,18 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App({ Component, pageProps }) {
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            delay: 300,
+        });
+    }, []);
+
     return (
         <>
             <Nav />
