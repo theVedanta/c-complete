@@ -10,7 +10,7 @@ body::-webkit-scrollbar {
     width: 10px;
 }
 body::-webkit-scrollbar-track {
-    @apply bg-gray;
+    @apply bg-white;
 }
 body::-webkit-scrollbar-thumb {
     @apply bg-blue;
@@ -56,10 +56,10 @@ body {
     @apply bg-blue text-white;
 }
 .btn-primary {
-    @apply bg-blue text-white px-7;
+    @apply bg-blue text-white px-7 border-2 border-blue;
 }
 .btn-primary:hover {
-    @apply bg-darkBlue;
+    @apply bg-darkBlue border-darkBlue;
 }
 .btn-transparent {
     @apply text-blue font-semibold px-0 py-5 hover:text-darkBlue;
