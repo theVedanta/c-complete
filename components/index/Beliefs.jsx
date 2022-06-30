@@ -2,7 +2,7 @@ import { Pagination, Autoplay } from "swiper";
 import Container from "../Container";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import sample from "../../public/case.png";
+import sample from "../../public/case.svg";
 
 const Beliefs = () => {
     const beliefs = [
@@ -86,7 +86,6 @@ const Belief = ({ bel }) => {
                     width={1000}
                     height={500}
                     objectFit="cover"
-                    placeholder="blur"
                 />
             </div>
 

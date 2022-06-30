@@ -1,4 +1,4 @@
-import sample from "./public/case.png";
+import sample from "./public/case.svg";
 import { FiCheck } from "react-icons/fi";
 
 const indiBenefits = [

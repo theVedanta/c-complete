@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import dash from "../../public/dash.png";
+import dash from "../../public/dash.svg";
 
 const Header = () => {
     return (

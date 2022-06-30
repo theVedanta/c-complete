@@ -35,7 +35,6 @@ const BenefitCard = ({ benefit }) => {
                     src={benefit.img}
                     objectFit="cover"
                     layout="fill"
-                    placeholder="blur"
                 />
             </div>
 

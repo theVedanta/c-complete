@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import indiImg from "../../public/indi.png";
-import orgImg from "../../public/org.png";
+import indiImg from "../../public/indi.svg";
+import orgImg from "../../public/org.svg";
 
 const Header = ({ indi }) => {
     return (
