@@ -18,20 +18,34 @@ const Nav = () => {
             </div>
             <div className="links w-10/12 flex justify-end ph:w-screen ph:flex-col ph:z-30">
                 {[
-                    ["Features", "/"],
-                    ["Case Studies", "/"],
-                    ["Pricing", "/"],
+                    ["Features", "/#feats"],
+                    ["Case Studies", "/#cases"],
+                    ["Pricing", "/#price"],
                     ["Contact", "/"],
-                    ["Organization", "/"],
-                    ["Individual", "/"],
+                    ["Organization", "/product/org"],
+                    ["Individual", "/product/indi"],
                     ["About", "/"],
-                ].map(([title, url]) => (
-                    <Link key={title} href={url}>
-                        <a className="py-4 pl-10 inline-block text-black transition-all duration-300 hover:font-bold hover:text-blue ease-in-out mx-1 lap:px-4 lap:py-4 lap:text-sm tab:px-2 tab:text-xs">
-                            {title}
-                        </a>
-                    </Link>
-                ))}
+                ].map(([title, url]) =>
+                    url.split("")[0] !== "#" ? (
+                        <Link key={title} href={url}>
+                            <a className="nav-link">{title}</a>
+                        </Link>
+                    ) : (
+                        // <button
+                        //     onClick={() => {
+                        //         document.querySelector(url).scrollIntoView({
+                        //             behavior: "smooth",
+                        //         });
+                        //     }}
+                        //     className="nav-link"
+                        // >
+                        //     {title}
+                        // </button>
+                        <Link href={url}>
+                            <a className="nav-link"></a>
+                        </Link>
+                    )
+                )}
             </div>
             <div
                 className="ham w-1/3 hidden justify-end items-center h-full ph:flex ph:z-40"

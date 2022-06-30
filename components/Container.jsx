@@ -1,5 +1,9 @@
-const Container = ({ children, className }) => {
-    return <main className={`container px-32 ${className}`}>{children}</main>;
+const Container = ({ children, className, id }) => {
+    return (
+        <main className={`container px-32 ${className}`} id={id}>
+            {children}
+        </main>
+    );
 };
 
 export default Container;

@@ -43,7 +43,7 @@ const Features = () => {
 
     return (
         <>
-            <section className="index-feat w-screen py-16">
+            <section className="index-feat w-screen py-16" id="feats">
                 <Container className="flex flex-col items-center">
                     <h3 className="index-feat-heading text-5xl text-white font-semibold text-center">
                         Features

@@ -7,7 +7,10 @@ import enterprise from "../../public/price/enterprise.svg";
 const Price = () => {
     const [pick, setPick] = useState("org");
     return (
-        <Container className="w-full py-32 flex flex-col items-center bg-gray text-black tab:py-14">
+        <Container
+            className="w-full py-32 flex flex-col items-center bg-gray text-black tab:py-14"
+            id="price"
+        >
             <h4 className="text-5xl z-10 font-semibold text-blue text-center ph:text-2xl">
                 Simple,Straight Pricing
             </h4>

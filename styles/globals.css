@@ -65,6 +65,11 @@ body {
     @apply text-blue font-semibold px-0 py-5 hover:text-darkBlue;
 }
 
+/* NAV */
+.nav-link {
+    @apply py-4 pl-10 inline-block text-black transition-all duration-300 hover:font-bold hover:text-blue ease-in-out mx-1 lap:px-4 lap:py-4 lap:text-sm tab:px-2 tab:text-xs;
+}
+
 /* HAM ---------------------------------------------------------------------------------------- */
 .line {
     width: 20px;
@@ -169,4 +174,9 @@ body {
 }
 .blog-img {
     @apply mb-10 rounded-2xl overflow-hidden w-full h-96 relative;
+}
+
+/* BENEFITS */
+.benefit {
+    width: 48%;
 }
