@@ -47,11 +47,11 @@ const Header = () => {
             >
                 <Image
                     src={dash}
-                    placeholder="blur"
                     alt="dash"
                     width={1000}
                     height={630}
                     priority
+                    leading="eager"
                     className="scale-105 translate-x-28"
                 />
             </div>

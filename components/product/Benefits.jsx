@@ -29,7 +29,7 @@ const Benefits = ({ indi }) => {
 const BenefitCard = ({ benefit }) => {
     return (
         <div className="benefit mb-20 bg-white text-black rounded-lg">
-            <div className="case-img h-36 rounded-t-lg w-full overflow-hidden relative">
+            <div className="case-img h-32 rounded-t-lg w-full overflow-hidden relative">
                 <Image
                     alt="the"
                     src={benefit.img}
@@ -39,11 +39,11 @@ const BenefitCard = ({ benefit }) => {
                 />
             </div>
 
-            <div className="case-content w-full px-10 pt-6 pb-5 flex flex-col items-start justify-center">
-                <h4 className="text-2xl font-semibold flex items-center text-blue py-2">
+            <div className="case-content w-full px-8 pt-5 pb-4 flex flex-col items-start justify-center">
+                <h4 className="text-xl font-semibold flex items-center text-blue py-2">
                     {benefit.icon}&nbsp;{benefit.title}
                 </h4>
-                <p className="my-3">{benefit.desc}</p>
+                <p className="my-3 text-sm">{benefit.desc}</p>
             </div>
         </div>
     );

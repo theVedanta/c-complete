@@ -47,11 +47,11 @@ const Header = ({ indi }) => {
             <div className="header-img w-1/2 flex justify-center items-center">
                 <Image
                     src={indi ? indiImg : orgImg}
-                    placeholder="blur"
                     alt="dash"
                     width={600}
                     height={450}
                     priority
+                    loading="eager"
                 />
             </div>
         </section>
