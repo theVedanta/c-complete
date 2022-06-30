@@ -1,4 +1,4 @@
-import Form from "../components/contact/form";
+import Form from "../components/contact/Form";
 import Map from "../components/contact/Map";
 
 const Contact = () => {
