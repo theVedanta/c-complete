@@ -25,27 +25,11 @@ const Nav = () => {
                     ["Organization", "/product/org"],
                     ["Individual", "/product/indi"],
                     ["About", "/"],
-                ].map(([title, url]) =>
-                    url.split("")[0] !== "#" ? (
-                        <Link key={title} href={url}>
-                            <a className="nav-link">{title}</a>
-                        </Link>
-                    ) : (
-                        // <button
-                        //     onClick={() => {
-                        //         document.querySelector(url).scrollIntoView({
-                        //             behavior: "smooth",
-                        //         });
-                        //     }}
-                        //     className="nav-link"
-                        // >
-                        //     {title}
-                        // </button>
-                        <Link href={url}>
-                            <a className="nav-link"></a>
-                        </Link>
-                    )
-                )}
+                ].map(([title, url]) => (
+                    <Link key={title} href={url}>
+                        <a className="nav-link">{title}</a>
+                    </Link>
+                ))}
             </div>
             <div
                 className="ham w-1/3 hidden justify-end items-center h-full ph:flex ph:z-40"
