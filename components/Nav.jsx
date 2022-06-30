@@ -21,7 +21,7 @@ const Nav = () => {
                     ["Features", "/#feats"],
                     ["Case Studies", "/#cases"],
                     ["Pricing", "/#price"],
-                    ["Contact", "/"],
+                    ["Contact", "/contact"],
                     ["Organization", "/product/org"],
                     ["Individual", "/product/indi"],
                     ["About", "/"],

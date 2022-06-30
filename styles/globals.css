@@ -180,3 +180,30 @@ body {
 .benefit {
     width: 48%;
 }
+
+/* INPUT */
+.input {
+    @apply flex flex-col;
+    width: 48%;
+}
+.input-textarea {
+    max-height: 45%;
+    min-height: 25%;
+}
+.input-field {
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    @apply rounded bg-white px-5 py-3;
+}
+/* MAP */
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 100%;
+}
