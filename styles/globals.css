@@ -125,8 +125,8 @@ body {
     bottom: -1.6rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
-    height: 4px;
+    width: 50%;
+    height: 5px;
     border-radius: 100px;
     @apply bg-white;
 }

@@ -18,12 +18,12 @@ const Nav = () => {
             </div>
             <div className="links w-10/12 flex justify-end ph:w-screen ph:flex-col ph:z-30">
                 {[
-                    ["Features", "/#feats"],
-                    ["Case Studies", "/#cases"],
-                    ["Pricing", "/#price"],
-                    ["Contact", "/contact"],
-                    ["Organization", "/product/org"],
-                    ["Individual", "/product/indi"],
+                    ["Features", "/#features"],
+                    ["Case Studies", "/#case-studies"],
+                    ["Pricing", "/#pricing"],
+                    ["Contact", "/contact-us"],
+                    ["Organization", "/product/organization"],
+                    ["Individual", "/product/individual"],
                     ["About", "/"],
                 ].map(([title, url]) => (
                     <Link key={title} href={url}>

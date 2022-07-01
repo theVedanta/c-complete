@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import indiImg from "../../public/indi.svg";
 import orgImg from "../../public/org.svg";
+import placeholder from "../../public/place.png";
+import { FiFileText, FiMonitor } from "react-icons/fi";
 
 const Header = ({ indi }) => {
     return (
@@ -32,25 +34,30 @@ const Header = ({ indi }) => {
                         assessment of competencies.
                     </p>
                 )}
-                <div className="btns mt-10">
+                <div className="flex mt-10">
                     <Link href="/">
-                        <a className="btn btn-dark mr-5 text-white">
-                            View Process
+                        <a className="btn btn-dark mr-5 flex items-center text-white">
+                            <FiFileText />
+                            &nbsp; View Process
                         </a>
                     </Link>
                     <Link href="/">
-                        <a className="btn btn-primary">View Presentation</a>
+                        <a className="btn btn-primary flex items-center">
+                            <FiMonitor />
+                            &nbsp; View Presentation
+                        </a>
                     </Link>
                 </div>
             </div>
 
             <div className="header-img w-1/2 flex justify-center items-center">
                 <Image
-                    src={indi ? indiImg : orgImg}
+                    src={
+                        indi === "check" ? placeholder : indi ? indiImg : orgImg
+                    }
                     alt="dash"
                     width={600}
                     height={450}
-                    priority
                     loading="eager"
                 />
             </div>

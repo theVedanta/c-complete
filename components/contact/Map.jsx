@@ -10,7 +10,7 @@ const Map = () => {
                         // height="500"
                         className="w-full h-full"
                         id="gmap_canvas"
-                        src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        src="https://maps.google.com/maps?q=Unitol,%20Gayathri%20Arcade%20Vikrampuri%20Colony,%20Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
                         frameBorder={0}
                         scrolling="no"
                         marginHeight={0}

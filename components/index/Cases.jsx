@@ -40,7 +40,7 @@ const Cases = () => {
     ];
 
     return (
-        <section className="cases py-32 bg-blue" id="cases">
+        <section className="cases py-32 bg-blue" id="case-studies">
             <Container className="flex flex-col items-center">
                 <h3 className="index-feat-heading text-5xl text-white font-semibold text-center mb-32">
                     Our latest case studies

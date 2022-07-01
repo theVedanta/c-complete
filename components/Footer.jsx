@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FiMail, FiMapPin, FiClock } from "react-icons/fi";
 
 const Footer = () => {
     return (
@@ -18,15 +19,16 @@ const Footer = () => {
                 <div className="foot-right-top w-full flex justify-between">
                     <div className="foot-col flex flex-col">
                         <Link href="mailto:contact@unitol.in">
-                            <a className="font-semibold mb-12">
-                                contact@unitol.in
+                            <a className="font-semibold mb-12 flex items-center">
+                                <FiMail />
+                                &nbsp;&nbsp; contact@unitol.in
                             </a>
                         </Link>
                         {[
-                            ["Contact Us", "/"],
-                            ["About Us", "/"],
-                            ["Company History", "/"],
-                            ["Privacy Policy", "/"],
+                            ["Features", "/#features"],
+                            ["Case Studies", "/#case-studies"],
+                            ["Pricing", "/#pricing"],
+                            ["Contact Us", "/contact-us"],
                         ].map(([title, href], i) => (
                             <Link href={href} key={i}>
                                 <a className="mb-8">{title}</a>
@@ -35,12 +37,16 @@ const Footer = () => {
                     </div>
                     <div className="foot-col flex flex-col">
                         <Link href="mailto:contact@unitol.in">
-                            <a className="font-semibold mb-12">Secunderabad</a>
+                            <a className="font-semibold mb-12 flex items-center">
+                                <FiMapPin />
+                                &nbsp; Secunderabad
+                            </a>
                         </Link>
                         {[
-                            ["Products", "/"],
-                            ["Services", "/"],
-                            ["Resources", "/"],
+                            ["Organization", "/product/organization"],
+                            ["Individual", "/product/individual"],
+                            ["About", "/"],
+                            ["Privacy Policy", "/"],
                         ].map(([title, href], i) => (
                             <Link href={href} key={i}>
                                 <a className="mb-8">{title}</a>
@@ -48,7 +54,10 @@ const Footer = () => {
                         ))}
                     </div>
                     <div className="foot-col flex flex-col">
-                        <h4 className="font-semibold mb-12">Opening Hours</h4>
+                        <h4 className="font-semibold mb-12 flex items-center">
+                            <FiClock />
+                            &nbsp; Opening Hours
+                        </h4>
                         <p className="w-full">
                             Mon - Sat: 09:30 am - 06:30 pm
                             <br />

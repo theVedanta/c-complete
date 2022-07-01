@@ -9,7 +9,7 @@ const Product = () => {
     const [indi, setIndi] = useState("check");
 
     useEffect(() => {
-        productFor === "indi" ? setIndi(true) : setIndi(false);
+        productFor === "individual" ? setIndi(true) : setIndi(false);
     }, [productFor]);
 
     return (

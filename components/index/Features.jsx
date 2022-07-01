@@ -43,7 +43,7 @@ const Features = () => {
 
     return (
         <>
-            <section className="index-feat w-screen py-16" id="feats">
+            <section className="index-feat w-screen py-16" id="features">
                 <Container className="flex flex-col items-center">
                     <h3 className="index-feat-heading text-5xl text-white font-semibold text-center">
                         Features
@@ -60,7 +60,12 @@ const Features = () => {
                 {feats.map((feat, i) => (
                     <div className="feat text-black flex w-1/2 my-6" key={i}>
                         <div className="feat-img relative w-1/3">
-                            <Image alt="feat" src={feat.img} layout="fill" />
+                            <Image
+                                alt="feat"
+                                loading="eager"
+                                src={feat.img}
+                                layout="fill"
+                            />
                         </div>
 
                         <div className="feat-content w-2/3 flex flex-col py-5 pr-10">
