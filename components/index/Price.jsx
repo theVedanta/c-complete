@@ -11,10 +11,13 @@ const Price = () => {
             className="w-full py-32 flex flex-col items-center bg-gray text-black tab:py-14"
             id="pricing"
         >
-            <h4 className="text-5xl z-10 font-semibold text-blue text-center ph:text-2xl">
+            <h4
+                data-aos="fade-down"
+                className="text-5xl z-10 font-semibold text-blue text-center ph:text-2xl"
+            >
                 Simple,Straight Pricing
             </h4>
-            <div className="price-picker my-14">
+            <div data-aos="fade-down" className="price-picker my-14">
                 <button
                     className="org-pick btn btn-round mx-3"
                     data-selected={pick === "org" && "selected"}
@@ -32,7 +35,11 @@ const Price = () => {
             </div>
 
             <div className="price-boxes flex w-full justify-center items-stretch">
-                <div className="price-box relative">
+                <div
+                    data-aos="fade-right"
+                    data-aos-delay="700"
+                    className="price-box relative"
+                >
                     <Image alt="coach" src={coach} width={80} height={80} />
                     <h4 className="text-2xl font-medium  mt-10">
                         Coaches and Facilitators
@@ -54,7 +61,11 @@ const Price = () => {
                     <button className="btn btn-primary mt-8">Purchase</button>
                 </div>
 
-                <div className="price-box relative">
+                <div
+                    data-aos="fade-left"
+                    data-aos-delay="700"
+                    className="price-box relative"
+                >
                     <Image
                         alt="coach"
                         src={enterprise}

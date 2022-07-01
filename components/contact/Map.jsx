@@ -2,7 +2,11 @@ import React from "react";
 
 const Map = () => {
     return (
-        <div className="contact-map w-5/12 h-full bg-blue">
+        <div
+            data-aos="fade-left"
+            data-aos-delay="1000"
+            className="contact-map w-5/12 h-full bg-blue"
+        >
             <div className="mapouter">
                 <div className="gmap_canvas">
                     <iframe

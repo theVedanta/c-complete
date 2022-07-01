@@ -45,10 +45,17 @@ const Features = () => {
         <>
             <section className="index-feat w-screen py-16" id="features">
                 <Container className="flex flex-col items-center">
-                    <h3 className="index-feat-heading text-5xl text-white font-semibold text-center">
+                    <h3
+                        data-aos="fade-up"
+                        className="index-feat-heading text-5xl text-white font-semibold text-center"
+                    >
                         Features
                     </h3>
-                    <h3 className="text-3xl font-light text-center px-32 text-white mt-20 leading-normal">
+                    <h3
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                        className="text-3xl font-light text-center px-32 text-white mt-20 leading-normal"
+                    >
                         C-Complete is a feature rich platform, which provides
                         for a number of value add aspects across the multi-rater
                         feedbak value chain.
@@ -59,7 +66,10 @@ const Features = () => {
             <Container className="feats w-full bg-gray py-32 flex flex-wrap">
                 {feats.map((feat, i) => (
                     <div className="feat text-black flex w-1/2 my-6" key={i}>
-                        <div className="feat-img relative w-1/3">
+                        <div
+                            data-aos="fade-right"
+                            className="feat-img relative w-1/3"
+                        >
                             <Image
                                 alt="feat"
                                 loading="eager"
@@ -68,7 +78,10 @@ const Features = () => {
                             />
                         </div>
 
-                        <div className="feat-content w-2/3 flex flex-col py-5 pr-10">
+                        <div
+                            data-aos="fade-left"
+                            className="feat-content w-2/3 flex flex-col py-5 pr-10"
+                        >
                             <h4 className="text-xl font-semibold mb-3">
                                 {feat.title}
                             </h4>

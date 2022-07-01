@@ -29,7 +29,10 @@ Ut a enim at non nunc. Nibh pharetra turpis sit scelerisque. Neque tincidunt mas
 
     return (
         <Container className="w-full py-32 flex flex-col items-center relative tab:py-14">
-            <h4 className="text-5xl z-10 font-medium text-center ph:text-2xl">
+            <h4
+                data-aos="fade-down"
+                className="text-5xl z-10 font-medium text-center ph:text-2xl"
+            >
                 Frequently Asked Questions
             </h4>
             <LayoutGroup>
@@ -50,11 +53,13 @@ const QNA = ({ qna, id }) => {
         <AnimatePresence>
             <motion.div
                 layout
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
                 className={`w-full px-12 z-10 py-8 flex flex-col mb-6 rounded text-black bg-white cursor-pointer tab:py-6 tab:px-10 ph:px-8 ${
                     isOpen ? "ph:px-12 ph:py-8" : ""
                 }`}
                 onClick={() => setIsOpen(!isOpen)}
-                initial={{ borderRadius: "5px" }}
+                initial={{ borderRadius: "5px", y: 100, opacity: 0 }}
             >
                 <motion.h5
                     className="q text-xl text-blue z-10 font-medium flex justify-between items-center tab:text-lg ph:text-sm"

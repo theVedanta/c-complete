@@ -3,6 +3,7 @@ import Container from "../Container";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import sample from "../../public/case.svg";
+import Link from "next/link";
 
 const Beliefs = () => {
     const beliefs = [
@@ -11,30 +12,35 @@ const Beliefs = () => {
             desc: `Different international studies have found that companies end up investing huge monies on development of soft skills. Analyst firms, such as Bersin & Associates`,
             pic: sample,
             time: "2015-02-01 17:44:44",
+            link: "/",
         },
         {
             title: "Why is a new Professional, still Unprofessional?",
             desc: `Different international studies have found that companies end up investing huge monies on development of soft skills. Analyst firms, such as Bersin & Associates`,
             pic: sample,
             time: "2015-02-01 17:44:44",
+            link: "/",
         },
         {
             title: "Why is a new Professional, still Unprofessional?",
             desc: `Different international studies have found that companies end up investing huge monies on development of soft skills. Analyst firms, such as Bersin & Associates`,
             pic: sample,
             time: "2015-02-01 17:44:44",
+            link: "/",
         },
         {
             title: "Why is a new Professional, still Unprofessional?",
             desc: `Different international studies have found that companies end up investing huge monies on development of soft skills. Analyst firms, such as Bersin & Associates`,
             pic: sample,
             time: "2015-02-01 17:44:44",
+            link: "/",
         },
         {
             title: "Why is a new Professional, still Unprofessional?",
             desc: `Different international studies have found that companies end up investing huge monies on development of soft skills. Analyst firms, such as Bersin & Associates`,
             pic: sample,
             time: "2015-02-01 17:44:44",
+            link: "/",
         },
     ];
 
@@ -78,23 +84,25 @@ const Beliefs = () => {
 
 const Belief = ({ bel }) => {
     return (
-        <div className="bel w-full mb-28 bg-white shadow-xl text-black rounded-lg">
-            <div className="bel-img w-full h-1/2 rounded-lg overflow-hidden relative">
-                <Image
-                    alt="the"
-                    src={bel.pic}
-                    width={1000}
-                    height={500}
-                    objectFit="cover"
-                />
-            </div>
+        <Link href={bel.link}>
+            <a className="bel w-full mb-28 bg-white shadow-xl text-black rounded-lg">
+                <div className="bel-img w-full h-1/2 rounded-lg overflow-hidden relative">
+                    <Image
+                        alt="the"
+                        src={bel.pic}
+                        width={1000}
+                        height={500}
+                        objectFit="cover"
+                    />
+                </div>
 
-            <div className="bel-content w-full h-1/2 px-6 flex flex-col items-start justify-center">
-                <span className="bel-time my-2">{bel.time}</span>
-                <h4 className="text-xl font-medium">{bel.title}</h4>
-                <p className="my-5 mb-14">{bel.desc}</p>
-            </div>
-        </div>
+                <div className="bel-content w-full h-1/2 px-6 flex flex-col items-start justify-center">
+                    <span className="bel-time my-2">{bel.time}</span>
+                    <h4 className="text-xl font-medium">{bel.title}</h4>
+                    <p className="my-5 mb-14">{bel.desc}</p>
+                </div>
+            </a>
+        </Link>
     );
 };
 

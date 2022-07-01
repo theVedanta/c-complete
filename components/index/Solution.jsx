@@ -46,10 +46,17 @@ const Solution = () => {
         <>
             <section className="index-feat sol-feat w-screen py-16">
                 <Container className="flex flex-col items-center">
-                    <h3 className="index-feat-heading text-5xl text-white font-semibold text-center">
+                    <h3
+                        data-aos="fade-up"
+                        className="index-feat-heading text-5xl text-white font-semibold text-center"
+                    >
                         What We Offer
                     </h3>
-                    <h3 className="text-3xl font-light text-center px-32 text-white mt-20 leading-normal">
+                    <h3
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                        className="text-3xl font-light text-center px-32 text-white mt-20 leading-normal"
+                    >
                         Standardized Competency Based Questionnaires for your
                         various requirements.
                     </h3>
@@ -61,6 +68,7 @@ const Solution = () => {
                         {sols.map((sol, i) => (
                             <div
                                 key={i}
+                                data-aos="fade-right"
                                 className="sol-card px-10 py-8 bg-white text-black rounded-xl mb-6"
                             >
                                 <h3 className="font-semibold flex items-center text-blue text-2xl mb-6">
@@ -76,6 +84,7 @@ const Solution = () => {
                         {sols2.map((sol, i) => (
                             <div
                                 key={i}
+                                data-aos="fade-left"
                                 className="sol-card px-10 py-8 bg-white text-black rounded-xl mb-6"
                             >
                                 <h3 className="font-semibold flex items-center text-blue text-2xl mb-6">
