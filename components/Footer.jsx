@@ -45,7 +45,6 @@ const Footer = () => {
                         {[
                             ["Organization", "/product/organization"],
                             ["Individual", "/product/individual"],
-                            ["About", "/"],
                             ["Privacy Policy", "/"],
                         ].map(([title, href], i) => (
                             <Link href={href} key={i}>

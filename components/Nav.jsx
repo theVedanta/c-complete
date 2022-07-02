@@ -24,7 +24,6 @@ const Nav = () => {
                     ["Contact", "/contact-us"],
                     ["Organization", "/product/organization"],
                     ["Individual", "/product/individual"],
-                    ["About", "/"],
                 ].map(([title, url]) => (
                     <Link key={title} href={url}>
                         <a className="nav-link">{title}</a>
