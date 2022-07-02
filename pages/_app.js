@@ -14,6 +14,7 @@ function App({ Component, pageProps }) {
         AOS.init({
             duration: 600,
             delay: 300,
+            once: true,
         });
     }, []);
 
