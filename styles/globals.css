@@ -207,3 +207,14 @@ body {
     width: 100%;
     height: 100%;
 }
+/* CASES */
+.case:hover .case-img-overlay {
+    @apply z-20 opacity-100;
+}
+.case:hover .case-img-overlay-text {
+    @apply translate-y-0 opacity-100;
+}
+/* BELIEF */
+.bel:hover .bel-img img {
+    transform: scale(1.3);
+}

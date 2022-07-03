@@ -71,7 +71,16 @@ const Cases = () => {
 const Case = ({ cas }) => {
     return (
         <div className="case w-full mb-20 bg-white rounded-lg">
-            <div className="case-img rounded-lg w-full overflow-hidden relative">
+            <div className="case-img rounded-t-lg w-full overflow-hidden relative flex items-center justify-center">
+                <div className="case-img-overlay z-0 absolute top-0 left-0 w-full h-full bg-darkBlue opacity-0 transition-all duration-200 flex items-center">
+                    <p className="case-img-overlay-text text-lg text-white px-8 py-6 translate-y-28 opacity-0 transition-all duration-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        A, adipisci. Aut distinctio nemo iure, deserunt dicta
+                        repellat ducimus ab animi magni odio optio vitae quas
+                        praesentium ullam dolorem quae at!
+                    </p>
+                </div>
+
                 <Image
                     alt="the"
                     src={cas.pic}

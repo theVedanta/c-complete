@@ -86,20 +86,21 @@ const Belief = ({ bel }) => {
     return (
         <Link href={bel.link}>
             <a className="bel w-full mb-28 bg-white shadow-xl text-black rounded-lg">
-                <div className="bel-img w-full h-1/2 rounded-lg overflow-hidden relative">
+                <div className="bel-img w-full mb-6 rounded-t-lg overflow-hidden relative">
                     <Image
                         alt="the"
                         src={bel.pic}
                         width={1000}
                         height={500}
                         objectFit="cover"
+                        className="transition-all duration-300"
                     />
                 </div>
 
                 <div className="bel-content w-full h-1/2 px-6 flex flex-col items-start justify-center">
                     <span className="bel-time my-2">{bel.time}</span>
                     <h4 className="text-xl font-medium">{bel.title}</h4>
-                    <p className="my-5 mb-14">{bel.desc}</p>
+                    <p className="my-5 mb-8">{bel.desc}</p>
                 </div>
             </a>
         </Link>
