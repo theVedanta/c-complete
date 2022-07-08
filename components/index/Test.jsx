@@ -25,14 +25,17 @@ const Test = () => {
     ];
 
     return (
-        <section className="testimonials py-32 bg-darkBlue">
+        <section className="testimonials py-32 bg-darkBlue tab:py-20 tab:pb-10">
             <Container className="flex flex-col items-center">
-                <h3 className="index-feat-heading text-5xl text-white font-semibold text-center mb-32">
+                <h3
+                    data-aos="fade-up"
+                    className="index-feat-heading text-5xl text-white font-semibold text-center mb-32 lap:text-4xl tab:mb-20"
+                >
                     Testimonials
                 </h3>
             </Container>
 
-            <Container className="px-56">
+            <Container className="px-56 tab:px-2 ph:px-0">
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
                     spaceBetween={50}
@@ -45,7 +48,7 @@ const Test = () => {
                     {tests.map((test, i) => (
                         <SwiperSlide
                             key={i}
-                            className="flex justify-center pb-16"
+                            className="flex justify-center pb-16 ph:px-4"
                         >
                             <Testimonial test={test} />
                         </SwiperSlide>
@@ -58,12 +61,14 @@ const Test = () => {
 
 const Testimonial = ({ test }) => {
     return (
-        <div className="testimonial w-4/5 bg-white text-black px-14 py-12 rounded-xl shadow-lg cursor-grab">
-            <p className="mb-10 text-lg">{test.desc}</p>
+        <div className="testimonial w-4/5 bg-white text-black px-14 py-12 rounded-xl shadow-lg cursor-grab tab:px-12 tab:py-10 ph:p-8">
+            <p className="mb-10 text-lg tab:text-base tab:mb-6">{test.desc}</p>
 
             <div className="tester flex items-center">
                 <Image alt="pfp" width={45} height={45} src={coach} />
-                <h4 className="font-medium pl-6 text-xl">{test.name}</h4>
+                <h4 className="font-medium pl-6 text-xl tab:text-base ph:pl-3 ph:text-sm">
+                    {test.name}
+                </h4>
             </div>
         </div>
     );

@@ -20,7 +20,7 @@ const Features = () => {
             desc: "Different Rating scales for varied needs; with scope to create and define new rating scales for specific needs.",
         },
         {
-            img: feat3,
+            img: feat5,
             title: "Personalized communication",
             desc: "Personalize your mail content at the start of the feedback cycle and also the intra cycle reminders.",
         },
@@ -30,7 +30,7 @@ const Features = () => {
             desc: "Want to roll out in different languages to different sets of people? Use C-Complete’s multi lingual capabilities.",
         },
         {
-            img: feat5,
+            img: feat3,
             title: "Mobile enabled",
             desc: "Provide feedback on multiple devise formats. Mobile enablement capabilities help CxO to give feedback on the go.",
         },
@@ -43,18 +43,21 @@ const Features = () => {
 
     return (
         <>
-            <section className="index-feat w-screen py-16" id="features">
+            <section
+                className="index-feat w-screen py-16 lap:py-14"
+                id="features"
+            >
                 <Container className="flex flex-col items-center">
                     <h3
                         data-aos="fade-up"
-                        className="index-feat-heading text-5xl text-white font-semibold text-center"
+                        className="index-feat-heading text-5xl text-white font-semibold text-center lap:text-4xl"
                     >
                         Features
                     </h3>
                     <h3
                         data-aos="fade-up"
                         data-aos-delay="600"
-                        className="text-3xl font-light text-center px-32 text-white mt-20 leading-normal"
+                        className="text-3xl font-light text-center px-32 text-white mt-20 leading-normal blap:text-2xl lap:px-10 tab:text-lg ph:px-0"
                     >
                         C-Complete is a feature rich platform, which provides
                         for a number of value add aspects across the multi-rater
@@ -63,9 +66,12 @@ const Features = () => {
                 </Container>
             </section>
 
-            <Container className="feats w-full bg-gray py-32 flex flex-wrap">
+            <Container className="feats w-full bg-gray py-32 flex flex-wrap lap:py-20 tab:flex-col tab:py-10 ph:px-5">
                 {feats.map((feat, i) => (
-                    <div className="feat text-black flex w-1/2 my-6" key={i}>
+                    <div
+                        className="feat text-black flex w-1/2 my-6 tab:w-full ph:my-3"
+                        key={i}
+                    >
                         <div
                             data-aos="fade-right"
                             className="feat-img relative w-1/3"
@@ -80,12 +86,14 @@ const Features = () => {
 
                         <div
                             data-aos="fade-left"
-                            className="feat-content w-2/3 flex flex-col py-5 pr-10"
+                            className="feat-content w-2/3 flex flex-col py-5 pr-10 tab:pl-5 ph:pl-4 ph:pr-0"
                         >
-                            <h4 className="text-xl font-semibold mb-3">
+                            <h4 className="text-xl font-semibold mb-3 lap:text-lg tab:text-xl">
                                 {feat.title}
                             </h4>
-                            <p>{feat.desc}</p>
+                            <p className="lap:text-sm tab:text-lg ph:text-xs">
+                                {feat.desc}
+                            </p>
                         </div>
                     </div>
                 ))}

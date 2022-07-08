@@ -45,12 +45,12 @@ const Beliefs = () => {
     ];
 
     return (
-        <section className="cases py-32 bg-gray text-black">
+        <section className="cases py-32 bg-gray text-black lap:py-20">
             <Container className="flex flex-col items-center">
-                <h3 className="text-5xl text-blue font-semibold text-center">
+                <h3 className="text-5xl text-blue font-semibold text-center lap:text-4xl">
                     Our Thoughts
                 </h3>
-                <p className="text-xl my-10 mb-16 px-20 text-center leading-relaxed">
+                <p className="text-xl my-10 mb-16 px-20 text-center leading-relaxed tab:px-4 ph:px-0 ph:text-sm ph:my-6">
                     We at C-Complete believe that it is important to provide
                     services that reflect our Thought Leadership. Our Content &
                     Research team publishes insightful reports, blogs and other
@@ -58,12 +58,16 @@ const Beliefs = () => {
                 </p>
             </Container>
 
-            <Container className="px-48">
+            <Container className="px-28">
                 <Swiper
                     modules={[Pagination, Autoplay]}
                     spaceBetween={0}
-                    slidesPerView={3}
+                    slidesPerView={1}
                     autoplay
+                    breakpoints={{
+                        768: { slidesPerView: 2 },
+                        1440: { slidesPerView: 3 },
+                    }}
                     loop
                     pagination={{ clickable: true }}
                     className="blue-nav"
@@ -71,7 +75,7 @@ const Beliefs = () => {
                     {beliefs.map((bel, i) => (
                         <SwiperSlide
                             key={i}
-                            className="flex justify-center px-10"
+                            className="flex justify-center px-10 tab:px-2"
                         >
                             <Belief bel={bel} key={i} />
                         </SwiperSlide>
@@ -85,7 +89,7 @@ const Beliefs = () => {
 const Belief = ({ bel }) => {
     return (
         <Link href={bel.link}>
-            <a className="bel w-full mb-28 bg-white shadow-xl text-black rounded-lg">
+            <a className="bel w-full mb-28 bg-white shadow-xl text-black rounded-lg ">
                 <div className="bel-img w-full mb-6 rounded-t-lg overflow-hidden relative">
                     <Image
                         alt="the"
@@ -100,7 +104,7 @@ const Belief = ({ bel }) => {
                 <div className="bel-content w-full h-1/2 px-6 flex flex-col items-start justify-center">
                     <span className="bel-time my-2">{bel.time}</span>
                     <h4 className="text-xl font-medium">{bel.title}</h4>
-                    <p className="my-5 mb-8">{bel.desc}</p>
+                    <p className="my-5 mb-8 tab:mb-4">{bel.desc}</p>
                 </div>
             </a>
         </Link>

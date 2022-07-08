@@ -13,11 +13,11 @@ const Price = () => {
         >
             <h4
                 data-aos="fade-down"
-                className="text-5xl z-10 font-semibold text-blue text-center ph:text-2xl"
+                className="text-5xl z-10 font-semibold text-blue tab:text-4xl ph:text-2xl"
             >
-                Simple,Straight Pricing
+                Simple, Straight Pricing
             </h4>
-            <div data-aos="fade-down" className="price-picker my-14">
+            <div data-aos="fade-down" className="price-picker my-14 lap:my-8">
                 <button
                     className="org-pick btn btn-round mx-3"
                     data-selected={pick === "org" && "selected"}
@@ -34,7 +34,7 @@ const Price = () => {
                 </button>
             </div>
 
-            <div className="price-boxes flex w-full justify-center items-stretch">
+            <div className="price-boxes flex w-full justify-center items-stretch ph:flex-col">
                 <div
                     data-aos="fade-right"
                     data-aos-delay="700"
@@ -58,7 +58,9 @@ const Price = () => {
                         51-100 users: USD 19.99
                     </div>
 
-                    <button className="btn btn-primary mt-8">Purchase</button>
+                    <button className="btn btn-primary mt-8 ph:mt-12">
+                        Purchase
+                    </button>
                 </div>
 
                 <div
@@ -73,7 +75,7 @@ const Price = () => {
                         height={80}
                     />
                     <h4 className="text-2xl font-medium  mt-10">Enterprise</h4>
-                    <p className="my-5">
+                    <p className="my-5 ph:mb-20">
                         Are you an Organization with a large number of employees
                         for whom you would like to initiate a multi rater?
                     </p>

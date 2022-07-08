@@ -40,10 +40,13 @@ const Cases = () => {
     ];
 
     return (
-        <section className="cases py-32 bg-blue" id="case-studies">
+        <section className="cases py-32 bg-blue lap:py-20" id="case-studies">
             <Container className="flex flex-col items-center">
-                <h3 className="index-feat-heading text-5xl text-white font-semibold text-center mb-32">
-                    Our latest case studies
+                <h3
+                    data-aos="fade-up"
+                    className="index-feat-heading text-5xl text-white font-semibold text-center mb-32 lap:text-4xl tab:text-3xl tab:mb-20"
+                >
+                    Our Latest Case Studies
                 </h3>
             </Container>
 
@@ -51,7 +54,12 @@ const Cases = () => {
                 <Swiper
                     modules={[Pagination, Autoplay]}
                     spaceBetween={50}
-                    slidesPerView={2}
+                    slidesPerView={1}
+                    breakpoints={{
+                        1024: {
+                            slidesPerView: 2,
+                        },
+                    }}
                     autoplay
                     loop
                     pagination={{ clickable: true }}

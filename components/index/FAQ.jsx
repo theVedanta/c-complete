@@ -28,15 +28,15 @@ Ut a enim at non nunc. Nibh pharetra turpis sit scelerisque. Neque tincidunt mas
     ];
 
     return (
-        <Container className="w-full py-32 flex flex-col items-center relative tab:py-14">
+        <Container className="w-full py-32 flex flex-col items-center relative tab:py-14 ph:pt-10 ph:pb-4">
             <h4
                 data-aos="fade-down"
-                className="text-5xl z-10 font-medium text-center ph:text-2xl"
+                className="text-5xl z-10 font-medium text-center tab:text-4xl ph:text-2xl"
             >
                 Frequently Asked Questions
             </h4>
             <LayoutGroup>
-                <motion.div className="qnas w-3/4 z-10 mt-20 lap:w-full lap:px-20 tab:mt-12 tab:px-14 ph:mt-8 ph:px-5">
+                <motion.div className="qnas w-3/4 z-10 mt-20 lap:w-full lap:px-20 tab:mt-12 tab:px-0 ph:mt-8">
                     {qnas.map((qna, i) => (
                         <QNA key={i} qna={qna} />
                     ))}
@@ -46,7 +46,7 @@ Ut a enim at non nunc. Nibh pharetra turpis sit scelerisque. Neque tincidunt mas
     );
 };
 
-const QNA = ({ qna, id }) => {
+const QNA = ({ qna }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (

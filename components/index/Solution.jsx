@@ -48,22 +48,23 @@ const Solution = () => {
                 <Container className="flex flex-col items-center">
                     <h3
                         data-aos="fade-up"
-                        className="index-feat-heading text-5xl text-white font-semibold text-center"
+                        className="index-feat-heading text-5xl text-white font-semibold text-center lap:text-4xl"
                     >
                         What We Offer
                     </h3>
                     <h3
                         data-aos="fade-up"
                         data-aos-delay="600"
-                        className="text-3xl font-light text-center px-32 text-white mt-20 leading-normal"
+                        className="text-3xl font-light text-center px-32 text-white mt-20 leading-normal blap:text-2xl lap:px-10 tab:text-lg ph:px-0"
                     >
                         Standardized Competency Based Questionnaires for your
                         various requirements.
                     </h3>
                 </Container>
             </section>
-            <div className="sol-cards-hold w-full flex justify-center items-center bg-gray py-32">
-                <Container className="flex w-10/12 justify-center items-start">
+
+            <div className="sol-cards-hold w-full flex justify-center items-center bg-gray py-32 lap:py-20 ph:py-10">
+                <Container className="flex w-10/12 justify-center items-start lap:w-full ph:flex-col">
                     <div className="sol-cards flex flex-col w-full items-center">
                         {sols.map((sol, i) => (
                             <div
@@ -71,12 +72,12 @@ const Solution = () => {
                                 data-aos="fade-right"
                                 className="sol-card px-10 py-8 bg-white text-black rounded-xl mb-6"
                             >
-                                <h3 className="font-semibold flex items-center text-blue text-2xl mb-6">
+                                <h3 className="font-semibold flex items-center text-blue text-2xl mb-6 tab:text-xl">
                                     <span className="text-4xl">{sol.icon}</span>
                                     &nbsp;&nbsp;
                                     {sol.title}
                                 </h3>
-                                <p>{sol.desc}</p>
+                                <p className="lap:text-sm">{sol.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -87,12 +88,12 @@ const Solution = () => {
                                 data-aos="fade-left"
                                 className="sol-card px-10 py-8 bg-white text-black rounded-xl mb-6"
                             >
-                                <h3 className="font-semibold flex items-center text-blue text-2xl mb-6">
+                                <h3 className="font-semibold flex items-center text-blue text-2xl mb-6 tab:text-xl">
                                     <span className="text-4xl">{sol.icon}</span>
                                     &nbsp;&nbsp;
                                     {sol.title}
                                 </h3>
-                                <p>{sol.desc}</p>
+                                <p className="lap:text-sm">{sol.desc}</p>
                             </div>
                         ))}
                     </div>

@@ -4,11 +4,11 @@ import { FiUser, FiUsers } from "react-icons/fi";
 
 const For = () => {
     return (
-        <section className="index-for py-32 pt-48">
+        <section className="index-for pb-32 pt-48 lap:pt-36 tab:pb-10 ph:pt-32 ph:pb-6">
             <Container>
                 <h3
                     data-aos="fade-down"
-                    className="font-medium text-4xl text-center px-32 text-black mt-32 mb-16 leading-normal"
+                    className="font-medium text-4xl text-center px-32 text-black mt-32 mb-16 leading-normal lap:text-3xl tab:px-0 tab:mb-12 ph:text-xl"
                 >
                     C-Complete allows both{" "}
                     <span className="font-semibold text-blue">Individuals</span>{" "}
@@ -20,20 +20,20 @@ const For = () => {
                     to see the complete picture.
                 </h3>
 
-                <div className="for-cards flex justify-between px-20 items-stretch w-full">
+                <div className="for-cards flex justify-between px-20 items-stretch w-full blap:px-10 tab:flex-col ph:px-0">
                     <Link href="/individual">
                         <a
                             data-aos="fade-right"
                             delay="600"
                             className="for-card"
                         >
-                            <h3 className="font-semibold flex items-center text-blue text-3xl mb-6">
-                                <span className="text-5xl">
+                            <h3 className="font-semibold flex items-center text-blue text-3xl mb-6 lap:text-2xl ph:text-xl ph:mb-4">
+                                <span className="lap:text-3xl ph:text-2xl">
                                     <FiUsers />
                                 </span>
                                 &nbsp;&nbsp; For Organizations
                             </h3>
-                            <p>
+                            <p className="lap:text-sm ph:text-xs">
                                 Organizations across the world today are using
                                 Multi Rater or 360° Feedback process for various
                                 aspects along the HR Value Chain. Multi-rater
@@ -54,13 +54,13 @@ const For = () => {
                             delay="600"
                             className="for-card"
                         >
-                            <h3 className="font-semibold flex items-center text-blue text-3xl mb-6">
-                                <span className="text-5xl">
+                            <h3 className="font-semibold flex items-center text-blue text-3xl mb-6 lap:text-2xl ph:text-xl ph:mb-4">
+                                <span className="lap:text-3xl ph:text-2xl">
                                     <FiUser />
                                 </span>
                                 &nbsp;&nbsp; For Individuals
                             </h3>
-                            <p>
+                            <p className="lap:text-sm ph:text-xs">
                                 Individuals, wanting to truly grow and develop,
                                 seek periodic feedback from those who matter and
                                 then act upon it. The act of seeking structured

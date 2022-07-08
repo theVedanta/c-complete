@@ -9,14 +9,14 @@ const Nav = () => {
             }}
             animate={{ y: 0 }}
             transition={{ duration: 0.4, delay: 1 }}
-            className="nav px-32 bg-white flex justify-between items-center border-b-2 border-b-slate-300 fixed top-0 left-0 w-screen z-40 lap:px-10 ph:px-6 ph:bg-white ph:border-none"
+            className="nav px-32 bg-white flex justify-between items-center border-b-2 border-b-slate-300 fixed top-0 left-0 w-screen z-40 lap:px-14 ph:px-8 ph:bg-white ph:border-none"
         >
-            <div className="logo-hold flex items-center w-2/12 ph:w-1/3 ph:z-40">
+            <div className="logo-hold flex items-center w-2/12 tab:w-1/3 tab:z-40 tab:py-3">
                 <Link href="/">
                     <a className="font-bold text-xl text-blue">C-Complete</a>
                 </Link>
             </div>
-            <div className="links w-10/12 flex justify-end ph:w-screen ph:flex-col ph:z-30">
+            <div className="links w-10/12 flex justify-end tab:w-screen tab:flex-col tab:z-30 tab:pt-16">
                 {[
                     ["Features", "/#features"],
                     ["Case Studies", "/#case-studies"],
@@ -31,7 +31,7 @@ const Nav = () => {
                 ))}
             </div>
             <div
-                className="ham w-1/3 hidden justify-end items-center h-full ph:flex ph:z-40"
+                className="ham w-1/3 hidden justify-end items-center h-full tab:flex tab:z-40"
                 onClick={() => {
                     document
                         .querySelector(".ham")
