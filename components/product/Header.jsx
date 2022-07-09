@@ -7,7 +7,7 @@ import { FiFileText, FiMonitor } from "react-icons/fi";
 
 const Header = ({ indi }) => {
     return (
-        <section className="flex w-full bg-gray text-black items-center py-48 relative lap:py-40 tab:flex-col tab:pt-28 tab:mb-0">
+        <section className="flex w-full bg-gray text-black items-center py-48 relative lap:py-40 tab:flex-col tab:pt-28 tab:mb-0 ph:pb-14">
             <div className="header-text w-1/2 pl-32 lap:pl-14 tab:w-full tab:px-16 tab:mb-14 ph:px-10">
                 <h3
                     data-aos="fade-up"
@@ -62,7 +62,7 @@ const Header = ({ indi }) => {
             </div>
 
             <div
-                className="header-img w-1/2 flex justify-center items-center blap:px-28 lap:px-20 tab:px-0"
+                className="header-img w-1/2 flex justify-center items-center blap:px-28 lap:px-20 tab:px-0 ph:w-full ph:px-10"
                 data-aos="fade-left"
                 data-aos-delay="600"
             >

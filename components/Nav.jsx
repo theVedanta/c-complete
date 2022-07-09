@@ -11,7 +11,7 @@ const Nav = () => {
             transition={{ duration: 0.4, delay: 1 }}
             className="nav px-32 bg-white flex justify-between items-center border-b-2 border-b-slate-300 fixed top-0 left-0 w-screen z-40 lap:px-14 ph:px-8 ph:bg-white ph:border-none"
         >
-            <div className="logo-hold flex items-center w-2/12 tab:w-1/3 tab:z-40 tab:py-3">
+            <div className="logo-hold flex items-center w-2/12 tab:w-1/3 tab:z-40 tab:py-3 ph:w-1/2">
                 <Link href="/">
                     <a className="font-bold text-xl text-blue">C-Complete</a>
                 </Link>
