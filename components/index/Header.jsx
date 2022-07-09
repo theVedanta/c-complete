@@ -51,7 +51,7 @@ const Header = () => {
                     width={1000}
                     height={630}
                     priority
-                    leading="eager"
+                    loading="eager"
                     className="scale-105 translate-x-28 lap:scale-110 tab:scale-100 tab:translate-x-0"
                 />
             </div>

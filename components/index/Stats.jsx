@@ -10,7 +10,12 @@ const Stats = () => {
                     data-aos="fade-right"
                     className="img-stat flex justify-start items-center w-1/2 relative tab:w-full tab:h-80"
                 >
-                    <Image alt="stat" src={stat} layout="fill" />
+                    <Image
+                        alt="stat"
+                        src={stat}
+                        layout="fill"
+                        loading="eager"
+                    />
                 </div>
 
                 <div className="stat-cards flex w-1/2 py-12 justify-end flex-wrap tab:w-full tab:justify-center ph:px-10">

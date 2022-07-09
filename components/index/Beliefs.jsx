@@ -45,7 +45,7 @@ const Beliefs = () => {
     ];
 
     return (
-        <section className="cases py-32 bg-gray text-black lap:py-20">
+        <section className="beliefs py-32 bg-gray text-black lap:py-20 ph:pb-5">
             <Container className="flex flex-col items-center">
                 <h3 className="text-5xl text-blue font-semibold text-center lap:text-4xl">
                     Our Thoughts
@@ -89,7 +89,7 @@ const Beliefs = () => {
 const Belief = ({ bel }) => {
     return (
         <Link href={bel.link}>
-            <a className="bel w-full mb-28 bg-white shadow-xl text-black rounded-lg h-full">
+            <a className="bel w-full mb-28 bg-white shadow-xl text-black rounded-lg h-full ph:shadow ph:mb-16">
                 <div className="bel-img w-full mb-6 rounded-t-lg overflow-hidden relative">
                     <Image
                         alt="the"

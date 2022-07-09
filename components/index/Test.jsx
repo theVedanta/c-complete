@@ -7,20 +7,27 @@ import { Navigation, Pagination, Autoplay } from "swiper";
 const Test = () => {
     const tests = [
         {
-            desc: `Our clients and partners, alike love us. It is our commitment to the highest standards of service that enthralls our Clients – most of whom have been with us, once they sign-up. We work with our partners, on the supply side, creating a truly win-win situation. Our endeavor is to support them to delight their clients, in various Employee Learning Development Processes.`,
-            name: "John Doe - Trainer at UniTol",
+            desc: `“ C-Complete, the cloud based 360° feedback tool has been used by company. We have worked with the team at UniTol to customize the feedback questionnaire to suit our specific requirement. We found the whole experience of working with UniTol to be delightful – their service, commitment and technology are really good and have meet all our requirements. Strongly recommend them to anyone wanting to use 360° tool for any of the HR processes.”`,
+            name: "Ajase hussain - Founder & CEO, 360° Learnings",
         },
         {
-            desc: `Our clients and partners, alike love us. It is our commitment to the highest standards of service that enthralls our Clients – most of whom have been with us, once they sign-up. We work with our partners, on the supply side, creating a truly win-win situation. Our endeavor is to support them to delight their clients, in various Employee Learning Development Processes.`,
-            name: "John Doe - Trainer at UniTol",
+            desc: `“C-Complete, the cloud based 360° feedback tool has been used by company. We have worked with the team at UniTol to customize the feedback questionnaire to suit our specific requirement. We found the whole experience of working with UniTol to be delightful – their service, commitment and technology are really good and have meet all our requirements. Strongly recommend them to anyone wanting to use 360° tool for any of the HR processes.”`,
+            name: "Vikas Puri - DGM HR, DCM Engineering Ltd",
         },
         {
-            desc: `Our clients and partners, alike love us. It is our commitment to the highest standards of service that enthralls our Clients – most of whom have been with us, once they sign-up. We work with our partners, on the supply side, creating a truly win-win situation. Our endeavor is to support them to delight their clients, in various Employee Learning Development Processes.`,
-            name: "John Doe - Trainer at UniTol",
+            desc: `“We have utilized C-Complete Portal of UniTol for 360° feedback survey assignment for some of our clients. We found C-Complete easy to set-up, administer and generate report with ease. The portal has pre-defined Competency based questionnaires apart from the customizable option. Team is very supportive and friendly. We certainly look forward to utilizing their services in the future.”`,
         },
         {
-            desc: `Our clients and partners, alike love us. It is our commitment to the highest standards of service that enthralls our Clients – most of whom have been with us, once they sign-up. We work with our partners, on the supply side, creating a truly win-win situation. Our endeavor is to support them to delight their clients, in various Employee Learning Development Processes.`,
-            name: "John Doe - Trainer at UniTol",
+            desc: `“We have been working with UniTol Training Solutions for the past eight plus years, using their multi rater feedback platform, C-Complete for our Performance Management System (PMS). We have found team from UniTol to be professional and service oriented. We have also found the tool, its reports and analytics to be very useful in our rating and performance evaluation process. We continue to work with them.”`,
+            name: "Pratap Singh - G. M. (HR & Admin), DCM Textiles",
+        },
+        {
+            desc: `“UniTol Training Solutions worked with us for driving the learning and people development initiative at Acacia. They helped design a multi-rater feedback which was administered to determine the soft skill related development requirements for our senior team. Their team, their approach and their post roll out support was really impressive. We look forward to working with them in future ”`,
+            name: "Dr. N Srinivasan - CEO, Acacia",
+        },
+        {
+            desc: `“ We have used C-Complete, the multi rater feedback tool of UniTol Training Solutions for our Leadership Training process. We worked with them from the questionnaire setting process, for different grades of people to defining the rating scales needed. The roll out was important for us, since we had external customers also participating in the feedback process. They supported us throughout the life cycle. We appreciate their team for their professional approach and service orientation. Look forward to working with them in future, as well.”`,
+            name: "Ram Dayal Tiwari - Vice President (HR & Admin), Bengal Energy",
         },
     ];
 
