@@ -6,24 +6,24 @@ import Container from "../Container";
 const FAQ = () => {
     const qnas = [
         {
-            q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-            a: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. At amet, nunc scelerisque sit proin mattis eget sem morbi. Quam id aliquet vivamus nulla porttitor amet. Lacus ultrices faucibus venenatis, vel arcu eu ac pellentesque. Sapien pretium, amet ultricies dictumst vulputate eu aliquet mattis gravida. Aliquam at a, tincidunt magna in.
-Ut a enim at non nunc. Nibh pharetra turpis sit scelerisque. Neque tincidunt massa aliquet urna nulla ac eget malesuada penatibus. Nunc sem ut gravida felis. Mauris, eu congue vitae pharetra.. `,
+            q: "Why a Multi Rater Feedback?",
+            a: `Well, behavior is very difficult to be ascertained objectively. It is more of a perception, and the more number of people feel about you (the individual) in a particular way, that is usually (closer to the) truth.`,
         },
         {
-            q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-            a: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. At amet, nunc scelerisque sit proin mattis eget sem morbi. Quam id aliquet vivamus nulla porttitor amet. Lacus ultrices faucibus venenatis, vel arcu eu ac pellentesque. Sapien pretium, amet ultricies dictumst vulputate eu aliquet mattis gravida. Aliquam at a, tincidunt magna in.
-Ut a enim at non nunc. Nibh pharetra turpis sit scelerisque. Neque tincidunt massa aliquet urna nulla ac eget malesuada penatibus. Nunc sem ut gravida felis. Mauris, eu congue vitae pharetra.. `,
+            q: "What is difference between 360° and Multi Rater Feedback?",
+            a: `Very broadly speaking 360° can be considered as a sub-set of Multi Rater Feedback or 360° is a form of a Multi Rater Feedback. In a Multi Rater, as the name indicates, feedback is taken from multiple people – multiple is operative word here. It doesn’t matter what relation they have with the receiver of the feedback. In a 360° the feedback is taken from the superiors, the peers, the subordinates and the customers. If each of these were represented by a angle of 90° (ex. Superior as 90°), then taken together it is 360°, hence the name.`,
         },
         {
-            q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-            a: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. At amet, nunc scelerisque sit proin mattis eget sem morbi. Quam id aliquet vivamus nulla porttitor amet. Lacus ultrices faucibus venenatis, vel arcu eu ac pellentesque. Sapien pretium, amet ultricies dictumst vulputate eu aliquet mattis gravida. Aliquam at a, tincidunt magna in.
-Ut a enim at non nunc. Nibh pharetra turpis sit scelerisque. Neque tincidunt massa aliquet urna nulla ac eget malesuada penatibus. Nunc sem ut gravida felis. Mauris, eu congue vitae pharetra.. `,
+            q: "On what basis is the Feedback taken?",
+            a: `The feedback is taken on behaviours critical to the person or position. These, referred to as Competencies in our Product are broken down to finer elements so as to get granular information on each of them.`,
         },
         {
-            q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-            a: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. At amet, nunc scelerisque sit proin mattis eget sem morbi. Quam id aliquet vivamus nulla porttitor amet. Lacus ultrices faucibus venenatis, vel arcu eu ac pellentesque. Sapien pretium, amet ultricies dictumst vulputate eu aliquet mattis gravida. Aliquam at a, tincidunt magna in.
-Ut a enim at non nunc. Nibh pharetra turpis sit scelerisque. Neque tincidunt massa aliquet urna nulla ac eget malesuada penatibus. Nunc sem ut gravida felis. Mauris, eu congue vitae pharetra.. `,
+            q: "Are Multi Rater and 360° only initiated by Organizations?",
+            a: `Though typically Organizations initiate the feedback, progressive individuals don’t wait for this and take upon themselves to identify their growth areas. C-Complete is one of the first platforms to support individual to initiate this process for himself/herself along with personality profiling.`,
+        },
+        {
+            q: "How often do I need to take the Feedback?",
+            a: `Well, behavior is not something that changes overnight. People after taking feedback, need to understand, reflect and improve (if needed) on it. Once they are sure that they have acted on it, they could re-initiate a repeat cycle to see if there is a improvement.`,
         },
     ];
 

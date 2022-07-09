@@ -8,8 +8,22 @@ import Link from "next/link";
 const Beliefs = () => {
     const beliefs = [
         {
-            title: "Why is a new Professional, still Unprofessional?",
-            desc: `Different international studies have found that companies end up investing huge monies on development of soft skills. Analyst firms, such as Bersin & Associates`,
+            title: "Multi Rate Systems & 360° Feedback Part-1",
+            desc: `While 360° feedback and other forms of multi-rater feedback systems are growing in popularity.`,
+            pic: sample,
+            time: "2015-02-01 17:44:44",
+            link: "/",
+        },
+        {
+            title: "Multi Rater Systems & 360° Feedback Part-2",
+            desc: `Our performance at work is influenced by our own level of expertise, experience, motivation, nature of the work.`,
+            pic: sample,
+            time: "2015-02-01 17:44:44",
+            link: "/",
+        },
+        {
+            title: "Professionalism the journey begins",
+            desc: `Now that we have agreed Professionalism is a Habit and a continuous process (our article on 360o the Key to Professionalism).`,
             pic: sample,
             time: "2015-02-01 17:44:44",
             link: "/",
@@ -22,22 +36,8 @@ const Beliefs = () => {
             link: "/",
         },
         {
-            title: "Why is a new Professional, still Unprofessional?",
-            desc: `Different international studies have found that companies end up investing huge monies on development of soft skills. Analyst firms, such as Bersin & Associates`,
-            pic: sample,
-            time: "2015-02-01 17:44:44",
-            link: "/",
-        },
-        {
-            title: "Why is a new Professional, still Unprofessional?",
-            desc: `Different international studies have found that companies end up investing huge monies on development of soft skills. Analyst firms, such as Bersin & Associates`,
-            pic: sample,
-            time: "2015-02-01 17:44:44",
-            link: "/",
-        },
-        {
-            title: "Why is a new Professional, still Unprofessional?",
-            desc: `Different international studies have found that companies end up investing huge monies on development of soft skills. Analyst firms, such as Bersin & Associates`,
+            title: "Designing the Questionnaire for the Engagement Survey",
+            desc: `Employee Engagement survey is often conducted to assess the employees ownership for the Organization.`,
             pic: sample,
             time: "2015-02-01 17:44:44",
             link: "/",
@@ -70,7 +70,7 @@ const Beliefs = () => {
                     }}
                     loop
                     pagination={{ clickable: true }}
-                    className="blue-nav"
+                    className="blue-nav cursor-grab"
                 >
                     {beliefs.map((bel, i) => (
                         <SwiperSlide
@@ -89,7 +89,7 @@ const Beliefs = () => {
 const Belief = ({ bel }) => {
     return (
         <Link href={bel.link}>
-            <a className="bel w-full mb-28 bg-white shadow-xl text-black rounded-lg ">
+            <a className="bel w-full mb-28 bg-white shadow-xl text-black rounded-lg h-full">
                 <div className="bel-img w-full mb-6 rounded-t-lg overflow-hidden relative">
                     <Image
                         alt="the"

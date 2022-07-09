@@ -9,31 +9,19 @@ const Cases = () => {
     const cases = [
         {
             title: "C-Complete for Training needs analysis",
+            over: `A prominent local hospital was seeking to address the dual need to identify and groom potential leaders who could manage their expanding scope of operations and also to ensure all staff was equipped to deliver the best patient care and experience. C-Complete partnered with them to deliver Individual reports and a detailed Training Needs Analysis report.`,
             pic: sample,
             url: "/",
         },
         {
-            title: "C-Complete for Training needs analysis",
+            title: "C-Complete for Leadership Development",
             pic: sample,
+            over: `C-Complete was the assessment partner during an intense, multi-year, leadership development initiative for a global pharmaceutical giant.`,
             url: "/",
         },
         {
-            title: "C-Complete for Training needs analysis",
-            pic: sample,
-            url: "/",
-        },
-        {
-            title: "C-Complete for Training needs analysis",
-            pic: sample,
-            url: "/",
-        },
-        {
-            title: "C-Complete for Training needs analysis",
-            pic: sample,
-            url: "/",
-        },
-        {
-            title: "C-Complete for Training needs analysis",
+            title: "C-Complete and performance potential Index",
+            over: `C-Complete has been the performance assessment partner for a Textile major for over a decade aiding evaluation of potential across employees. Click to see how C-Complete support long term and sustainable Organizational growth.`,
             pic: sample,
             url: "/",
         },
@@ -63,7 +51,7 @@ const Cases = () => {
                     autoplay
                     loop
                     pagination={{ clickable: true }}
-                    className="px-32"
+                    className="px-32 cursor-grab"
                 >
                     {cases.map((cas, i) => (
                         <SwiperSlide key={i} className="flex justify-center">
@@ -81,11 +69,8 @@ const Case = ({ cas }) => {
         <div className="case w-full mb-20 bg-white rounded-lg">
             <div className="case-img rounded-t-lg w-full overflow-hidden relative flex items-center justify-center">
                 <div className="case-img-overlay z-0 absolute top-0 left-0 w-full h-full bg-darkBlue opacity-0 transition-all duration-200 flex items-center">
-                    <p className="case-img-overlay-text text-lg text-white px-8 py-6 translate-y-28 opacity-0 transition-all duration-300">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        A, adipisci. Aut distinctio nemo iure, deserunt dicta
-                        repellat ducimus ab animi magni odio optio vitae quas
-                        praesentium ullam dolorem quae at!
+                    <p className="case-img-overlay-text text-lg text-white px-8 py-6 translate-y-28 opacity-0 transition-all duration-300 blap:text-base lap:text-sm tab:text-xs">
+                        {cas.over}
                     </p>
                 </div>
 

@@ -1,13 +1,11 @@
-import React from "react";
-
 const Map = () => {
     return (
         <div
             data-aos="fade-left"
             data-aos-delay="1000"
-            className="contact-map w-5/12 h-full bg-blue"
+            className="contact-map w-5/12 h-full bg-blue ph:w-full"
         >
-            <div className="mapouter">
+            <div className="mapouter pt-14 lap:pt-12 ph:pt-0">
                 <div className="gmap_canvas">
                     <iframe
                         // width="600"
@@ -19,6 +17,9 @@ const Map = () => {
                         scrolling="no"
                         marginHeight={0}
                         marginWidth={0}
+                        style={{
+                            display: "hidden",
+                        }}
                     ></iframe>
                 </div>
             </div>

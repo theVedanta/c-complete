@@ -1,6 +1,6 @@
 const Form = () => {
     return (
-        <form className="contact-form w-7/12 h-full flex flex-col justify-center pr-64">
+        <form className="contact-form w-7/12 h-full flex flex-col justify-center pr-64 lap:pr-20 tab:pr-6 ph:w-full ph:px-6 ph:mt-20 ph:mb-16">
             <h3
                 data-aos="fade-up"
                 className="text-darkBlue font-semibold text-3xl mb-10"
@@ -14,7 +14,10 @@ const Form = () => {
                 className="fields w-full flex items-center justify-between text-black mb-6"
             >
                 <div className="input">
-                    <label htmlFor="name" className="mb-2 font-medium">
+                    <label
+                        htmlFor="name"
+                        className="mb-2 font-medium tab:text-sm"
+                    >
                         Name / Business name
                     </label>
                     <input
@@ -29,7 +32,10 @@ const Form = () => {
                 </div>
 
                 <div className="input">
-                    <label htmlFor="name" className="mb-2 font-medium">
+                    <label
+                        htmlFor="name"
+                        className="mb-2 font-medium tab:text-sm"
+                    >
                         Email
                     </label>
                     <input
@@ -48,7 +54,7 @@ const Form = () => {
                 data-aos="fade-up"
                 data-aos-delay="800"
                 htmlFor="msg"
-                className="text-black mb-2 font-medium"
+                className="text-black mb-2 font-medium tab:text-sm"
             >
                 Message
             </label>
