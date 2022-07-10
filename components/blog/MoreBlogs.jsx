@@ -44,7 +44,7 @@ const MoreBlogs = () => {
 const Belief = ({ bel }) => {
     return (
         <Link href={bel.link}>
-            <a className="more-bel mb-0 bg-white shadow-xl text-black rounded-lg h-full ph:shadow ph:mb-16">
+            <a className="more-bel mb-0 bg-white shadow-xl text-black rounded-lg h-full ph:w-full ph:mb-4 ph:shadow">
                 <div className="bel-img w-full mb-6 rounded-t-lg overflow-hidden relative">
                     <Image
                         alt="the"

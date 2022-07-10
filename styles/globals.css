@@ -176,7 +176,7 @@ body {
     box-shadow: 0 0 50px rgba(56, 56, 56, 0.15);
 }
 .blog-img {
-    @apply mb-10 rounded-2xl overflow-hidden w-full h-96 relative;
+    @apply mb-10 rounded-2xl overflow-hidden w-full h-96 relative ph:h-60;
 }
 
 /* BENEFITS */
