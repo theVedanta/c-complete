@@ -19,7 +19,7 @@ const Benefits = ({ indi }) => {
                 Benefits
             </h3>
 
-            <div className="benefit-cards flex flex-wrap justify-between items-center mt-20 tab:px-20 ph:px-0">
+            <div className="benefit-cards flex flex-wrap justify-between items-stretch mt-20 tab:px-20 ph:px-0">
                 {data !== null &&
                     data.map((benefit, i) => (
                         <BenefitCard key={i} benefit={benefit} />
@@ -31,8 +31,8 @@ const Benefits = ({ indi }) => {
 
 const BenefitCard = ({ benefit }) => {
     return (
-        <div className="benefit mb-20 bg-white text-black rounded-lg blap:mb-16 tab:mb-10">
-            <div className="case-img h-32 rounded-t-lg w-full overflow-hidden relative">
+        <div className="benefit mb-14 bg-white text-black rounded-lg blap:mb-12 tab:mb-8">
+            <div className="case-img h-48 rounded-t-lg w-full overflow-hidden relative">
                 <Image
                     alt="the"
                     src={benefit.img}
@@ -42,13 +42,13 @@ const BenefitCard = ({ benefit }) => {
             </div>
 
             <div className="case-content w-full px-8 pt-5 pb-4 flex flex-col items-start justify-center">
-                <h4 className="text-lg font-semibold flex items-center text-blue py-2 lap:text-base">
+                <h4 className="text-xl font-semibold flex items-center text-blue py-2 lap:text-base">
                     <span className="mr-3 text-2xl lap:text-xl">
                         {benefit.icon}
                     </span>
                     <span>{benefit.title}</span>
                 </h4>
-                <p className="my-3 text-sm">{benefit.desc}</p>
+                <p className="my-3 text-lg">{benefit.desc}</p>
             </div>
         </div>
     );

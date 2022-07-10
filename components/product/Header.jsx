@@ -23,22 +23,33 @@ const Header = ({ indi }) => {
                 >
                     {indi ? (
                         <>
-                            The process of reflection and introspection
-                            triggered by using a Multi Rater or a 360° Feedback,
-                            enables individuals to grow, by addressing their
-                            ‘gaps’ and leveraging on their strengths.
+                            It is becoming increasingly vital for individuals to
+                            stay competent and prove it credibly in order to
+                            move ahead in their careers. The best method to
+                            leverage strengths and uncover blind spots is
+                            through 360° feedback, also known as multi-rater
+                            feedback.Multi-rater feedback, the tool for painting
+                            the most objective picture of you as a person, as it
+                            consolidates how you are perceived by the very
+                            stakeholders you regularly interact with.
                             <br />
                             <br />
-                            Individuals, wanting to truly grow and develop, seek
-                            periodic feedback from those who matter and then act
-                            upon it.
+                            C-Complete lets you see the complete picture.
                         </>
                     ) : (
-                        `Organizations across the world today are using Multi
-                        Rater or 360° Feedback process for various aspects along
-                        the HR Value Chain. Multi-rater feedback is a powerful
-                        tool in every situation that requires demonstration or
-                        assessment of competencies.`
+                        <>
+                            Competency management and development professionals
+                            are constantly faced with the need to accurately
+                            evaluate behavioral attributes. Whether as part of
+                            performance management, training needs analysis,
+                            leadership development or succession planning -
+                            C-Complete offers you a platform for objectively
+                            capturing the picture of each individual as
+                            perceived by the many stakeholders.
+                            <br />
+                            <br />
+                            C-Complete lets you see the complete picture.
+                        </>
                     )}
                 </p>
                 <div

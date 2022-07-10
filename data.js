@@ -3,26 +3,20 @@ import { FiCheck } from "react-icons/fi";
 
 const indiBenefits = [
     {
-        title: "Training Needs Identification and Analysis (TNI & A)",
-        desc: "Want to build a more effective management cadre? Assess the Managerial capability of your employees through Management Complete. Our General Management competency repository can be used to identify the development requirements in your staff. By selecting the appropriate competencies to suit your requirement, you will be able to help build those capabilities in your people and thus build the organization in the long run.",
+        title: "Readiness of higher responsibilities and a promotion",
+        desc: "Checking for and demonstrating readiness for higher managerial and leadership roles when discussing with HR or managers, comes with customized development roadmap.",
         img: sample,
         icon: <FiCheck />,
     },
     {
-        title: "Training Needs Identification and Analysis (TNI & A)",
-        desc: "Want to build a more effective management cadre? Assess the Managerial capability of your employees through Management Complete. Our General Management competency repository can be used to identify the development requirements in your staff. By selecting the appropriate competencies to suit your requirement, you will be able to help build those capabilities in your people and thus build the organization in the long run.",
+        title: "Competence for a new role or a new job",
+        desc: "Demonstrating your preparedness for a job by sharing a report with objective evaluation of your competence; both technical and managerial; with ratings from multiple stakeholders you have worked with.",
         img: sample,
         icon: <FiCheck />,
     },
     {
-        title: "Training Needs Identification and Analysis (TNI & A)",
-        desc: "Want to build a more effective management cadre? Assess the Managerial capability of your employees through Management Complete. Our General Management competency repository can be used to identify the development requirements in your staff. By selecting the appropriate competencies to suit your requirement, you will be able to help build those capabilities in your people and thus build the organization in the long run.",
-        img: sample,
-        icon: <FiCheck />,
-    },
-    {
-        title: "Training Needs Identification and Analysis (TNI & A)",
-        desc: "Want to build a more effective management cadre? Assess the Managerial capability of your employees through Management Complete. Our General Management competency repository can be used to identify the development requirements in your staff. By selecting the appropriate competencies to suit your requirement, you will be able to help build those capabilities in your people and thus build the organization in the long run.",
+        title: "Consistent performance during performance reviews",
+        desc: "Demonstrating your initiative and dedication to self-improvement with a report on your managerial and behavioral competencies.",
         img: sample,
         icon: <FiCheck />,
     },
@@ -31,25 +25,25 @@ const indiBenefits = [
 const orgBenefits = [
     {
         title: "Training Needs Identification and Analysis (TNI & A)",
-        desc: "Want to build a more effective management cadre? Assess the Managerial capability of your employees through Management Complete. Our General Management competency repository can be used to identify the development requirements in your staff. By selecting the appropriate competencies to suit your requirement, you will be able to help build those capabilities in your people and thus build the organization in the long run.",
+        desc: "For conducting the Training Needs Analysis for a group of employees or for the Enterprise; use the advanced analytics features to set-up trigger and filter criteria to 'laser focus' on requirements.",
         img: sample,
         icon: <FiCheck />,
     },
     {
-        title: "Training Needs Identification and Analysis (TNI & A)",
-        desc: "Want to build a more effective management cadre? Assess the Managerial capability of your employees through Management Complete. Our General Management competency repository can be used to identify the development requirements in your staff. By selecting the appropriate competencies to suit your requirement, you will be able to help build those capabilities in your people and thus build the organization in the long run.",
+        title: "Leadership Development",
+        desc: "Facilitating Leadership Development of individuals by identifying context specific development areas.",
         img: sample,
         icon: <FiCheck />,
     },
     {
-        title: "Training Needs Identification and Analysis (TNI & A)",
-        desc: "Want to build a more effective management cadre? Assess the Managerial capability of your employees through Management Complete. Our General Management competency repository can be used to identify the development requirements in your staff. By selecting the appropriate competencies to suit your requirement, you will be able to help build those capabilities in your people and thus build the organization in the long run.",
+        title: "Performance Management System (PMS) through performance-potential index",
+        desc: "Using it as a part of Performance Management System (PMS) as part of Performance-Potential Index.",
         img: sample,
         icon: <FiCheck />,
     },
     {
-        title: "Training Needs Identification and Analysis (TNI & A)",
-        desc: "Want to build a more effective management cadre? Assess the Managerial capability of your employees through Management Complete. Our General Management competency repository can be used to identify the development requirements in your staff. By selecting the appropriate competencies to suit your requirement, you will be able to help build those capabilities in your people and thus build the organization in the long run.",
+        title: "Career & Succession Planning (C&S)",
+        desc: "For conducting the Training Needs Analysis for a group of employees or for the Enterprise; use the advanced analytics features to set-up trigger and filter criteria to 'laser focus' on requirements.",
         img: sample,
         icon: <FiCheck />,
     },
