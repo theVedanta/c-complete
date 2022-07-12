@@ -1,6 +1,10 @@
 import Container from "../Container";
-import { FiUserCheck, FiStar, FiFileText } from "react-icons/fi";
-import { AiOutlineStock } from "react-icons/ai";
+import { FiUserCheck } from "react-icons/fi";
+import {
+    AiOutlineStock,
+    AiOutlineStar,
+    AiOutlineFileText,
+} from "react-icons/ai";
 import { IoFemaleOutline } from "react-icons/io5";
 import { TbCrown } from "react-icons/tb";
 
@@ -31,12 +35,12 @@ const Solution = () => {
             desc: "Drawing up specific development initiatives for your high power Sales force? Developing your Sales team in general into a high performance Sales Force? Drive Sales by identifying competency gaps and drawing up appropriate development roadmaps. C-Complete have a unique and exhaustive database of questions covering all critical aspects of Sales. You could use this questionnaire, or customize it to meet any specific development requirement of your Sales team.",
         },
         {
-            icon: <FiStar />,
+            icon: <AiOutlineStar />,
             title: "Change Complete",
             desc: "Driving a Change initiative? Identifying Change champions? Use Change-Complete; the most exhaustive database of parameters regarding Change Management in organizations.",
         },
         {
-            icon: <FiFileText />,
+            icon: <AiOutlineFileText />,
             title: "Project Complete",
             desc: "Grappling with Project Management issues? Want to identify areas of improvement in the Project Management Team? Project-Complete has mapped all the critical elements along the Project Value Chain and based on the same, developed a comprehensive questionnaire to help ascertain areas of strengths and improvement in your Project Management Team. Using this instrument or customizing it to your specific requirements, you can drive Project Management competency in your organization and ensure steady growth in capability maturity.",
         },
@@ -73,7 +77,9 @@ const Solution = () => {
                                 className="sol-card px-10 py-8 bg-white text-black rounded-xl mb-6"
                             >
                                 <h3 className="font-semibold flex items-center text-blue text-2xl mb-6 tab:text-xl">
-                                    <span className="text-4xl">{sol.icon}</span>
+                                    <span className="text-4xl ph:text-2xl">
+                                        {sol.icon}
+                                    </span>
                                     &nbsp;&nbsp;
                                     {sol.title}
                                 </h3>

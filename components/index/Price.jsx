@@ -13,11 +13,14 @@ const Price = () => {
         >
             <h4
                 data-aos="fade-down"
-                className="text-5xl z-10 font-semibold text-blue tab:text-4xl ph:text-2xl"
+                className="text-5xl z-10 text-center font-semibold text-blue tab:text-4xl ph:text-2xl"
             >
                 Simple, Straight Pricing
             </h4>
-            <div data-aos="fade-down" className="price-picker my-14 lap:my-8">
+            <div
+                data-aos="fade-down"
+                className="price-picker flex justify-center w-full my-14 lap:my-8"
+            >
                 <button
                     className="org-pick btn btn-round mx-3"
                     data-selected={pick === "org" && "selected"}
