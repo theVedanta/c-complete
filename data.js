@@ -1,4 +1,9 @@
 import sample from "./public/case.svg";
+import mul1 from "./public/beliefs/mul1.jpeg";
+import mul2 from "./public/beliefs/mul2.jpeg";
+import prof from "./public/beliefs/prof.jpeg";
+import ques from "./public/beliefs/ques.jpeg";
+import journ from "./public/beliefs/journ.jpeg";
 import { FiCheck } from "react-icons/fi";
 
 const indiBenefits = [
@@ -100,7 +105,7 @@ const blogs = [
             </>
         ),
         time: "2015-02-01 17:44:44",
-        cover: sample,
+        cover: mul1,
         mini: `Our performance at work is influenced by our own level of
                 expertise, experience, motivation, nature of the work,
                 opportunities given by the organization and equally importantly
@@ -154,7 +159,7 @@ const blogs = [
             </>
         ),
         time: "2015-02-01 17:44:44",
-        cover: sample,
+        cover: mul2,
     },
 
     {
@@ -216,7 +221,7 @@ const blogs = [
             </>
         ),
         time: "2015-02-01 17:44:44",
-        cover: sample,
+        cover: journ,
     },
 
     {
@@ -277,7 +282,7 @@ const blogs = [
             </>
         ),
         time: "2015-02-01 17:44:44",
-        cover: sample,
+        cover: prof,
     },
 
     {
@@ -341,7 +346,7 @@ const blogs = [
             </>
         ),
         time: "2015-02-01 17:44:44",
-        cover: sample,
+        cover: ques,
     },
 ];
 

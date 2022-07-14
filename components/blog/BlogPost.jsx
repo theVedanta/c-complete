@@ -1,5 +1,5 @@
 import Image from "next/image";
-import sample from "../../public/case.svg";
+import place from "../../public/place.png";
 
 const BlogPost = ({ blog }) => {
     return (
@@ -11,7 +11,7 @@ const BlogPost = ({ blog }) => {
             <p className="mt-10 w-full text-lg blap:text-base tab:text-sm tab:mt-6">
                 <div className="blog-img">
                     <Image
-                        src={sample}
+                        src={blog ? blog.cover : place}
                         alt="blog"
                         objectFit="cover"
                         layout="fill"

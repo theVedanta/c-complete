@@ -6,6 +6,7 @@ import enterprise from "../../public/price/enterprise.svg";
 
 const Price = () => {
     const [pick, setPick] = useState("org");
+
     return (
         <Container
             className="w-full py-32 flex flex-col items-center bg-gray text-black tab:py-14"

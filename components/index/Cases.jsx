@@ -2,7 +2,9 @@ import { Pagination, Autoplay } from "swiper";
 import Container from "../Container";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import sample from "../../public/case.svg";
+import needs from "../../public/case/needs.jpeg";
+import index from "../../public/case/in.jpeg";
+import lead from "../../public/case/lead.jpeg";
 import { FiPlay } from "react-icons/fi";
 
 const Cases = () => {
@@ -10,19 +12,19 @@ const Cases = () => {
         {
             title: "C-Complete for Training needs analysis",
             over: `A prominent local hospital was seeking to address the dual need to identify and groom potential leaders who could manage their expanding scope of operations and also to ensure all staff was equipped to deliver the best patient care and experience. C-Complete partnered with them to deliver Individual reports and a detailed Training Needs Analysis report.`,
-            pic: sample,
+            pic: needs,
             url: "/",
         },
         {
             title: "C-Complete for Leadership Development",
-            pic: sample,
+            pic: lead,
             over: `C-Complete was the assessment partner during an intense, multi-year, leadership development initiative for a global pharmaceutical giant.`,
             url: "/",
         },
         {
             title: "C-Complete and performance potential Index",
             over: `C-Complete has been the performance assessment partner for a Textile major for over a decade aiding evaluation of potential across employees. Click to see how C-Complete support long term and sustainable Organizational growth.`,
-            pic: sample,
+            pic: index,
             url: "/",
         },
     ];

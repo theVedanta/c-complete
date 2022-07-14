@@ -1,7 +1,12 @@
 import Container from "../Container";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import coach from "../../public/price/coach.svg";
+import ac from "../../public/orgs/ac.jpeg";
+import beng from "../../public/orgs/beng.jpeg";
+import dcm from "../../public/orgs/dcm.webp";
+import dcme from "../../public/orgs/dcme.png";
+import hr from "../../public/orgs/hr.png";
+import my from "../../public/orgs/my.png";
 import { Navigation, Pagination, Autoplay } from "swiper";
 
 const Test = () => {
@@ -9,25 +14,32 @@ const Test = () => {
         {
             desc: `“ C-Complete, the cloud based 360° feedback tool has been used by company. We have worked with the team at UniTol to customize the feedback questionnaire to suit our specific requirement. We found the whole experience of working with UniTol to be delightful – their service, commitment and technology are really good and have meet all our requirements. Strongly recommend them to anyone wanting to use 360° tool for any of the HR processes.”`,
             name: "Ajase hussain - Founder & CEO, 360° Learnings",
+            img: my,
         },
         {
             desc: `“C-Complete, the cloud based 360° feedback tool has been used by company. We have worked with the team at UniTol to customize the feedback questionnaire to suit our specific requirement. We found the whole experience of working with UniTol to be delightful – their service, commitment and technology are really good and have meet all our requirements. Strongly recommend them to anyone wanting to use 360° tool for any of the HR processes.”`,
             name: "Vikas Puri - DGM HR, DCM Engineering Ltd",
+            img: dcme,
         },
         {
             desc: `“We have utilized C-Complete Portal of UniTol for 360° feedback survey assignment for some of our clients. We found C-Complete easy to set-up, administer and generate report with ease. The portal has pre-defined Competency based questionnaires apart from the customizable option. Team is very supportive and friendly. We certainly look forward to utilizing their services in the future.”`,
+            name: "HR Footprints",
+            img: hr,
         },
         {
             desc: `“We have been working with UniTol Training Solutions for the past eight plus years, using their multi rater feedback platform, C-Complete for our Performance Management System (PMS). We have found team from UniTol to be professional and service oriented. We have also found the tool, its reports and analytics to be very useful in our rating and performance evaluation process. We continue to work with them.”`,
             name: "Pratap Singh - G. M. (HR & Admin), DCM Textiles",
+            img: dcm,
         },
         {
             desc: `“UniTol Training Solutions worked with us for driving the learning and people development initiative at Acacia. They helped design a multi-rater feedback which was administered to determine the soft skill related development requirements for our senior team. Their team, their approach and their post roll out support was really impressive. We look forward to working with them in future ”`,
             name: "Dr. N Srinivasan - CEO, Acacia",
+            img: ac,
         },
         {
             desc: `“ We have used C-Complete, the multi rater feedback tool of UniTol Training Solutions for our Leadership Training process. We worked with them from the questionnaire setting process, for different grades of people to defining the rating scales needed. The roll out was important for us, since we had external customers also participating in the feedback process. They supported us throughout the life cycle. We appreciate their team for their professional approach and service orientation. Look forward to working with them in future, as well.”`,
             name: "Ram Dayal Tiwari - Vice President (HR & Admin), Bengal Energy",
+            img: beng,
         },
     ];
 
@@ -72,7 +84,7 @@ const Testimonial = ({ test }) => {
             <p className="mb-10 text-lg tab:text-base tab:mb-6">{test.desc}</p>
 
             <div className="tester flex items-center">
-                <Image alt="pfp" width={45} height={45} src={coach} />
+                <Image alt="pfp" width={45} height={45} src={test.img} />
                 <h4 className="font-medium pl-6 text-xl tab:text-base ph:pl-3 ph:text-sm">
                     {test.name}
                 </h4>

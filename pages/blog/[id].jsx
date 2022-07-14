@@ -6,9 +6,10 @@ import Link from "next/link";
 import { blogs } from "../../data";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import place from "../../public/place.png";
 
 const Blog = () => {
-    const [blog, setBlog] = useState({});
+    const [blog, setBlog] = useState({ cover: place });
     const router = useRouter();
     const { id } = router.query;
 
