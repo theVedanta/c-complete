@@ -43,11 +43,6 @@ const For = () => {
                                 feedback is a powerful tool in every situation
                                 that requires demonstration or assessment of
                                 competencies.
-                                <br />
-                                <br />
-                                Internal and External, Coaches & Mentors use
-                                Multi Rater feedback for providing impactful
-                                results.
                             </p>
                         </a>
                     </Link>
@@ -69,13 +64,6 @@ const For = () => {
                                 then act upon it. The act of seeking structured
                                 feedback is a clear indication on taking
                                 initiative and being proactive.
-                                <br />
-                                <br />
-                                In the era where most performance and
-                                recruitment discussions center around competency
-                                demonstration - a multi-rater feedback report is
-                                the most objective way of demonstrating
-                                competencies, consistently
                             </p>
                         </a>
                     </Link>

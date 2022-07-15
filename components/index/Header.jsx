@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import dash from "../../public/dash.svg";
+import dashMob from "../../public/dash-mob.svg";
 
 const Header = () => {
     return (
@@ -57,10 +58,25 @@ const Header = () => {
 
             <div
                 data-aos="fade-left"
-                className="header-img w-1/2 flex justify-center tab:w-full tab:px-20 ph:px-0 ph:w-screen ph:absolute ph:top-full"
+                className="header-img w-1/2 flex justify-center tab:w-full tab:px-20 ph:hidden"
             >
                 <Image
                     src={dash}
+                    alt="dash"
+                    objectFit="contain"
+                    width={930}
+                    height={690}
+                    priority
+                    loading="eager"
+                    className="lap:scale-110 tab:scale-100 tab:translate-x-0"
+                />
+            </div>
+            <div
+                data-aos="fade-left"
+                className="header-img w-1/2 justify-center hidden ph:flex ph:px-0 ph:w-screen ph:absolute ph:top-full"
+            >
+                <Image
+                    src={dashMob}
                     alt="dash"
                     objectFit="contain"
                     width={930}
