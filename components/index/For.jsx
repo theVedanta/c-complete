@@ -6,7 +6,7 @@ const For = () => {
     return (
         <section
             id="for"
-            className="index-for pb-32 pt-48 blap:pt-20 blap:pb-24 lap:pt-12 lap:pb-16 tab:pt-10 tab:pb-10 ph:pt-40 ph:pb-6"
+            className="index-for pb-32 pt-36 blap:pt-20 blap:pb-24 lap:pt-12 lap:pb-16 tab:pt-10 tab:pb-10 ph:pt-40 ph:pb-6"
         >
             <Container>
                 <h3
@@ -30,13 +30,13 @@ const For = () => {
                             delay="600"
                             className="for-card"
                         >
-                            <h3 className="font-semibold flex items-center text-blue text-3xl mb-6 lap:text-2xl ph:text-xl ph:mb-4">
-                                <span className="lap:text-3xl ph:text-2xl">
+                            <h3 className="font-semibold flex items-center text-blue text-3xl mb-6 lap:text-xl ph:text-xl ph:mb-4">
+                                <span className="lap:text-2xl ph:text-2xl">
                                     <FiUsers />
                                 </span>
                                 &nbsp;&nbsp; For Organizations
                             </h3>
-                            <p className="lap:text-sm ph:text-xs">
+                            <p className="lap:text-xs">
                                 Organizations across the world today are using
                                 Multi Rater or 360° Feedback process for various
                                 aspects along the HR Value Chain. Multi-rater
@@ -57,13 +57,13 @@ const For = () => {
                             delay="600"
                             className="for-card"
                         >
-                            <h3 className="font-semibold flex items-center text-blue text-3xl mb-6 lap:text-2xl ph:text-xl ph:mb-4">
-                                <span className="lap:text-3xl ph:text-2xl">
+                            <h3 className="font-semibold flex items-center text-blue text-3xl mb-6 lap:text-xl ph:text-xl ph:mb-4">
+                                <span className="lap:text-2xl ph:text-2xl">
                                     <FiUser />
                                 </span>
                                 &nbsp;&nbsp; For Individuals
                             </h3>
-                            <p className="lap:text-sm ph:text-xs">
+                            <p className="lap:text-xs">
                                 Individuals, wanting to truly grow and develop,
                                 seek periodic feedback from those who matter and
                                 then act upon it. The act of seeking structured

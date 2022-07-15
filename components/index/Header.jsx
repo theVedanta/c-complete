@@ -4,7 +4,7 @@ import dash from "../../public/dash.svg";
 
 const Header = () => {
     return (
-        <section className="flex w-full items-center my-48 relative blap:mt-36 blap:mb-12 lap:my-28 lap:mb-0 tab:flex-col tab:mt-28 tab:mb-0 ph:mb-4">
+        <section className="flex w-full items-center mt-20 relative blap:mt-36 blap:mb-12 lap:my-28 lap:mb-0 tab:flex-col tab:mt-28 tab:mb-0 ph:mb-4">
             <div className="header-text w-1/2 pl-32 lap:pl-14 tab:w-full tab:px-16 tab:mb-14 ph:px-10 ph:mb-10">
                 <h2
                     data-aos="fade-up"

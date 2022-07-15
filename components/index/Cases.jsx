@@ -59,7 +59,10 @@ const Cases = () => {
                     className="px-32 cursor-grab"
                 >
                     {cases.map((cas, i) => (
-                        <SwiperSlide key={i} className="flex justify-center">
+                        <SwiperSlide
+                            key={i}
+                            className="flex justify-center px-4 tab:px-20 ph:px-0"
+                        >
                             <Case cas={cas} key={i} />
                         </SwiperSlide>
                     ))}
@@ -83,8 +86,8 @@ const Case = ({ cas }) => {
                     alt="the"
                     src={cas.pic}
                     objectFit="cover"
-                    width={1000}
-                    height={500}
+                    width={900}
+                    height={400}
                 />
             </div>
 

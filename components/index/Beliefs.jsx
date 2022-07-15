@@ -44,7 +44,7 @@ const Beliefs = () => {
                     {beliefs.map((bel, i) => (
                         <SwiperSlide
                             key={i}
-                            className="flex justify-center px-10 blap:px-4 tab:px-2"
+                            className="flex justify-center px-10 blap:px-4 lap:px-10 tab:px-2"
                         >
                             <Belief bel={bel} key={i} />
                         </SwiperSlide>
@@ -58,13 +58,13 @@ const Beliefs = () => {
 const Belief = ({ bel }) => {
     return (
         <Link href={`/blog/${bel.id}`}>
-            <a className="bel w-full mb-28 bg-white shadow-xl text-black rounded-lg h-full ph:shadow ph:mb-16">
+            <a className="bel w-full mb-20 bg-white shadow-xl text-black rounded-lg h-full ph:shadow ph:mb-16">
                 <div className="bel-img w-full mb-6 rounded-t-lg overflow-hidden relative lap:mb-3">
                     <Image
                         alt="the"
                         src={bel.cover}
                         width={1000}
-                        height={500}
+                        height={400}
                         objectFit="cover"
                         className="transition-all duration-300"
                     />
