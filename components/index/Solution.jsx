@@ -1,12 +1,15 @@
 import Container from "../Container";
 import { FiUserCheck } from "react-icons/fi";
+import { FaChevronDown } from "react-icons/fa";
 import {
     AiOutlineStock,
     AiOutlineStar,
     AiOutlineFileText,
 } from "react-icons/ai";
+import { motion, LayoutGroup, AnimatePresence } from "framer-motion";
 import { IoFemaleOutline } from "react-icons/io5";
 import { TbCrown } from "react-icons/tb";
+import { useState } from "react";
 
 const Solution = () => {
     const sols = [
@@ -59,7 +62,7 @@ const Solution = () => {
                     <h3
                         data-aos="fade-up"
                         data-aos-delay="600"
-                        className="text-3xl font-light text-center px-32 text-white mt-20 leading-normal blap:text-2xl lap:px-10 tab:text-lg ph:px-0"
+                        className="text-3xl font-light text-center px-32 text-white mt-20 leading-normal blap:text-2xl lap:px-14 lap:mt-14 lap:text-xl tab:text-lg ph:px-0"
                     >
                         Standardized Competency Based Questionnaires for your
                         various requirements.
@@ -67,45 +70,75 @@ const Solution = () => {
                 </Container>
             </section>
 
-            <div className="sol-cards-hold w-full flex justify-center items-center bg-gray py-32 lap:py-20 ph:py-10">
+            <div className="sol-cards-hold w-full flex justify-center items-center bg-gray pt-32 pb-24 blap:py-14 blap:pb-10 lap:py-20 tab:py-12 tab:pb-8">
                 <Container className="flex w-10/12 justify-center items-start lap:w-full ph:flex-col">
-                    <div className="sol-cards flex flex-col w-full items-center">
-                        {sols.map((sol, i) => (
-                            <div
-                                key={i}
-                                data-aos="fade-right"
-                                className="sol-card px-10 py-8 bg-white text-black rounded-xl mb-6"
-                            >
-                                <h3 className="font-semibold flex items-center text-blue text-2xl mb-6 tab:text-xl">
-                                    <span className="text-4xl ph:text-2xl">
-                                        {sol.icon}
-                                    </span>
-                                    &nbsp;&nbsp;
-                                    {sol.title}
-                                </h3>
-                                <p className="lap:text-sm">{sol.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="sol-cards flex flex-col w-full items-center">
-                        {sols2.map((sol, i) => (
-                            <div
-                                key={i}
-                                data-aos="fade-left"
-                                className="sol-card px-10 py-8 bg-white text-black rounded-xl mb-6"
-                            >
-                                <h3 className="font-semibold flex items-center text-blue text-2xl mb-6 tab:text-xl">
-                                    <span className="text-4xl">{sol.icon}</span>
-                                    &nbsp;&nbsp;
-                                    {sol.title}
-                                </h3>
-                                <p className="lap:text-sm">{sol.desc}</p>
-                            </div>
-                        ))}
-                    </div>
+                    <LayoutGroup>
+                        <div className="sol-cards flex flex-col w-full items-center">
+                            {sols.map((sol, i) => (
+                                <Sol sol={sol} key={i} />
+                            ))}
+                        </div>
+                        <div className="sol-cards flex flex-col w-full items-center">
+                            {sols2.map((sol, i) => (
+                                <Sol sol={sol} key={i} />
+                            ))}
+                        </div>
+                    </LayoutGroup>
                 </Container>
             </div>
         </>
+    );
+};
+
+const Sol = ({ sol }) => {
+    const [isOpen, setOpen] = useState(false);
+    return (
+        <AnimatePresence>
+            <motion.div
+                layout
+                initial={{ borderRadius: "10px", y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                onClick={() => setOpen(!isOpen)}
+                className="sol-card cursor-pointer px-10 py-6 bg-white text-black rounded-xl mb-6 tab:px-6 ph:mb-4"
+            >
+                <motion.h3
+                    layout
+                    className={`font-medium flex items-center justify-between text-blue text-2xl ${
+                        isOpen ? "mb-6" : "mb-0"
+                    } blap:text-xl lap:text-lg tab:text-base`}
+                >
+                    <span className="flex items-center">
+                        <span className="text-4xl lap:text-3xl tab:text-2xl">
+                            {sol.icon}
+                        </span>
+                        &nbsp;&nbsp;
+                        {sol.title}
+                    </span>
+                    <span>
+                        <span>
+                            <FaChevronDown
+                                className={`transition-all duration-500 ${
+                                    isOpen ? "rotate-180" : ""
+                                }`}
+                            />
+                        </span>
+                    </span>
+                </motion.h3>
+                {isOpen && (
+                    <motion.p
+                        key={sol.desc}
+                        layout
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ delay: 0.15, duration: 0.3 }}
+                        className="lap:text-sm"
+                    >
+                        {sol.desc}
+                    </motion.p>
+                )}
+            </motion.div>
+        </AnimatePresence>
     );
 };
 

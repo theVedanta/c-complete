@@ -4,11 +4,14 @@ import { FiUser, FiUsers } from "react-icons/fi";
 
 const For = () => {
     return (
-        <section className="index-for pb-32 pt-48 lap:pt-36 tab:pb-10 ph:pt-32 ph:pb-6">
+        <section
+            id="for"
+            className="index-for pb-32 pt-48 blap:pt-20 blap:pb-24 lap:pt-12 lap:pb-16 tab:pt-10 tab:pb-10 ph:pt-40 ph:pb-6"
+        >
             <Container>
                 <h3
                     data-aos="fade-down"
-                    className="font-medium text-4xl text-center px-32 text-black mt-32 mb-16 leading-normal lap:text-3xl tab:px-0 tab:mb-12 ph:text-xl"
+                    className="font-medium text-4xl text-center px-32 text-black mt-32 mb-16 leading-normal lap:text-2xl tab:px-0 tab:mb-12 ph:text-xl ph:mb-6 ph:mt-36"
                 >
                     C-Complete allows both{" "}
                     <span className="font-semibold text-blue">Individuals</span>{" "}
@@ -20,7 +23,7 @@ const For = () => {
                     to see the complete picture.
                 </h3>
 
-                <div className="for-cards flex justify-between px-20 items-stretch w-full blap:px-10 tab:flex-col ph:px-0">
+                <div className="for-cards flex justify-between px-20 items-stretch w-full blap:px-0 tab:flex-col ph:px-0">
                     <Link href="/product/individual">
                         <a
                             data-aos="fade-right"

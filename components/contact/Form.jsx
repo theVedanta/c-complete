@@ -1,6 +1,6 @@
 const Form = () => {
     return (
-        <form className="contact-form w-7/12 h-full flex flex-col justify-center pr-64 lap:pr-20 tab:pr-6 ph:w-full ph:px-6 ph:mt-20 ph:mb-16">
+        <form className="contact-form w-7/12 h-full flex flex-col justify-center pr-64 lap:pr-20 tab:pr-6 ph:w-full ph:px-6 ph:mt-28 ph:mb-16">
             <h3
                 data-aos="fade-up"
                 className="text-darkBlue font-semibold text-3xl mb-10"
@@ -64,7 +64,7 @@ const Form = () => {
                 className="input-field input-textarea mb-10 h-2/6 text-black"
                 name="msg"
                 id="msg"
-                placeholder="United States"
+                placeholder="Write your message here..."
             ></textarea>
 
             <button

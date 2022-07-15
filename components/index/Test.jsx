@@ -44,17 +44,17 @@ const Test = () => {
     ];
 
     return (
-        <section className="testimonials py-32 bg-darkBlue tab:py-20 tab:pb-10">
+        <section className="testimonials py-32 bg-darkBlue blap:py-24 lap:py-16 tab:py-20 tab:pb-10">
             <Container className="flex flex-col items-center">
                 <h3
                     data-aos="fade-up"
-                    className="index-feat-heading text-5xl text-white font-semibold text-center mb-32 lap:text-4xl tab:mb-20"
+                    className="index-feat-heading text-5xl text-white font-semibold text-center mb-32 blap:mb-20 lap:text-4xl tab:mb-20"
                 >
                     Testimonials
                 </h3>
             </Container>
 
-            <Container className="px-56 tab:px-2 ph:px-0">
+            <Container className="px-56 blap:px-36 tab:px-2 ph:px-0">
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
                     spaceBetween={50}
@@ -80,12 +80,14 @@ const Test = () => {
 
 const Testimonial = ({ test }) => {
     return (
-        <div className="testimonial w-4/5 bg-white text-black px-14 py-12 rounded-xl shadow-lg cursor-grab tab:px-12 tab:py-10 ph:p-8">
-            <p className="mb-10 text-lg tab:text-base tab:mb-6">{test.desc}</p>
+        <div className="testimonial w-4/5 bg-white text-black px-14 py-12 rounded-xl shadow-lg cursor-grab lap:px-10 lap:py-8 tab:px-8 tab:py-6 ph:p-8">
+            <p className="mb-10 text-lg lap:text-sm lap:mb-6 tab:mb-6">
+                {test.desc}
+            </p>
 
             <div className="tester flex items-center">
                 <Image alt="pfp" width={45} height={45} src={test.img} />
-                <h4 className="font-medium pl-6 text-xl tab:text-base ph:pl-3 ph:text-sm">
+                <h4 className="font-medium pl-6 text-xl lap:text-base tab:text-sm ph:pl-3 ph:text-sm">
                     {test.name}
                 </h4>
             </div>

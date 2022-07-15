@@ -22,17 +22,17 @@ const Stats = () => {
                     {[
                         {
                             stat: "69",
-                            name: "Incompetencies",
+                            name: "Competencies",
                             delay: "400",
                         },
                         {
                             stat: "489",
-                            name: "Competencies",
+                            name: "Elements",
                             delay: "500",
                         },
                         {
                             stat: "3826",
-                            name: "Competencies",
+                            name: "Feedback givers",
                             delay: "600",
                         },
                         {
@@ -47,10 +47,10 @@ const Stats = () => {
                             key={i}
                             className="stat-card w-4/12 m-3 h-1/2 py-10 flex flex-col items-center justify-center rounded-lg shadow-lg bg-white blap:w-5/12 tab:w-4/12 ph:w-full"
                         >
-                            <h5 className="font-bold text-5xl text-blue">
+                            <h5 className="font-bold text-5xl text-blue lap:text-4xl">
                                 {stat.stat}
                             </h5>
-                            <h6 className="font-semibold text-lg text-blue mt-4 lap:text-base ph:text-lg">
+                            <h6 className="font-semibold text-lg text-blue mt-4 lap:mt-2 lap:text-sm ph:text-lg">
                                 {stat.name}
                             </h6>
                         </div>

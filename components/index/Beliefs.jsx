@@ -14,12 +14,12 @@ const Beliefs = () => {
     }, []);
 
     return (
-        <section className="beliefs py-32 bg-gray text-black lap:py-20 ph:pb-5">
+        <section className="beliefs py-32 bg-gray text-black blap:py-24 lap:py-20 ph:pb-5">
             <Container className="flex flex-col items-center">
                 <h3 className="text-5xl text-blue font-semibold text-center lap:text-4xl">
                     Our Thoughts
                 </h3>
-                <p className="text-xl my-10 mb-16 px-20 text-center leading-relaxed tab:px-4 ph:px-0 ph:text-sm ph:my-6">
+                <p className="text-xl my-10 mb-16 px-20 text-center leading-relaxed lap:text-lg lap:mb-10 lap:mt-4 tab:px-4 ph:px-0 ph:text-sm ph:my-6">
                     We at C-Complete believe that it is important to provide
                     services that reflect our Thought Leadership. Our Content &
                     Research team publishes insightful reports, blogs and other
@@ -44,7 +44,7 @@ const Beliefs = () => {
                     {beliefs.map((bel, i) => (
                         <SwiperSlide
                             key={i}
-                            className="flex justify-center px-10 tab:px-2"
+                            className="flex justify-center px-10 blap:px-4 tab:px-2"
                         >
                             <Belief bel={bel} key={i} />
                         </SwiperSlide>
@@ -59,7 +59,7 @@ const Belief = ({ bel }) => {
     return (
         <Link href={`/blog/${bel.id}`}>
             <a className="bel w-full mb-28 bg-white shadow-xl text-black rounded-lg h-full ph:shadow ph:mb-16">
-                <div className="bel-img w-full mb-6 rounded-t-lg overflow-hidden relative">
+                <div className="bel-img w-full mb-6 rounded-t-lg overflow-hidden relative lap:mb-3">
                     <Image
                         alt="the"
                         src={bel.cover}
@@ -72,8 +72,12 @@ const Belief = ({ bel }) => {
 
                 <div className="bel-content w-full h-1/2 px-6 flex flex-col items-start justify-center">
                     <span className="bel-time my-2">{bel.time}</span>
-                    <h4 className="text-xl font-medium">{bel.title}</h4>
-                    <p className="my-5 mb-8 tab:mb-4">{bel.mini}</p>
+                    <h4 className="text-xl font-medium lap:text-lg">
+                        {bel.title}
+                    </h4>
+                    <p className="my-5 mb-8 lap:text-sm lap:my-2 lap:mb-6 tab:mb-4">
+                        {bel.mini}
+                    </p>
                 </div>
             </a>
         </Link>

@@ -57,7 +57,7 @@ const Features = () => {
                     <h3
                         data-aos="fade-up"
                         data-aos-delay="600"
-                        className="text-3xl font-light text-center px-32 text-white mt-20 leading-normal blap:text-2xl lap:px-10 tab:text-lg ph:px-0"
+                        className="text-3xl font-light text-center px-32 text-white mt-20 leading-normal blap:text-2xl lap:px-14 lap:mt-14 lap:text-xl tab:text-lg ph:px-0"
                     >
                         C-Complete is a feature rich platform, which provides
                         for a number of value add aspects across the multi-rater
@@ -66,7 +66,7 @@ const Features = () => {
                 </Container>
             </section>
 
-            <Container className="feats w-full bg-gray py-32 flex flex-wrap lap:py-20 tab:flex-col tab:py-10 ph:px-5">
+            <Container className="feats w-full bg-gray py-32 flex flex-wrap blap:py-20 lap:py-14 tab:flex-col tab:py-10 ph:px-5">
                 {feats.map((feat, i) => (
                     <div
                         className="feat text-black flex w-1/2 my-6 tab:w-full ph:my-3"
@@ -86,12 +86,12 @@ const Features = () => {
 
                         <div
                             data-aos="fade-left"
-                            className="feat-content w-2/3 flex flex-col py-5 pr-10 tab:pl-5 ph:pl-4 ph:pr-0"
+                            className="feat-content w-2/3 flex flex-col py-5 pr-10 lap:px-4 tab:pl-5 ph:pl-4 ph:pr-0"
                         >
-                            <h4 className="text-xl font-semibold mb-3 lap:text-lg tab:text-xl">
+                            <h4 className="text-xl font-semibold mb-3 lap:text-base tab:text-xl">
                                 {feat.title}
                             </h4>
-                            <p className="lap:text-sm tab:text-lg ph:text-xs">
+                            <p className="lap:text-xs tab:text-lg ph:text-xs">
                                 {feat.desc}
                             </p>
                         </div>

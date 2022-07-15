@@ -19,7 +19,7 @@ const Header = ({ indi }) => {
                 <p
                     data-aos="fade-up"
                     data-aos-delay="600"
-                    className="w-5/6 leading-relaxed lap:w-full tab:text-center ph:text-left"
+                    className="w-5/6 leading-relaxed lap:w-full tab:text-center ph:text-sm ph:text-left"
                 >
                     {indi ? (
                         <>

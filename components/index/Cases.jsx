@@ -30,11 +30,14 @@ const Cases = () => {
     ];
 
     return (
-        <section className="cases py-32 bg-blue lap:py-20" id="case-studies">
+        <section
+            className="cases py-32 bg-blue blap:py-24 lap:py-16"
+            id="case-studies"
+        >
             <Container className="flex flex-col items-center">
                 <h3
                     data-aos="fade-up"
-                    className="index-feat-heading text-5xl text-white font-semibold text-center mb-32 lap:text-4xl tab:text-3xl tab:mb-20"
+                    className="index-feat-heading text-5xl text-white font-semibold text-center mb-32 lap:text-4xl lap:mb-20 tab:text-3xl tab:mb-20"
                 >
                     Our Latest Case Studies
                 </h3>
@@ -85,11 +88,11 @@ const Case = ({ cas }) => {
                 />
             </div>
 
-            <div className="case-content w-full px-8 pb-8 pt-3 flex flex-col items-start justify-center">
-                <h4 className="text-black text-xl font-medium py-2">
+            <div className="case-content w-full px-8 pb-8 pt-3 flex flex-col items-start justify-center lap:px-6 lap:pt-2 lap:pb-6">
+                <h4 className="text-black text-xl font-medium py-2 lap:text-base">
                     {cas.title}
                 </h4>
-                <button className="btn btn-primary w-auto flex items-center mt-3 text-light">
+                <button className="btn btn-primary w-auto flex items-center mt-3 text-light lap:mt-2">
                     <FiPlay />
                     &nbsp;&nbsp;Watch now
                 </button>

@@ -4,19 +4,26 @@ import dash from "../../public/dash.svg";
 
 const Header = () => {
     return (
-        <section className="flex w-full items-center my-48 relative lap:my-40 tab:flex-col tab:mt-28 tab:mb-0">
-            <div className="header-text w-1/2 pl-32 lap:pl-14 tab:w-full tab:px-16 tab:mb-14 ph:px-10">
+        <section className="flex w-full items-center my-48 relative blap:mt-36 blap:mb-12 lap:my-28 lap:mb-0 tab:flex-col tab:mt-28 tab:mb-0 ph:mb-4">
+            <div className="header-text w-1/2 pl-32 lap:pl-14 tab:w-full tab:px-16 tab:mb-14 ph:px-10 ph:mb-10">
+                <h2
+                    data-aos="fade-up"
+                    className="text-5xl font-semibold mb-4 blap:text-4xl lap:text-3xl tab:text-center ph:text-left"
+                >
+                    Seeing Completely.
+                </h2>
                 <h3
                     data-aos="fade-up"
-                    className="text-4xl leading-snug mb-12 pr-10 blap:text-3xl lap:text-xl lap:mb-8 tab:text-center tab:pr-0 ph:text-left ph:mb-4"
+                    data-aos-delay="600"
+                    className="text-4xl leading-snug mb-12 pr-10 blap:text-2xl blap:mb-6 lap:text-xl lap:mb-4 tab:text-center tab:pr-0 ph:text-left ph:mb-4"
                 >
                     Welcome to C-Complete, a Flexible and Comprehensive Multi
                     Rater.
                 </h3>
                 <p
                     data-aos="fade-up"
-                    data-aos-delay="600"
-                    className="w-5/6 leading-relaxed blap:w-full lap:text-sm tab:text-center ph:text-left ph:text-xs"
+                    data-aos-delay="800"
+                    className="w-5/6 leading-relaxed blap:w-full lap:text-xs tab:text-center ph:text-left ph:text-xs"
                 >
                     Competency management and development professionals are
                     constantly faced with the need to accurately evaluate
@@ -29,30 +36,38 @@ const Header = () => {
                 </p>
                 <div
                     data-aos="fade-up"
-                    data-aos-delay="900"
-                    className="btns mt-16 lap:mt-10 tab:w-full tab:flex tab:justify-center ph:justify-start ph:mt-6"
+                    data-aos-delay="1000"
+                    className="btns mt-16 blap:mt-10 lap:mt-8 tab:w-full tab:flex tab:justify-center ph:justify-start ph:my-6"
                 >
-                    <Link href="/">
+                    <Link href="/contact-us">
                         <a className="btn btn-dark mr-5">Get started</a>
                     </Link>
-                    <Link href="/">
-                        <a className="btn btn-line">Learn more</a>
-                    </Link>
+                    <button
+                        onClick={() => {
+                            document
+                                .querySelector("#for")
+                                .scrollIntoView({ behavior: "smooth" });
+                        }}
+                        className="btn btn-line"
+                    >
+                        Learn more
+                    </button>
                 </div>
             </div>
 
             <div
                 data-aos="fade-left"
-                className="header-img w-1/2 flex justify-end tab:w-full tab:px-20 ph:px-6 ph:w-screen ph:absolute ph:-bottom-2/3"
+                className="header-img w-1/2 flex justify-center tab:w-full tab:px-20 ph:px-0 ph:w-screen ph:absolute ph:top-full"
             >
                 <Image
                     src={dash}
                     alt="dash"
-                    width={1000}
-                    height={630}
+                    objectFit="contain"
+                    width={930}
+                    height={690}
                     priority
                     loading="eager"
-                    className="scale-105 translate-x-28 lap:scale-110 tab:scale-100 tab:translate-x-0"
+                    className="lap:scale-110 tab:scale-100 tab:translate-x-0"
                 />
             </div>
         </section>
