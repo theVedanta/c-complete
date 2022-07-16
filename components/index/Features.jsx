@@ -6,6 +6,8 @@ import feat3 from "../../public/feats/feat-3.svg";
 import feat4 from "../../public/feats/feat-4.svg";
 import feat5 from "../../public/feats/feat-5.svg";
 import feat6 from "../../public/feats/feat-6.svg";
+import Link from "next/link";
+import { AiOutlineDownload } from "react-icons/ai";
 
 const Features = () => {
     const feats = [
@@ -63,6 +65,14 @@ const Features = () => {
                         for a number of value add aspects across the multi-rater
                         feedbak value chain.
                     </h3>
+                    <Link href="/">
+                        <a className="btn btn-dark flex items-center mt-6">
+                            <span className="text-2xl">
+                                <AiOutlineDownload />
+                            </span>
+                            &nbsp;&nbsp;Download sample report
+                        </a>
+                    </Link>
                 </Container>
             </section>
 

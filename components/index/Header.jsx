@@ -83,7 +83,7 @@ const Header = () => {
                     height={690}
                     priority
                     loading="eager"
-                    className="lap:scale-110 tab:scale-100 tab:translate-x-0"
+                    className="lap:scale-110 tab:scale-100 tab:translate-x-0 ph:translate-x-3 ph:scale-105"
                 />
             </div>
         </section>

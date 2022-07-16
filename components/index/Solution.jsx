@@ -98,6 +98,7 @@ const Sol = ({ sol }) => {
                 layout
                 initial={{ borderRadius: "10px", y: 100, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
                 onClick={() => setOpen(!isOpen)}
                 className="sol-card cursor-pointer px-10 py-6 bg-white text-black rounded-xl mb-6 tab:px-6 ph:mb-4"
             >
