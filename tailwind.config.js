@@ -14,6 +14,7 @@ module.exports = {
             bph: { max: "767px" },
             ph: { max: "639px" },
             mph: { max: "400px" },
+            sph: { max: "330px" },
         },
         colors: ({ colors }) => ({
             inherit: colors.inherit,

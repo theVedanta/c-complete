@@ -29,7 +29,7 @@ const Footer = () => {
                             ["Features", "/#features"],
                             ["Case Studies", "/#case-studies"],
                             ["Pricing", "/#pricing"],
-                            ["Contact Us", "/contact-us"],
+                            ["Offerings", "/#offerings"],
                         ].map(([title, href], i) => (
                             <Link href={href} key={i}>
                                 <a className="mb-8 underline lap:text-sm lap:mb-6 tab:mb-4">
@@ -46,6 +46,7 @@ const Footer = () => {
                             </a>
                         </Link>
                         {[
+                            ["Contact Us", "/contact-us"],
                             ["Organization", "/product/organization"],
                             ["Individual", "/product/individual"],
                             ["Privacy Policy", "/"],

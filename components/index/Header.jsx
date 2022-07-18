@@ -6,7 +6,7 @@ import dashMob from "../../public/dash-mob.svg";
 const Header = () => {
     return (
         <section className="flex w-full items-center mt-20 relative blap:mt-36 blap:mb-12 lap:my-28 lap:mb-0 tab:flex-col tab:mt-28 tab:mb-0 ph:mb-4">
-            <div className="header-text w-1/2 pl-32 lap:pl-14 tab:w-full tab:px-16 tab:mb-14 ph:px-10 ph:mb-10">
+            <div className="header-text w-1/2 pl-32 lap:pl-14 tab:w-full tab:px-16 tab:mb-14 ph:px-10 ph:mb-10 sph:px-4">
                 <h2
                     data-aos="fade-up"
                     className="text-5xl font-semibold mb-4 blap:text-4xl lap:text-3xl tab:text-center ph:text-left"

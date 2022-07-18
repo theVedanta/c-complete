@@ -21,7 +21,7 @@ function App({ Component, pageProps }) {
             once: true,
         });
 
-        document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("load", function () {
             setLoading(false);
         });
     }, []);

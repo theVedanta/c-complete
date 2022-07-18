@@ -51,7 +51,10 @@ const Solution = () => {
 
     return (
         <>
-            <section className="index-feat sol-feat w-screen py-16">
+            <section
+                id="offerings"
+                className="index-feat sol-feat w-screen py-16"
+            >
                 <Container className="flex flex-col items-center">
                     <h3
                         data-aos="fade-up"
