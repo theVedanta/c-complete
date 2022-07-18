@@ -11,7 +11,7 @@ const Price = () => {
 
     return (
         <Container
-            className="w-full py-32 flex flex-col items-center bg-gray text-black blap:py-20 lap:py-16 tab:py-14"
+            className="w-full nav-section py-32 flex flex-col items-center bg-gray text-black blap:py-20 lap:py-16 tab:py-14"
             id="pricing"
         >
             <h4

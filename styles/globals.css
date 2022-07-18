@@ -70,7 +70,7 @@ body {
 
 /* NAV */
 .nav-link {
-    @apply py-4 pl-10 inline-block text-black transition-all duration-300 hover:text-blue ease-in-out mx-1 lap:px-4 lap:py-4 lap:text-sm tab:px-2 tab:text-lg ph:text-base;
+    @apply py-4 pl-10 inline-block text-black transition-all duration-300 hover:text-blue ease-in-out mx-1 lap:px-4 lap:py-4 lap:text-xs tab:px-2 tab:text-lg ph:text-base;
 }
 
 /* HAM ---------------------------------------------------------------------------------------- */

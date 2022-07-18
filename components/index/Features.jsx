@@ -46,7 +46,7 @@ const Features = () => {
     return (
         <>
             <section
-                className="index-feat w-screen py-16 lap:py-14"
+                className="index-feat nav-section w-screen py-16 lap:py-14"
                 id="features"
             >
                 <Container className="flex flex-col items-center">

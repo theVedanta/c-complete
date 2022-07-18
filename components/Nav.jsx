@@ -1,8 +1,12 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
+import logo from "../public/logo.png";
 
 const Nav = () => {
+    const [active, setActive] = useState("");
+
     return (
         <motion.nav
             initial={{
@@ -16,7 +20,8 @@ const Nav = () => {
                 <Link href="/">
                     <a className="font-bold text-xl text-blue flex items-center">
                         <Image
-                            src="/logo.png"
+                            src={logo}
+                            loading="eager"
                             alt="logo"
                             width={150}
                             height={60}
@@ -27,15 +32,17 @@ const Nav = () => {
             <div className="links w-10/12 flex justify-end tab:w-screen tab:flex-col tab:z-30 tab:pt-16">
                 {[
                     ["Features", "/#features"],
-                    ["Case Studies", "/#case-studies"],
                     ["Pricing", "/#pricing"],
+                    ["Case Studies", "/#case-studies"],
                     ["Contact", "/contact-us"],
                     ["Organization", "/product/organization"],
                     ["Individual", "/product/individual"],
                 ].map(([title, url]) => (
                     <Link key={title} href={url}>
                         <a
-                            className="nav-link"
+                            className={`nav-link ${
+                                active === title && "!text-blue"
+                            }`}
                             onClick={() => {
                                 document.querySelector(".ham-active") &&
                                     document
@@ -45,6 +52,7 @@ const Nav = () => {
                                     document
                                         .querySelector(".links-active")
                                         .classList.remove("links-active");
+                                setActive(title);
                             }}
                         >
                             {title}

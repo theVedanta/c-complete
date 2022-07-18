@@ -7,22 +7,38 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { RotateLoader } from "react-spinners";
 
 function App({ Component, pageProps }) {
+    const [loading, setLoading] = useState(true);
+
     useEffect(() => {
+        // AOS
         AOS.init({
             duration: 600,
             delay: 300,
             once: true,
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            setLoading(false);
+        });
     }, []);
 
     return (
         <>
-            <Nav />
-            <Component {...pageProps} />
-            <Footer />
+            {loading ? (
+                <div className="load w-screen h-screen flex items-center justify-center">
+                    <RotateLoader color={"#fff"} />
+                </div>
+            ) : (
+                <>
+                    <Nav />
+                    <Component {...pageProps} />
+                    <Footer />
+                </>
+            )}
         </>
     );
 }

@@ -9,7 +9,7 @@ module.exports = {
     theme: {
         screens: {
             blap: { max: "1535px" },
-            lap: { max: "1279px" },
+            lap: { max: "1280px" },
             tab: { max: "1023px" },
             bph: { max: "767px" },
             ph: { max: "639px" },

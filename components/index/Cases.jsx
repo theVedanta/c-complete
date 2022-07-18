@@ -31,7 +31,7 @@ const Cases = () => {
 
     return (
         <section
-            className="cases py-32 bg-blue blap:py-24 lap:py-16"
+            className="cases nav-section py-32 bg-blue blap:py-24 lap:py-16"
             id="case-studies"
         >
             <Container className="flex flex-col items-center">

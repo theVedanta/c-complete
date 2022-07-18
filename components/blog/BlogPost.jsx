@@ -13,6 +13,7 @@ const BlogPost = ({ blog }) => {
                     <Image
                         src={blog ? blog.cover : place}
                         alt="blog"
+                        loading="eager"
                         objectFit="cover"
                         layout="fill"
                     />
