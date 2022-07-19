@@ -16,7 +16,7 @@ const Form = () => {
                 <div className="input">
                     <label
                         htmlFor="name"
-                        className="mb-2 font-medium tab:text-sm"
+                        className="mb-2 font-medium tab:text-sm ph:text-xs"
                     >
                         Name / Business name
                     </label>
@@ -34,7 +34,7 @@ const Form = () => {
                 <div className="input">
                     <label
                         htmlFor="name"
-                        className="mb-2 font-medium tab:text-sm"
+                        className="mb-2 font-medium tab:text-sm ph:text-xs"
                     >
                         Email
                     </label>
@@ -54,7 +54,7 @@ const Form = () => {
                 data-aos="fade-up"
                 data-aos-delay="800"
                 htmlFor="msg"
-                className="text-black mb-2 font-medium tab:text-sm"
+                className="text-black mb-2 font-medium tab:text-sm ph:text-xs"
             >
                 Message
             </label>
