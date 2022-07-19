@@ -3,7 +3,7 @@ import { FiMail, FiMapPin, FiClock } from "react-icons/fi";
 
 const Footer = () => {
     return (
-        <footer className="flex justify-between bg-darkBlue w-screen px-32 py-20 lap:px-20 tab:flex-col tab:py-14 ph:px-10">
+        <footer className="flex z-30 justify-between bg-darkBlue w-screen px-32 py-20 lap:px-20 tab:flex-col tab:py-14 ph:px-10">
             <div className="foot-left w-1/2 blap:w-1/3 tab:w-full tab:mb-16">
                 <h1 className="text-4xl font-bold">C-Complete</h1>
                 <p className="mt-10 pr-48 blap:pr-20 blap:text-xs blap:leading-loose lap:pr-5 tab:text-sm tab:leading-loose ph:px-0 ph:mt-6">
