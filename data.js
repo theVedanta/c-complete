@@ -350,4 +350,18 @@ const blogs = [
     },
 ];
 
-export { orgBenefits, indiBenefits, blogs };
+const logos = [
+    "/logos/tata.svg",
+    "/logos/acacia.svg",
+    "/logos/advanta.svg",
+    "/logos/bengal.svg",
+    "/logos/dcm.svg",
+    "/logos/ofcc.svg",
+    "/logos/reddy.svg",
+    "/logos/ggk.svg",
+    "/logos/hr footprints.svg",
+    "/logos/iclean.svg",
+    "/logos/isb.svg",
+];
+
+export { orgBenefits, indiBenefits, blogs, logos };

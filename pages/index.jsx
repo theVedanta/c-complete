@@ -4,6 +4,7 @@ import FAQ from "../components/index/FAQ";
 import Features from "../components/index/Features";
 import For from "../components/index/For";
 import Header from "../components/index/Header";
+import Logos from "../components/index/Logos";
 import Price from "../components/index/Price";
 import Solution from "../components/index/Solution";
 import Stats from "../components/index/Stats";
@@ -20,6 +21,7 @@ const Index = () => {
             <FAQ />
             <Price />
             <Test />
+            <Logos />
             <Cases />
             <Beliefs />
         </>

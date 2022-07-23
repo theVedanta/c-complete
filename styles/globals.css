@@ -224,6 +224,27 @@ body {
 .more-bel {
     width: 48%;
 }
+
+/* LOGOS ANIMATION */
+@keyframes logos {
+    0% {
+        transform: translateX(-20%);
+    }
+    50% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(-20%);
+    }
+}
+.logos-container:hover .logos {
+    animation-play-state: paused;
+}
+.logos {
+    padding-left: 50%;
+    animation: logos 40s linear infinite;
+}
+
 /* MEDIA */
 @media (max-width: 1023px) {
     .links {
@@ -257,5 +278,8 @@ body {
     .input-textarea {
         max-height: 30vh;
         min-height: 20vh;
+    }
+    .logos {
+        animation: logos 10s linear infinite;
     }
 }
