@@ -44,7 +44,10 @@ const Test = () => {
     ];
 
     return (
-        <section className="testimonials py-32 bg-darkBlue blap:py-24 lap:py-16 tab:py-20 tab:pb-10">
+        <section
+            id="testimonials"
+            className="testimonials py-32 bg-darkBlue blap:py-24 lap:py-16 tab:py-20 tab:pb-10"
+        >
             <Container className="flex flex-col items-center">
                 <h3
                     data-aos="fade-up"

@@ -1,6 +1,5 @@
 import Container from "../Container";
 import Image from "next/image";
-import { useEffect } from "react";
 
 const Logos = () => {
     const logos = [
@@ -18,7 +17,10 @@ const Logos = () => {
     ];
 
     return (
-        <section className="py-20 bg-gray blap:py-24 lap:py-16 tab:py-20 tab:pb-10">
+        <section
+            id="clients"
+            className="py-20 bg-gray blap:py-24 lap:py-16 tab:py-20 tab:pb-10"
+        >
             <Container className="flex flex-col items-center">
                 <h3
                     data-aos="fade-up"

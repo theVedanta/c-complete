@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState } from "react";
+// import { useState } from "react";
 import logo from "../public/logo.png";
 
 const Nav = () => {
-    const [active, setActive] = useState("");
+    // const [active, setActive] = useState("");
 
     return (
         <motion.nav
@@ -34,6 +34,8 @@ const Nav = () => {
                     ["Features", "/#features"],
                     ["Offerings", "/#offerings"],
                     ["Pricing", "/#pricing"],
+                    ["Testimonials", "/#testimonials"],
+                    ["Clients", "/#clients"],
                     ["Case Studies", "/#case-studies"],
                     ["Contact", "/contact-us"],
                     ["Organization", "/product/organization"],
@@ -42,19 +44,20 @@ const Nav = () => {
                     <Link key={title} href={url}>
                         <a
                             className={`nav-link ${
-                                active === title && "!text-blue"
+                                // active === title && "!text-blue"
+                                ""
                             }`}
-                            onClick={() => {
-                                document.querySelector(".ham-active") &&
-                                    document
-                                        .querySelector(".ham-active")
-                                        .classList.remove("ham-active");
-                                document.querySelector(".links-active") &&
-                                    document
-                                        .querySelector(".links-active")
-                                        .classList.remove("links-active");
-                                setActive(title);
-                            }}
+                            // onClick={() => {
+                            //     document.querySelector(".ham-active") &&
+                            //         document
+                            //             .querySelector(".ham-active")
+                            //             .classList.remove("ham-active");
+                            //     document.querySelector(".links-active") &&
+                            //         document
+                            //             .querySelector(".links-active")
+                            //             .classList.remove("links-active");
+                            //     setActive(title);
+                            // }}
                         >
                             {title}
                         </a>

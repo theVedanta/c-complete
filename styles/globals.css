@@ -70,7 +70,7 @@ body {
 
 /* NAV */
 .nav-link {
-    @apply py-4 pl-8 inline-block text-black transition-all duration-300 hover:text-blue ease-in-out mx-1 lap:pl-8 lap:py-4 lap:text-xs tab:pl-4 tab:text-lg ph:text-base;
+    @apply py-4 pl-8 inline-block text-black transition-all duration-300 hover:text-blue ease-in-out mx-1 blap:text-sm lap:pl-8 lap:py-4 lap:text-xs tab:pl-4 tab:text-lg ph:text-base;
 }
 
 /* HAM ---------------------------------------------------------------------------------------- */
@@ -231,7 +231,7 @@ body {
         transform: translateX(-20%);
     }
     50% {
-        transform: translateX(-150%);
+        transform: translateX(-110%);
     }
     100% {
         transform: translateX(-20%);
@@ -241,7 +241,7 @@ body {
     animation-play-state: paused;
 }
 .logos {
-    padding-left: 50%;
+    padding-left: 35%;
     animation: logos 40s linear infinite;
 }
 
