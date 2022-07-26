@@ -16,7 +16,7 @@ const Header = () => {
                 <h3
                     data-aos="fade-up"
                     data-aos-delay="600"
-                    className="text-4xl leading-snug mb-12 pr-10 blap:text-2xl blap:mb-6 lap:text-xl lap:mb-4 tab:text-center tab:pr-0 ph:text-left ph:mb-4"
+                    className="text-4xl leading-snug mb-8 pr-10 blap:text-2xl blap:mb-4 lap:text-xl lap:mb-4 tab:text-center tab:pr-0 ph:text-left ph:mb-4"
                 >
                     Welcome to C-Complete, a Flexible and Comprehensive Multi
                     Rater.
