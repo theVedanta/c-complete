@@ -71,6 +71,7 @@ body {
 /* NAV */
 .nav-link {
     @apply py-4 pl-8 inline-block text-black transition-all duration-300 hover:text-blue ease-in-out mx-1 blap:text-sm lap:pl-8 lap:py-4 lap:text-xs tab:pl-4 tab:text-lg ph:text-base;
+    white-space: nowrap;
 }
 
 /* HAM ---------------------------------------------------------------------------------------- */
