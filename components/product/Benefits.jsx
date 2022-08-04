@@ -32,14 +32,14 @@ const Benefits = ({ indi }) => {
 const BenefitCard = ({ benefit }) => {
     return (
         <div className="benefit mb-14 bg-white text-black rounded-lg blap:mb-12 tab:mb-8">
-            <div className="case-img h-48 rounded-t-lg w-full overflow-hidden relative">
+            {/* <div className="case-img h-48 rounded-t-lg w-full overflow-hidden relative">
                 <Image
                     alt="the"
                     src={benefit.img}
                     objectFit="cover"
                     layout="fill"
                 />
-            </div>
+            </div> */}
 
             <div className="case-content w-full px-8 pt-5 pb-4 flex flex-col items-start justify-center">
                 <h4 className="text-xl font-semibold flex items-center text-blue py-2 lap:text-base">

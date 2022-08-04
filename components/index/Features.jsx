@@ -62,8 +62,8 @@ const Features = () => {
                         className="text-3xl font-light text-center px-32 text-white mt-20 leading-normal blap:text-2xl lap:px-14 lap:mt-14 lap:text-xl tab:text-lg ph:px-0"
                     >
                         C-Complete is a feature rich platform, which provides
-                        for a number of value add aspects across the multi-rater
-                        feedbak value chain.
+                        for a number of value added aspects across the
+                        multi-rater feedbak value chain.
                     </h3>
                     <Link href="/">
                         <a className="btn btn-dark flex items-center mt-6">
