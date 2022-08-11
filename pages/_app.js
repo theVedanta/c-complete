@@ -8,7 +8,7 @@ import "swiper/css/autoplay";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { RotateLoader } from "react-spinners";
+// import { RotateLoader } from "react-spinners";
 
 function App({ Component, pageProps }) {
     // const [loading, setLoading] = useState(true);
