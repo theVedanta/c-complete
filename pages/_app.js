@@ -7,11 +7,11 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { RotateLoader } from "react-spinners";
 
 function App({ Component, pageProps }) {
-    const [loading, setLoading] = useState(true);
+    // const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         // AOS
@@ -21,14 +21,14 @@ function App({ Component, pageProps }) {
             once: true,
         });
 
-        window.addEventListener("load", function () {
-            setLoading(false);
-        });
+        // window.addEventListener("load", function () {
+        //     setLoading(false);
+        // });
     }, []);
 
     return (
         <>
-            {loading ? (
+            {/* {loading ? (
                 <div className="load w-screen h-screen flex items-center justify-center">
                     <RotateLoader color={"#fff"} />
                 </div>
@@ -38,7 +38,10 @@ function App({ Component, pageProps }) {
                     <Component {...pageProps} />
                     <Footer />
                 </>
-            )}
+            )} */}
+            <Nav />
+            <Component {...pageProps} />
+            <Footer />
         </>
     );
 }
