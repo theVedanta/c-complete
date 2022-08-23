@@ -1,14 +1,22 @@
+import { Notyf } from "notyf";
+import "notyf/notyf.min.css";
+
 const DownloadForm = ({ setForm }) => {
+    const notyf = new Notyf();
+
     return (
-        <main
-            className="w-screen h-screen fixed top-0 left-0 z-40 flex justify-center items-center"
-            style={{ background: "rgba(0, 0, 0, 0.2)" }}
-        >
+        <main className="w-screen h-screen fixed top-0 left-0 z-40 flex justify-center items-center">
+            <div
+                className="overlay w-screen h-screen fixed top-0 left-0 z-40"
+                style={{ background: "rgba(0, 0, 0, 0.6)" }}
+                onClick={() => setForm(false)}
+            ></div>
             <form
                 className="z-50 bg-white w-1/3 px-12 py-8 rounded-xl text-black shadow-lg"
                 onSubmit={(e) => {
                     e.preventDefault();
                     setForm(false);
+                    notyf.success("Request sent!");
                 }}
             >
                 <h3 className="text-2xl font-medium mb-10 text-center mt-6">
