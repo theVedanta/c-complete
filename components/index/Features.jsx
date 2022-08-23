@@ -8,6 +8,8 @@ import feat5 from "../../public/feats/feat-5.svg";
 import feat6 from "../../public/feats/feat-6.svg";
 import Link from "next/link";
 import { AiOutlineDownload } from "react-icons/ai";
+import { useState } from "react";
+import DownloadForm from "./DownloadForm";
 
 const Features = () => {
     const feats = [
@@ -42,6 +44,7 @@ const Features = () => {
             desc: "Extensive reports along multiple dimensions helping in better and more objective analysis for the individual.",
         },
     ];
+    const [form, setForm] = useState(false);
 
     return (
         <>
@@ -65,16 +68,19 @@ const Features = () => {
                         for a number of value added aspects across the
                         multi-rater feedbak value chain.
                     </h3>
-                    <Link href="/">
-                        <a className="btn btn-dark flex items-center mt-6">
-                            <span className="text-2xl">
-                                <AiOutlineDownload />
-                            </span>
-                            &nbsp;&nbsp;Download sample report
-                        </a>
-                    </Link>
+                    <button
+                        className="btn btn-dark flex items-center mt-6"
+                        onClick={() => setForm(true)}
+                    >
+                        <span className="text-2xl">
+                            <AiOutlineDownload />
+                        </span>
+                        &nbsp;&nbsp;Download sample report
+                    </button>
                 </Container>
             </section>
+
+            {form && <DownloadForm setForm={setForm} />}
 
             <Container className="feats w-full bg-gray py-32 flex flex-wrap blap:py-20 lap:py-14 tab:flex-col tab:py-10 ph:px-5">
                 {feats.map((feat, i) => (
