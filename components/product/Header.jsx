@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import indiImg from "../../public/indi.svg";
 import orgImg from "../../public/org.svg";
 import placeholder from "../../public/place.png";
@@ -68,12 +67,13 @@ const Header = ({ indi }) => {
                         <FiFileText />
                         &nbsp; View Process
                     </button>
-                    <Link href="/">
-                        <a className="btn btn-primary flex items-center ph:self-start">
-                            <FiMonitor />
-                            &nbsp; View Presentation
-                        </a>
-                    </Link>
+                    <button
+                        onClick={() => setForm(true)}
+                        className="btn btn-primary flex items-center ph:self-start"
+                    >
+                        <FiMonitor />
+                        &nbsp; View Presentation
+                    </button>
                 </div>
             </div>
 
