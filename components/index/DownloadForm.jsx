@@ -32,7 +32,7 @@ const DownloadForm = ({ setForm }) => {
                         required
                         maxLength="50"
                         name="name"
-                        placeholder="eg. John Doe"
+                        placeholder="John Doe"
                         className="text-lg w-full rounded-lg px-5 py-3 border-blue border-2"
                     />
                 </div>
@@ -45,38 +45,41 @@ const DownloadForm = ({ setForm }) => {
                         required
                         maxLength="50"
                         name="org-name"
-                        placeholder="eg. Infosys"
+                        placeholder="Infosys"
                         className="text-lg w-full rounded-lg px-5 py-3 border-blue border-2"
                     />
                 </div>
                 <div className="form-field mb-6 flex flex-col">
-                    <label htmlFor="name" className="mb-1">
-                        Name
+                    <label htmlFor="email" className="mb-1">
+                        Email
                     </label>
                     <input
-                        type="text"
+                        type="email"
                         required
                         maxLength="50"
-                        name="name"
-                        placeholder="eg. John Doe"
+                        name="email"
+                        placeholder="johndoe@service.com"
                         className="text-lg w-full rounded-lg px-5 py-3 border-blue border-2"
                     />
                 </div>
                 <div className="form-field mb-6 flex flex-col">
-                    <label htmlFor="name" className="mb-1">
-                        Name
+                    <label htmlFor="phone" className="mb-1">
+                        Phone
                     </label>
                     <input
-                        type="text"
+                        type="number"
                         required
                         maxLength="50"
-                        name="name"
-                        placeholder="eg. John Doe"
+                        name="phone"
+                        placeholder="1234567890"
                         className="text-lg w-full rounded-lg px-5 py-3 border-blue border-2"
                     />
                 </div>
 
-                <button type="submit" className="btn btn-primary w-full mt-10">
+                <button
+                    type="submit"
+                    className="btn btn-primary w-full mt-10 mb-6"
+                >
                     Send Report
                 </button>
             </form>

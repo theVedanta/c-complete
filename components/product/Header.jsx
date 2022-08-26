@@ -4,8 +4,12 @@ import indiImg from "../../public/indi.svg";
 import orgImg from "../../public/org.svg";
 import placeholder from "../../public/place.png";
 import { FiFileText, FiMonitor } from "react-icons/fi";
+import { useState } from "react";
+import DownloadForm from "../index/DownloadForm";
 
 const Header = ({ indi }) => {
+    const [form, setForm] = useState(false);
+
     return (
         <section className="flex w-full bg-gray text-black items-center py-48 relative lap:py-40 tab:flex-col tab:pt-28 tab:mb-0 ph:pb-14">
             <div className="header-text w-1/2 pl-32 lap:pl-14 tab:w-full tab:px-16 tab:mb-14 ph:px-10">
@@ -57,12 +61,13 @@ const Header = ({ indi }) => {
                     data-aos-delay="800"
                     className="flex mt-10 tab:w-full tab:flex tab:justify-center ph:justify-start ph:mt-6 ph:flex-col"
                 >
-                    <Link href="/">
-                        <a className="btn btn-dark mr-5 flex items-center text-white ph:mb-3 ph:self-start">
-                            <FiFileText />
-                            &nbsp; View Process
-                        </a>
-                    </Link>
+                    <button
+                        onClick={() => setForm(true)}
+                        className="btn btn-dark mr-5 flex items-center text-white ph:mb-3 ph:self-start"
+                    >
+                        <FiFileText />
+                        &nbsp; View Process
+                    </button>
                     <Link href="/">
                         <a className="btn btn-primary flex items-center ph:self-start">
                             <FiMonitor />
@@ -87,6 +92,8 @@ const Header = ({ indi }) => {
                     loading="eager"
                 />
             </div>
+
+            {form && <DownloadForm setForm={setForm} />}
         </section>
     );
 };

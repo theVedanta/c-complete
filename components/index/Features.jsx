@@ -6,7 +6,6 @@ import feat3 from "../../public/feats/feat-3.svg";
 import feat4 from "../../public/feats/feat-4.svg";
 import feat5 from "../../public/feats/feat-5.svg";
 import feat6 from "../../public/feats/feat-6.svg";
-import Link from "next/link";
 import { AiOutlineDownload } from "react-icons/ai";
 import { useState } from "react";
 import DownloadForm from "./DownloadForm";
