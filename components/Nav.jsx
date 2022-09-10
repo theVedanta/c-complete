@@ -18,14 +18,8 @@ const Nav = () => {
         >
             <div className="logo-hold flex items-center w-2/12 tab:w-1/3 tab:z-40 tab:py-0 ph:w-1/2">
                 <Link href="/">
-                    <a className="font-bold text-xl text-blue flex items-center">
-                        <Image
-                            src={logo}
-                            loading="eager"
-                            alt="logo"
-                            width={150}
-                            height={60}
-                        />
+                    <a className="font-bold text-xl italic text-blue flex items-center transition-all hover:text-darkBlue">
+                        C-Complete
                     </a>
                 </Link>
             </div>
