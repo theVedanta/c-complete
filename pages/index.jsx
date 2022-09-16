@@ -9,10 +9,23 @@ import Price from "../components/index/Price";
 import Solution from "../components/index/Solution";
 import Stats from "../components/index/Stats";
 import Test from "../components/index/Test";
+import Meta from "../components/Meta";
 
 const Index = () => {
     return (
         <>
+            <Meta
+                title="C-Complete"
+                description="Competency management and development professionals are
+                    constantly faced with the need to accurately evaluate
+                    behavioral attributes. Whether as part of performance
+                    management, training needs analysis, leadership development
+                    or succession planning - C-Complete offers you a platform
+                    for objectively capturing the picture of each individual as
+                    perceived by the many stakeholders. C-Complete lets you see
+                    the complete picture."
+                keywords="c-complete, unitol, competency management, c complete, see complete"
+            />
             <Header />
             <For />
             <Stats />
