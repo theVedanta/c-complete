@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const Nav = () => {
+const Nav = ({ curr, setCurr }) => {
     return (
         <motion.nav
             initial={{
@@ -33,8 +33,7 @@ const Nav = () => {
                     <Link key={title} href={url}>
                         <a
                             className={`nav-link ${
-                                // active === title && "!text-blue"
-                                ""
+                                curr === title && "!text-blue"
                             }`}
                             onClick={() => {
                                 document
@@ -43,18 +42,8 @@ const Nav = () => {
                                 document
                                     .querySelector(".links")
                                     .classList.toggle("links-active");
+                                setTimeout(() => setCurr(title), 300);
                             }}
-                            // onClick={() => {
-                            //     document.querySelector(".ham-active") &&
-                            //         document
-                            //             .querySelector(".ham-active")
-                            //             .classList.remove("ham-active");
-                            //     document.querySelector(".links-active") &&
-                            //         document
-                            //             .querySelector(".links-active")
-                            //             .classList.remove("links-active");
-                            //     setActive(title);
-                            // }}
                         >
                             {title}
                         </a>
