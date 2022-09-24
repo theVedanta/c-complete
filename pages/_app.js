@@ -16,8 +16,8 @@ function App({ Component, pageProps }) {
     useEffect(() => {
         // AOS
         AOS.init({
-            duration: 600,
-            delay: 300,
+            duration: 400,
+            delay: 200,
             once: true,
         });
 

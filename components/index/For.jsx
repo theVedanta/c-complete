@@ -24,7 +24,7 @@ const For = () => {
                 </h3>
 
                 <div className="for-cards flex justify-between px-20 items-stretch w-full blap:px-0 tab:flex-col ph:px-0">
-                    <Link href="/product/individual">
+                    <Link href="/product/organization">
                         <a
                             data-aos="fade-right"
                             delay="600"
@@ -46,7 +46,7 @@ const For = () => {
                             </p>
                         </a>
                     </Link>
-                    <Link href="/product/organization">
+                    <Link href="/product/individual">
                         <a
                             data-aos="fade-left"
                             delay="600"

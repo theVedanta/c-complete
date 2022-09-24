@@ -24,7 +24,7 @@ const Index = () => {
                     for objectively capturing the picture of each individual as
                     perceived by the many stakeholders. C-Complete lets you see
                     the complete picture."
-                keywords="c-complete, unitol, competency management, c complete, see complete"
+                keywords="c-complete, unitol, competency management, c complete, see complete, hyderabad, training"
             />
             <Header />
             <For />

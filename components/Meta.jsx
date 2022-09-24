@@ -11,7 +11,7 @@ const Meta = ({ title, description, keywords }) => {
             />
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
-            {/* <link rel="icon" href="" type="image/x-icon" /> */}
+            <link rel="icon" href="/favicon.ico" type="image/x-icon" />
             <title>{title}</title>
         </Head>
     );

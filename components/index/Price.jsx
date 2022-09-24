@@ -5,6 +5,7 @@ import coach from "../../public/price/coach.svg";
 import enterprise from "../../public/price/enterprise.svg";
 import indi from "../../public/price/indi.svg";
 import gold from "../../public/price/gold.svg";
+import Link from "next/link";
 
 const Price = () => {
     const [pick, setPick] = useState("org");
@@ -67,9 +68,9 @@ const Org = () => {
                     51-100 users: USD 19.99
                 </div>
 
-                <button className="btn btn-primary mt-8 ph:mt-12">
-                    Purchase
-                </button>
+                <Link href="/contact-us">
+                    <a className="btn btn-primary mt-8 ph:mt-12">Purchase</a>
+                </Link>
             </div>
 
             <div className="price-box relative !bg-darkBlue text-white">
@@ -82,9 +83,11 @@ const Org = () => {
                     whom you would like to initiate a multi rater?
                 </p>
 
-                <button className="btn btn-primary absolute bottom-10 mt-6">
-                    Contact us
-                </button>
+                <Link href="/contact-us">
+                    <a className="btn btn-primary absolute bottom-10 mt-6">
+                        Contact us
+                    </a>
+                </Link>
             </div>
         </div>
     );
@@ -105,9 +108,9 @@ const Indi = () => {
                     or Senior Management Roles
                 </p>
 
-                <button className="btn btn-primary mt-8 ph:mt-12">
-                    Purchase
-                </button>
+                <Link href="/contact-us">
+                    <a className="btn btn-primary mt-8 ph:mt-12">Purchase</a>
+                </Link>
             </div>
 
             <div className="price-box relative !bg-darkBlue text-white">
@@ -120,9 +123,9 @@ const Indi = () => {
                     yourself, based on how others view you, in your role.
                 </p>
 
-                <button className="btn btn-primary mt-8 ph:mt-12">
-                    Purchase
-                </button>
+                <Link href="/contact-us">
+                    <a className="btn btn-primary mt-8 ph:mt-12">Purchase</a>
+                </Link>
             </div>
         </div>
     );

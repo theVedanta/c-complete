@@ -7,6 +7,7 @@ import { blogs } from "../../data";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import place from "../../public/place.png";
+import Meta from "../../components/Meta";
 
 const Blog = () => {
     const [blog, setBlog] = useState({ cover: place });
@@ -18,16 +19,30 @@ const Blog = () => {
     }, [id]);
 
     return (
-        <section className="blog">
-            <Container className="bg-gray pt-20">
-                <BlogBtns id={id} />
-                <Container className="tab:px-0 ph:!px-0">
-                    <BlogPost blog={blog} />
+        <>
+            <Meta
+                title="C-Complete - Blog"
+                description="Competency management and development professionals are
+                    constantly faced with the need to accurately evaluate
+                    behavioral attributes. Whether as part of performance
+                    management, training needs analysis, leadership development
+                    or succession planning - C-Complete offers you a platform
+                    for objectively capturing the picture of each individual as
+                    perceived by the many stakeholders. C-Complete lets you see
+                    the complete picture."
+                keywords="c-complete, blog, blogs, unitol, competency management, c complete, see complete, hyderabad, training"
+            />
+            <section className="blog">
+                <Container className="bg-gray pt-20">
+                    <BlogBtns id={id} />
+                    <Container className="tab:px-0 ph:!px-0">
+                        <BlogPost blog={blog} />
+                    </Container>
                 </Container>
-            </Container>
 
-            <MoreBlogs id={id} />
-        </section>
+                <MoreBlogs id={id} />
+            </section>
+        </>
     );
 };
 

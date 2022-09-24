@@ -41,17 +41,11 @@ const Header = ({ indi }) => {
                         </>
                     ) : (
                         <>
-                            Competency management and development professionals
-                            are constantly faced with the need to accurately
-                            evaluate behavioral attributes. Whether as part of
-                            performance management, training needs analysis,
-                            leadership development or succession planning -
-                            C-Complete offers you a platform for objectively
-                            capturing the picture of each individual as
-                            perceived by the many stakeholders.
-                            <br />
-                            <br />
-                            C-Complete lets you see the complete picture.
+                            Organizations across the world today are using Multi
+                            Rater or 360° Feedback process for various aspects
+                            along the HR Value Chain. Multi-rater feedback is a
+                            powerful tool in every situation that requires
+                            demonstration or assessment of competencies.
                         </>
                     )}
                 </p>

@@ -246,6 +246,14 @@ body {
     animation: logos 40s linear infinite;
 }
 
+/* FORM */
+.form-field input {
+    @apply text-lg w-full rounded-lg px-5 py-3 border-blue border-2 ph:px-4 ph:text-base;
+}
+.form-field label {
+    @apply mb-1 text-sm;
+}
+
 /* MEDIA */
 @media (max-width: 1023px) {
     .links {
