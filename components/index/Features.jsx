@@ -19,7 +19,7 @@ const Features = () => {
         },
         {
             img: feat2,
-            title: "Customizable competency models",
+            title: "Customizable rating scales",
             desc: "Different Rating scales for varied needs; with scope to create and define new rating scales for specific needs.",
         },
         {

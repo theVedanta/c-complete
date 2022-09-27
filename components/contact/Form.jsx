@@ -1,6 +1,16 @@
+import { Notyf } from "notyf";
+
 const Form = () => {
+    const notyf = new Notyf();
+
     return (
-        <form className="contact-form w-7/12 h-full flex flex-col justify-center pr-64 lap:pr-20 tab:pr-6 ph:w-full ph:px-6 ph:mt-28 ph:mb-16">
+        <form
+            onSubmit={(e) => {
+                e.preventDefault();
+                notyf.success("Details sent!");
+            }}
+            className="contact-form w-7/12 h-full flex flex-col justify-center pr-64 lap:pr-20 tab:pr-6 ph:w-full ph:px-6 ph:mt-28 ph:mb-16"
+        >
             <h3
                 data-aos="fade-up"
                 className="text-darkBlue font-semibold text-3xl mb-10"
