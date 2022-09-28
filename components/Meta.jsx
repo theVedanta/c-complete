@@ -3,7 +3,7 @@ import Head from "next/head";
 const Meta = ({ title, description, keywords }) => {
     return (
         <Head>
-            <meta charset="UTF-8" />
+            <meta charSet="UTF-8" />
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta
                 name="viewport"

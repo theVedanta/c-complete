@@ -1,7 +1,10 @@
 import { Notyf } from "notyf";
+import { useEffect } from "react";
 
 const Form = () => {
-    const notyf = new Notyf();
+    useEffect(() => {
+        const notyf = new Notyf();
+    }, []);
 
     return (
         <form

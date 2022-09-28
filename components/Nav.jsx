@@ -42,7 +42,7 @@ const Nav = ({ curr, setCurr }) => {
                                 document
                                     .querySelector(".links")
                                     .classList.toggle("links-active");
-                                setTimeout(() => setCurr(title), 300);
+                                setTimeout(() => setCurr(title), 200);
                             }}
                         >
                             {title}

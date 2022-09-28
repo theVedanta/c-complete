@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 
 function App({ Component, pageProps }) {
     const [curr, setCurr] = useState("");
+
     useEffect(() => {
         // AOS
         AOS.init({
@@ -18,16 +19,12 @@ function App({ Component, pageProps }) {
             delay: 200,
             once: true,
         });
-
-        window.addEventListener("scroll", (e) => {
-            setCurr("");
-        });
     }, []);
 
     return (
         <>
             <Nav curr={curr} setCurr={setCurr} />
-            <Component {...pageProps} />
+            <Component setCurr={setCurr} {...pageProps} />
             <Footer />
         </>
     );

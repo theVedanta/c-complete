@@ -292,3 +292,8 @@ body {
         animation: logos 10s linear infinite;
     }
 }
+@media (max-width: 639px) {
+    body::-webkit-scrollbar {
+        width: 0px;
+    }
+}

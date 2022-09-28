@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Beliefs from "../components/index/Beliefs";
 import Cases from "../components/index/Cases";
 import FAQ from "../components/index/FAQ";
@@ -11,7 +12,13 @@ import Stats from "../components/index/Stats";
 import Test from "../components/index/Test";
 import Meta from "../components/Meta";
 
-const Index = () => {
+const Index = ({ setCurr }) => {
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            window.location.pathname === "/" && setCurr("");
+        });
+    }, [setCurr]);
+
     return (
         <>
             <Meta
