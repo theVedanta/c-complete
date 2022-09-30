@@ -14,7 +14,6 @@ const Stats = () => {
                         alt="stat"
                         src={stat}
                         layout="fill"
-                        loading="eager"
                     />
                 </div>
 

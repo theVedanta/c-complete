@@ -83,7 +83,6 @@ const Header = ({ indi }) => {
                     alt="dash"
                     width={600}
                     height={450}
-                    loading="eager"
                 />
             </div>
 

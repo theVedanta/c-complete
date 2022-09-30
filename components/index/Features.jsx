@@ -93,7 +93,6 @@ const Features = () => {
                         >
                             <Image
                                 alt="feat"
-                                loading="eager"
                                 src={feat.img}
                                 layout="fill"
                             />
