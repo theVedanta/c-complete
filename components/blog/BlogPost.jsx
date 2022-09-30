@@ -4,7 +4,7 @@ import place from "../../public/place.png";
 const BlogPost = ({ blog }) => {
     return (
         <div className="blog-post z-30 relative mt-6 px-12 py-10 rounded-2xl bg-white text-black flex flex-col items-center tab:px-10 tab:py-8 ph:p-6">
-            <h1 className="text-center text-5xl leading-snug font-semibold w-1/2 blap:text-3xl tab:text-2xl ph:w-full">
+            <h1 className="text-center text-5xl leading-snug font-semibold w-2/3 blap:text-3xl tab:text-2xl ph:w-full">
                 {blog && blog.title}
             </h1>
 

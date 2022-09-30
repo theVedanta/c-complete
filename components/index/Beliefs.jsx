@@ -57,30 +57,29 @@ const Beliefs = () => {
 
 const Belief = ({ bel }) => {
     return (
-        <Link href={`/blog/${bel.id}`}>
-            <a className="bel w-full mb-20 bg-white shadow-xl text-black rounded-lg h-full ph:shadow ph:mb-16">
-                <div className="bel-img w-full mb-6 rounded-t-lg overflow-hidden relative lap:mb-3">
-                    <Image
-                        alt="the"
-                        src={bel.cover}
-                        width={1000}
-                        height={400}
-                        objectFit="cover"
-                        className="transition-all duration-300"
-                    />
-                </div>
-
-                <div className="bel-content w-full h-1/2 px-6 flex flex-col items-start justify-center">
-                    <span className="bel-time my-2">{bel.time}</span>
-                    <h4 className="text-xl font-medium lap:text-lg">
-                        {bel.title}
-                    </h4>
-                    <p className="my-5 mb-8 lap:text-sm lap:my-2 lap:mb-6 tab:mb-4">
-                        {bel.mini}
-                    </p>
-                </div>
-            </a>
-        </Link>
+        <a
+            href={`/blog/${bel.id}`}
+            className="bel w-full mb-20 bg-white shadow-xl text-black rounded-lg
+            h-full ph:shadow ph:mb-16"
+        >
+            <div className="bel-img w-full mb-6 rounded-t-lg overflow-hidden relative lap:mb-3">
+                <Image
+                    alt="the"
+                    src={bel.cover}
+                    width={1000}
+                    height={400}
+                    objectFit="cover"
+                    className="transition-all duration-300"
+                />
+            </div>
+            <div className="bel-content w-full h-1/2 px-6 flex flex-col items-start justify-center">
+                <span className="bel-time my-2">{bel.time}</span>
+                <h4 className="text-xl font-medium lap:text-lg">{bel.title}</h4>
+                <p className="my-5 mb-8 lap:text-sm lap:my-2 lap:mb-6 tab:mb-4">
+                    {bel.mini}
+                </p>
+            </div>
+        </a>
     );
 };
 
