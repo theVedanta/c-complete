@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://c-complete.xyz
+
+# Sitemaps
+Sitemap: https://c-complete.xyz/sitemap.xml
