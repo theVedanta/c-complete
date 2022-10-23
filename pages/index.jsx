@@ -25,12 +25,15 @@ const Index = ({ setCurr }) => {
                 <h1>C-Complete</h1>
                 <h1>C - Complete</h1>
                 <h1>C Complete</h1>
+                <h1>C</h1>
+                <h1>Complete</h1>
+                <h1>Feedback</h1>
                 <h1>UniTol</h1>
                 <h1>Training</h1>
                 <h1>Competency managment</h1>
             </div>
             <Meta
-                title="C-Complete - UniTol"
+                title="C-Complete - 360 Degree Feedback"
                 description="Competency management and development professionals are
                     constantly faced with the need to accurately evaluate
                     behavioral attributes. Whether as part of performance
@@ -39,7 +42,7 @@ const Index = ({ setCurr }) => {
                     for objectively capturing the picture of each individual as
                     perceived by the many stakeholders. C-Complete lets you see
                     the complete picture."
-                keywords="c-complete, c complete, c, complete, unitol, competency, solutions, unitol solutions, c - complete, c- complete, c -complete, competency management, c complete, see complete, hyderabad, training"
+                keywords="c-complete, c complete, c, complete, 360, feedback, see completely, see complete, unitol, competency, solutions, unitol solutions, c - complete, c- complete, c -complete, competency management, c complete, see complete, hyderabad, training"
             />
             <Header />
             <For />
