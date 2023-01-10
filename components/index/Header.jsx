@@ -26,9 +26,7 @@ const Header = () => {
                     data-aos-delay="800"
                     className="w-5/6 leading-relaxed blap:w-full lap:text-xs tab:text-center ph:text-left ph:text-xs"
                 >
-                    Competency management and development professionals are
-                    constantly faced with the need to accurately evaluate
-                    behavioral attributes. Whether as part of performance
+                    Whether as part of performance
                     management, training needs analysis, leadership development
                     or succession planning - C-Complete offers you a platform
                     for objectively capturing the picture of each individual as
