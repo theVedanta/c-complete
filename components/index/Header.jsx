@@ -24,14 +24,13 @@ const Header = () => {
                 <p
                     data-aos="fade-up"
                     data-aos-delay="800"
-                    className="w-5/6 leading-relaxed blap:w-full lap:text-xs tab:text-center ph:text-left ph:text-xs"
+                    className="w-5/6 leading-relaxed blap:w-full lap:text-xs tab:text-center ph:text-left ph:text-sm"
                 >
-                    Whether as part of performance
-                    management, training needs analysis, leadership development
-                    or succession planning - C-Complete offers you a platform
-                    for objectively capturing the picture of each individual as
-                    perceived by the many stakeholders. C-Complete lets you see
-                    the complete picture.
+                    Whether as part of performance management, training needs
+                    analysis, leadership development or succession planning -
+                    C-Complete offers you a platform for objectively capturing
+                    the picture of each individual as perceived by the many
+                    stakeholders. C-Complete lets you see the complete picture.
                 </p>
                 <div
                     data-aos="fade-up"
