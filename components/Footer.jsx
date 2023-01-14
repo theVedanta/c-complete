@@ -72,7 +72,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="foot-right-bottom w-full mt-20 ph:text-center ph:mt-10">
-                    UniTol © 2011 - 2022 All Right Reserved
+                    UniTol © 2011 - 2023 All Right Reserved
                 </div>
             </div>
         </footer>
